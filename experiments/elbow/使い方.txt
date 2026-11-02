@@ -1,0 +1,52 @@
+FreeCAD / CfdOF / OpenFOAM CFD 試運転
+
+確認済みの構成
+FreeCAD 1.1.4、CfdOF（a90f60c＋同梱のQt6互換パッチ）、OpenFOAM 2306、ParaView 6.1.0。
+Podmanで動かすローカルイメージ：localhost/cfdof-openfoam:verified-20261030。
+cfMesh 1.32、HiSA 1.13.4、Gmsh 4.15.2へ更新済みです。
+runtimeフォルダにバージョン・help起動確認、公式アーカイブのURLとSHA256、再構築用Containerfileを保存しています。
+この更新後の環境でも、10,823セルのメッシュ品質チェックと242反復での収束を確認しました。
+OpenFOAMの計算結果とParaViewの結果表示を確認しています。
+
+対象
+公式CfdOFのElbowサンプル。2つの入口を持つ曲がり流路の2D定常・層流解析です。
+入口は1 m/sと3 m/s、出口はゲージ圧0 Pa、壁面は滑りなしです。
+流体は公式サンプルの空気設定（密度1.20 kg/m³、粘度1.80e-5 kg/(m·s)）です。
+解析の連携動作を確認するための例で、製品設計の妥当性や実験との一致を検証したものではありません。
+
+開き方
+1. FreeCADで、このフォルダのElbow-CFD.FCStdを開きます。
+2. ワークベンチでCfdOFを選択します。CfdAnalysis内に物性・境界条件・メッシュ・ソルバー設定があります。
+3. 計算済み結果はParaViewのFile > Load StateからElbow-velocity.pvsmを開けます。
+4. velocity.pngが流速、pressure.pngがゲージ圧の結果画像です。
+
+再計算
+FreeCADのMacro > Macrosで、このフォルダのRun-Elbow.FCMacroを選び、実行します。
+このデモのメッシュとケース・計算結果を再生成し、mesh-run.log / mesh-check.log / solver-run.logを更新します。
+このフォルダ内の前回のデモ計算結果は再計算で置き換わります。
+画像とParaView状態ファイルはマクロだけでは更新されません。再計算後にPowerShellで次を実行します。
+
+uv run -- "C:\Users\Aslan\AppData\Local\Programs\ParaView-6.1.0-Windows-Python3.12-msvc2017-AMD64\bin\pvpython.exe" "C:\Users\Aslan\Documents\Codex\2026-10-29\fr-2\outputs\CFD-Elbow\render-results.py"
+
+このデモは現在のフォルダ配置で動作確認します。フォルダを移動する場合は、CfdOF既定出力先とParaView状態の参照先の変更が必要です。
+Run-Elbow.FCMacroには、別の出力先への誤った再計算を防ぐための確認を入れています。
+
+圧力の単位
+OpenFOAMのこの非圧縮ケースでは、pの次元はm²/s²です。
+pressure.pngでは、pに密度1.20 kg/m³を掛けてPaに換算しています。
+result-summary.jsonの流速・圧力範囲は、断面の点に補間されたデータの範囲です。
+
+互換性修正
+FreeCAD 1.1 / Qt6向けに、CfdOFのPodman検出・起動コマンドを引数別指定へ修正しました。
+依存確認時にWindowsのホームパスをコンテナ内で参照していた箇所も、マウントされた出力先へ修正しました。
+変更内容はCfdOF-Qt6-compatibility.patchに保存しています。
+将来Addon ManagerでCfdOFを更新すると、このローカル修正が置き換わることがあります。
+
+未検証
+実験値との一致、メッシュ独立性、圧縮性・自由表面・熱連成・並列計算など、今回のデモ以外の解析。
+
+公式資料
+https://github.com/jaheyns/CfdOF
+https://github.com/jaheyns/CfdOF/tree/master/Demos/Elbow
+https://openfoam.com/
+https://www.paraview.org/

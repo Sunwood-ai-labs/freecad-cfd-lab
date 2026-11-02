@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "video": {
+    "path": "outputs\\Family-House-Airflow\\この家の風の流れ_3D-CFD.mp4",
+    "duration_s": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "frames": 480,
+    "all_frames_decoded": true,
+    "bytes": 5602845,
+    "sha256": "57f44e26264081977efde590af91514402fd28739bc93fa1f2a0d9d08b813d79"
+  },
+  "preview": {
+    "path": "outputs\\Family-House-Airflow\\preview.webp",
+    "frames": 160,
+    "loop": 0,
+    "all_frames_decoded": true,
+    "bytes": 2258930
+  },
+  "motion": {
+    "sample_seconds": [
+      2,
+      2.15
+    ],
+    "pixels_changed_gt30": 14061,
+    "roi": [
+      150,
+      280,
+      1250,
+      900
+    ]
+  },
+  "sampled_video_seconds": [
+    0,
+    5,
+    10,
+    13,
+    19.9
+  ],
+  "visual_review": "Parent/renderer must separately inspect decoded-contact-sheet.png; automatic decode does not establish readability or CFD correctness"
+}

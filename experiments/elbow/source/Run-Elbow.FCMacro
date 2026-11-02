@@ -1,0 +1,72 @@
+# Run from FreeCAD's Macro menu. Recalculates this demonstration case.
+import os
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+from CfdOF import CfdTools
+from CfdOF.Mesh import CfdMeshTools
+from CfdOF.Solve import CfdCaseWriterFoam, CfdRunnableFoam
+from CfdOF.CfdConsoleProcess import CfdConsoleProcess
+
+Gui.activateWorkbench('CfdOFWorkbench')
+root = Path(__file__).resolve().parent.parent
+document_path = str(root / 'Elbow-CFD.FCStd')
+doc = next((d for d in App.listDocuments().values() if d.FileName == document_path), None)
+if doc is None:
+    doc = App.openDocument(document_path)
+App.setActiveDocument(doc.Name)
+analysis = next(o for o in doc.Objects if o.Name == 'CfdAnalysis')
+CfdTools.setActiveAnalysis(analysis)
+analysis.OutputPath = str(root)
+if Path(CfdTools.getOutputPath(analysis)).resolve() != root.resolve():
+    raise RuntimeError('The output directory must match the folder containing this macro.')
+
+def run_and_log(command, working_dir, filename):
+    process = CfdConsoleProcess()
+    process.process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
+    process.process.setStandardOutputFile(str(root / filename))
+    process.start(command, env_vars=CfdTools.getRunEnvironment(), working_dir=working_dir)
+    if not process.waitForStarted():
+        raise RuntimeError('Unable to start: ' + filename)
+    process.waitForFinished()
+    if process.exitCode() != 0:
+        raise RuntimeError('Command failed; see ' + filename)
+    return process.exitCode()
+
+mesh = CfdTools.getMesh(analysis)
+mesh_writer = CfdMeshTools.CfdMeshTools(mesh)
+mesh_writer.writeMesh()
+run_and_log(CfdTools.makeRunCommand('./Allmesh', mesh_writer.mesh_case_dir, source_env=False),
+            mesh_writer.mesh_case_dir, 'mesh-run.log')
+run_and_log(CfdTools.makeRunCommand('checkMesh -meshQuality', mesh_writer.mesh_case_dir),
+            mesh_writer.mesh_case_dir, 'mesh-check.log')
+if 'Mesh OK.' not in (root / 'mesh-check.log').read_text(encoding='utf-8'):
+    raise RuntimeError('Mesh quality check did not report Mesh OK.')
+
+CfdCaseWriterFoam.CfdCaseWriterFoam(analysis).writeCase()
+solver = CfdTools.getSolver(analysis)
+runnable = CfdRunnableFoam.CfdRunnableFoam(analysis, solver)
+case_dir = str(root / solver.InputCaseName)
+run_and_log(runnable.getSolverCmd(case_dir), case_dir, 'solver-run.log')
+solver_log = (root / 'solver-run.log').read_text(encoding='utf-8')
+if 'SIMPLE solution converged' not in solver_log:
+    raise RuntimeError('Solver exited without reporting SIMPLE convergence.')
+runnable.processOutput(solver_log)
+import Fem
+preview = doc.getObject(mesh.Name + 'SurfaceMesh')
+if preview is None:
+    preview = doc.addObject('Fem::FemMeshObject', mesh.Name + 'SurfaceMesh')
+    mesh.addObject(preview)
+preview.FemMesh = Fem.read(str(Path(mesh_writer.mesh_case_dir) / 'surfaceMesh.vtk'))
+mesh.Part.ViewObject.Visibility = False
+preview.ViewObject.Visibility = True
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().fitAll()
+doc.recompute()
+analysis.NeedsMeshRewrite = False
+analysis.NeedsMeshRerun = False
+analysis.NeedsCaseRewrite = False
+doc.save()
+App.saveParameter()
+print('Elbow demonstration: mesh generation, quality check and CFD solution passed.')

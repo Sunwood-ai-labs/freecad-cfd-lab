@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "pdf": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House\\4人家族の平屋_基本設計案.pdf",
+  "pages": 7,
+  "bytes": 1267861,
+  "sha256": "d2797c5152385de7327964a1ea8a5f05e286d0d1c92a114b34a1476d351330d2",
+  "source_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+  "page_mm": [
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ],
+    [
+      420.0,
+      297.0
+    ]
+  ],
+  "page_checks": [
+    {
+      "page": 1,
+      "text_characters": 524,
+      "basic_design_notice": true
+    },
+    {
+      "page": 2,
+      "text_characters": 70,
+      "basic_design_notice": true
+    },
+    {
+      "page": 3,
+      "text_characters": 953,
+      "basic_design_notice": true
+    },
+    {
+      "page": 4,
+      "text_characters": 154,
+      "basic_design_notice": true
+    },
+    {
+      "page": 5,
+      "text_characters": 1006,
+      "basic_design_notice": true
+    },
+    {
+      "page": 6,
+      "text_characters": 452,
+      "basic_design_notice": true
+    },
+    {
+      "page": 7,
+      "text_characters": 734,
+      "basic_design_notice": true
+    }
+  ],
+  "svg_parse": "pass",
+  "visual_review": "All 7 pages rendered and reviewed; corrected enclosed roof, true orthographic elevations, font/text/labels/physical print scale checked",
+  "physical_floorplan_scale": "1:50 when printed actual size on A3",
+  "pdf_marker_calls": 1,
+  "pdf_marker_exit_code": 0
+}

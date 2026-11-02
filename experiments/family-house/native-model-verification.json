@@ -1,0 +1,3634 @@
+{
+  "shapes": [
+    {
+      "object": "Structure",
+      "label": "01 Floors and foundation reference",
+      "type": "App::DocumentObjectGroup",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 18,
+      "volume_mm3": 25141679999.99998
+    },
+    {
+      "object": "Walls",
+      "label": "02 Native BIM walls",
+      "type": "App::DocumentObjectGroup",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 12,
+      "volume_mm3": 31032750000.000004
+    },
+    {
+      "object": "Openings",
+      "label": "03 Native BIM doors and windows",
+      "type": "App::DocumentObjectGroup",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 63,
+      "volume_mm3": 2243631999.9999995
+    },
+    {
+      "object": "Furniture",
+      "label": "05 Furniture and equipment",
+      "type": "App::DocumentObjectGroup",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 117,
+      "volume_mm3": 25094821043.22799
+    },
+    {
+      "object": "Roof",
+      "label": "06 Native BIM roof",
+      "type": "App::DocumentObjectGroup",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17212695535.81485
+    },
+    {
+      "object": "Wire",
+      "label": "Wire",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall",
+      "label": "外周壁 断熱構成未確定",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 19993999999.99994
+    },
+    {
+      "object": "Line",
+      "label": "spine baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall001",
+      "label": "spine",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2347500000.0
+    },
+    {
+      "object": "Line001",
+      "label": "service_south baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall002",
+      "label": "service_south",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1336500000.0
+    },
+    {
+      "object": "Line002",
+      "label": "bath_wash baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall003",
+      "label": "bath_wash",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 553500000.0
+    },
+    {
+      "object": "Line003",
+      "label": "wet_split baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall004",
+      "label": "wet_split",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 653499999.9999999
+    },
+    {
+      "object": "Line004",
+      "label": "laundry_east baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall005",
+      "label": "laundry_east",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1068750000.0
+    },
+    {
+      "object": "Line005",
+      "label": "wc_hall baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall006",
+      "label": "wc_hall",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 334500000.0
+    },
+    {
+      "object": "Line006",
+      "label": "entry_south baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall007",
+      "label": "entry_south",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 387000000.0
+    },
+    {
+      "object": "Line007",
+      "label": "private_south baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall008",
+      "label": "private_south",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1131000000.0
+    },
+    {
+      "object": "Line008",
+      "label": "private_north baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall009",
+      "label": "private_north",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1120500000.0
+    },
+    {
+      "object": "Line009",
+      "label": "master_fcl baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall010",
+      "label": "master_fcl",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1120500000.0
+    },
+    {
+      "object": "Line010",
+      "label": "children_split baseline",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Wall011",
+      "label": "children_split",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wall",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 985500000.0
+    },
+    {
+      "object": "Sketch",
+      "label": "Sketch",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window",
+      "label": "D01 玄関ドア",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 181300000.0
+    },
+    {
+      "object": "Sketch001",
+      "label": "Sketch001",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Sketch002",
+      "label": "Sketch002",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window002",
+      "label": "D03 玄関ホール→LDK",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch003",
+      "label": "Sketch003",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window003",
+      "label": "D04 LDK→独立洗面",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch004",
+      "label": "Sketch004",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window004",
+      "label": "D05 洗面→脱衣",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch005",
+      "label": "Sketch005",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window005",
+      "label": "D06 脱衣→浴室",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 140750000.0
+    },
+    {
+      "object": "Sketch006",
+      "label": "Sketch006",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window006",
+      "label": "D07 ホール→トイレ",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 147750000.0
+    },
+    {
+      "object": "Sketch007",
+      "label": "Sketch007",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window007",
+      "label": "D08 LDK→個室ホール",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch008",
+      "label": "Sketch008",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window008",
+      "label": "D09 ホール→家族収納",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 147750000.0
+    },
+    {
+      "object": "Sketch009",
+      "label": "Sketch009",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window009",
+      "label": "D10 ホール→主寝室",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch010",
+      "label": "Sketch010",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window010",
+      "label": "D11 ホール→子ども室1",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch011",
+      "label": "Sketch011",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window011",
+      "label": "D12 ホール→子ども室2",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 156200000.0
+    },
+    {
+      "object": "Sketch012",
+      "label": "Sketch012",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window012",
+      "label": "W01 ダイニング南腰窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 75265200.0
+    },
+    {
+      "object": "Sketch013",
+      "label": "Sketch013",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window013",
+      "label": "W02 リビング南掃出窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 124045200.00000006
+    },
+    {
+      "object": "Sketch014",
+      "label": "Sketch014",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window014",
+      "label": "W03 LDK西窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 37549200.000000015
+    },
+    {
+      "object": "Sketch015",
+      "label": "Sketch015",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window015",
+      "label": "W04 子ども室1北窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 63181199.999999985
+    },
+    {
+      "object": "Sketch016",
+      "label": "Sketch016",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window016",
+      "label": "W05 子ども室2北窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 63181199.999999985
+    },
+    {
+      "object": "Sketch017",
+      "label": "Sketch017",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window017",
+      "label": "W06 主寝室南窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 70081200.0
+    },
+    {
+      "object": "Sketch018",
+      "label": "Sketch018",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window018",
+      "label": "W07 主寝室東窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 54529200.00000003
+    },
+    {
+      "object": "Sketch019",
+      "label": "Sketch019",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window019",
+      "label": "W08 浴室北高窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 19256799.999999993
+    },
+    {
+      "object": "Sketch020",
+      "label": "Sketch020",
+      "type": "Sketcher::SketchObject",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Window020",
+      "label": "W09 ランドリー北高窓",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Window",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 25592800.0
+    },
+    {
+      "object": "Rectangle",
+      "label": "Rectangle",
+      "type": "Part::Part2DObjectPython",
+      "native_bim_type": "Rectangle",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Structure001",
+      "label": "主床スラブ 参考構成",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Structure",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21301999999.999996
+    },
+    {
+      "object": "GenkanFloorCut0",
+      "label": "GenkanFloorCut0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4080000000.0
+    },
+    {
+      "object": "GenkanFloorCut1",
+      "label": "GenkanFloorCut1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 240000000.0
+    },
+    {
+      "object": "Rectangle001",
+      "label": "Rectangle001",
+      "type": "Part::Part2DObjectPython",
+      "native_bim_type": "Rectangle",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Structure002",
+      "label": "玄関土間・敷居 参考構成",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Structure",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 680000000.0
+    },
+    {
+      "object": "Rectangle002",
+      "label": "Rectangle002",
+      "type": "Part::Part2DObjectPython",
+      "native_bim_type": "Rectangle",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Structure003",
+      "label": "Structure003",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Structure",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40000000.0
+    },
+    {
+      "object": "ldkRoomVolume",
+      "label": "ldkRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 74400000000.0
+    },
+    {
+      "object": "Space",
+      "label": "LDK",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 74400000000.0
+    },
+    {
+      "object": "Finish_ldk",
+      "label": "Finish_ldk",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 30999999.999999996
+    },
+    {
+      "object": "masterRoomVolume",
+      "label": "masterRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36480000000.0
+    },
+    {
+      "object": "Space001",
+      "label": "主寝室",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36480000000.0
+    },
+    {
+      "object": "Finish_master",
+      "label": "Finish_master",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 15199999.999999998
+    },
+    {
+      "object": "child1RoomVolume",
+      "label": "child1RoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22260000000.0
+    },
+    {
+      "object": "Space002",
+      "label": "子ども室1",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22260000000.0
+    },
+    {
+      "object": "Finish_child1",
+      "label": "Finish_child1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9275000.0
+    },
+    {
+      "object": "child2RoomVolume",
+      "label": "child2RoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22260000000.0
+    },
+    {
+      "object": "Space003",
+      "label": "子ども室2",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22260000000.0
+    },
+    {
+      "object": "Finish_child2",
+      "label": "Finish_child2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9275000.0
+    },
+    {
+      "object": "fclRoomVolume",
+      "label": "fclRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14400000000.0
+    },
+    {
+      "object": "Space004",
+      "label": "家族収納",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14400000000.0
+    },
+    {
+      "object": "Finish_fcl",
+      "label": "Finish_fcl",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6000000.0
+    },
+    {
+      "object": "private_hallRoomVolume",
+      "label": "private_hallRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12960000000.0
+    },
+    {
+      "object": "Space005",
+      "label": "個室ホール",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12960000000.0
+    },
+    {
+      "object": "Finish_private_hall",
+      "label": "Finish_private_hall",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5400000.0
+    },
+    {
+      "object": "bathRoomVolume",
+      "label": "bathRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8664000000.0
+    },
+    {
+      "object": "Space006",
+      "label": "浴室・1616設置枠",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8664000000.0
+    },
+    {
+      "object": "Finish_bath",
+      "label": "Finish_bath",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3610000.0000000005
+    },
+    {
+      "object": "washRoomVolume",
+      "label": "washRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7296000000.0
+    },
+    {
+      "object": "Space007",
+      "label": "独立洗面",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7296000000.0
+    },
+    {
+      "object": "Finish_wash",
+      "label": "Finish_wash",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3040000.0
+    },
+    {
+      "object": "laundryRoomVolume",
+      "label": "laundryRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18144000000.0
+    },
+    {
+      "object": "Space008",
+      "label": "脱衣・ランドリー",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18144000000.0
+    },
+    {
+      "object": "Finish_laundry",
+      "label": "Finish_laundry",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7560000.0
+    },
+    {
+      "object": "wcRoomVolume",
+      "label": "wcRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4320000000.0
+    },
+    {
+      "object": "Space009",
+      "label": "トイレ",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4320000000.0
+    },
+    {
+      "object": "Finish_wc",
+      "label": "Finish_wc",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1800000.0
+    },
+    {
+      "object": "entry_hallRoomVolume",
+      "label": "entry_hallRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3888000000.0
+    },
+    {
+      "object": "Space010",
+      "label": "玄関ホール",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3888000000.0
+    },
+    {
+      "object": "Finish_entry_hall",
+      "label": "Finish_entry_hall",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1620000.0
+    },
+    {
+      "object": "entryRoomVolume",
+      "label": "entryRoomVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8670000000.0
+    },
+    {
+      "object": "Space011",
+      "label": "玄関・靴収納",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Space",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8670000000.0
+    },
+    {
+      "object": "Finish_entry",
+      "label": "Finish_entry",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3400000.0
+    },
+    {
+      "object": "kitchen",
+      "label": "kitchen",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1350862500.0
+    },
+    {
+      "object": "kitchenCountertop",
+      "label": "kitchenCountertop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 58012500.0
+    },
+    {
+      "object": "kitchenSink",
+      "label": "kitchenSink",
+      "type": "Part::Feature",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13352000.000000013
+    },
+    {
+      "object": "kitchenCooktop",
+      "label": "kitchenCooktop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4039200.0
+    },
+    {
+      "object": "kitchenBurner0",
+      "label": "kitchenBurner0",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 95567.24852220145
+    },
+    {
+      "object": "kitchenBurner1",
+      "label": "kitchenBurner1",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 95567.24852220145
+    },
+    {
+      "object": "kitchenBurner2",
+      "label": "kitchenBurner2",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 95567.24852220145
+    },
+    {
+      "object": "kitchenBurner3",
+      "label": "kitchenBurner3",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 95567.24852220145
+    },
+    {
+      "object": "kitchenFaucet",
+      "label": "kitchenFaucet",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 264647.76513840345
+    },
+    {
+      "object": "fridge",
+      "label": "fridge",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1020937499.9999999
+    },
+    {
+      "object": "fridgeTop",
+      "label": "fridgeTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 19687500.0
+    },
+    {
+      "object": "fridgeHandle",
+      "label": "fridgeHandle",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 129999.99999999997
+    },
+    {
+      "object": "tableTop",
+      "label": "tableTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 51199999.999999985
+    },
+    {
+      "object": "tableLeg0",
+      "label": "tableLeg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "tableLeg1",
+      "label": "tableLeg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "tableLeg2",
+      "label": "tableLeg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "tableLeg3",
+      "label": "tableLeg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "dining_chair1Seat",
+      "label": "dining_chair1Seat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "dining_chair1Back",
+      "label": "dining_chair1Back",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "dining_chair1Leg0",
+      "label": "dining_chair1Leg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair1Leg1",
+      "label": "dining_chair1Leg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair1Leg2",
+      "label": "dining_chair1Leg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair1Leg3",
+      "label": "dining_chair1Leg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair2Seat",
+      "label": "dining_chair2Seat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "dining_chair2Back",
+      "label": "dining_chair2Back",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "dining_chair2Leg0",
+      "label": "dining_chair2Leg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair2Leg1",
+      "label": "dining_chair2Leg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair2Leg2",
+      "label": "dining_chair2Leg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair2Leg3",
+      "label": "dining_chair2Leg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair3Seat",
+      "label": "dining_chair3Seat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "dining_chair3Back",
+      "label": "dining_chair3Back",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "dining_chair3Leg0",
+      "label": "dining_chair3Leg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair3Leg1",
+      "label": "dining_chair3Leg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair3Leg2",
+      "label": "dining_chair3Leg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair3Leg3",
+      "label": "dining_chair3Leg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair4Seat",
+      "label": "dining_chair4Seat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "dining_chair4Back",
+      "label": "dining_chair4Back",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "dining_chair4Leg0",
+      "label": "dining_chair4Leg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair4Leg1",
+      "label": "dining_chair4Leg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair4Leg2",
+      "label": "dining_chair4Leg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "dining_chair4Leg3",
+      "label": "dining_chair4Leg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "sofaBase",
+      "label": "sofaBase",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 752400000.0
+    },
+    {
+      "object": "sofaBack",
+      "label": "sofaBack",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 257400000.0
+    },
+    {
+      "object": "sofaArm1",
+      "label": "sofaArm1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 86400000.0
+    },
+    {
+      "object": "sofaArm2",
+      "label": "sofaArm2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 86400000.0
+    },
+    {
+      "object": "sofaCushion",
+      "label": "sofaCushion",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 132990000.0
+    },
+    {
+      "object": "tv",
+      "label": "tv",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 334800000.0
+    },
+    {
+      "object": "tvTop",
+      "label": "tvTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25200000.0
+    },
+    {
+      "object": "queenFrame",
+      "label": "queenFrame",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 735999999.9999999
+    },
+    {
+      "object": "queenMattress",
+      "label": "queenMattress",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 544050000.0
+    },
+    {
+      "object": "queenHeadboard",
+      "label": "queenHeadboard",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 89599999.99999999
+    },
+    {
+      "object": "queenPillow",
+      "label": "queenPillow",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 45990000.0
+    },
+    {
+      "object": "master_closet",
+      "label": "master_closet",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3247500000.0
+    },
+    {
+      "object": "master_closetTop",
+      "label": "master_closetTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 52500000.0
+    },
+    {
+      "object": "fcl_storage",
+      "label": "fcl_storage",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5196000000.0
+    },
+    {
+      "object": "fcl_storageTop",
+      "label": "fcl_storageTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 83999999.99999999
+    },
+    {
+      "object": "child1_bedFrame",
+      "label": "child1_bedFrame",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 459999999.9999999
+    },
+    {
+      "object": "child1_bedMattress",
+      "label": "child1_bedMattress",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 333450000.0
+    },
+    {
+      "object": "child1_bedHeadboard",
+      "label": "child1_bedHeadboard",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56000000.0
+    },
+    {
+      "object": "child1_bedPillow",
+      "label": "child1_bedPillow",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 27090000.0
+    },
+    {
+      "object": "child1_deskTop",
+      "label": "child1_deskTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28800000.0
+    },
+    {
+      "object": "child1_deskLeg0",
+      "label": "child1_deskLeg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child1_deskLeg1",
+      "label": "child1_deskLeg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child1_deskLeg2",
+      "label": "child1_deskLeg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child1_deskLeg3",
+      "label": "child1_deskLeg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child1_chairSeat",
+      "label": "child1_chairSeat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "child1_chairBack",
+      "label": "child1_chairBack",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "child1_chairLeg0",
+      "label": "child1_chairLeg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child1_chairLeg1",
+      "label": "child1_chairLeg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child1_chairLeg2",
+      "label": "child1_chairLeg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child1_chairLeg3",
+      "label": "child1_chairLeg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child1_closet",
+      "label": "child1_closet",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1558800000.0
+    },
+    {
+      "object": "child1_closetTop",
+      "label": "child1_closetTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25199999.999999996
+    },
+    {
+      "object": "child2_bedFrame",
+      "label": "child2_bedFrame",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 459999999.9999999
+    },
+    {
+      "object": "child2_bedMattress",
+      "label": "child2_bedMattress",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 333450000.0
+    },
+    {
+      "object": "child2_bedHeadboard",
+      "label": "child2_bedHeadboard",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56000000.0
+    },
+    {
+      "object": "child2_bedPillow",
+      "label": "child2_bedPillow",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 27090000.0
+    },
+    {
+      "object": "child2_deskTop",
+      "label": "child2_deskTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28800000.0
+    },
+    {
+      "object": "child2_deskLeg0",
+      "label": "child2_deskLeg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child2_deskLeg1",
+      "label": "child2_deskLeg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child2_deskLeg2",
+      "label": "child2_deskLeg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child2_deskLeg3",
+      "label": "child2_deskLeg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1377000.0
+    },
+    {
+      "object": "child2_chairSeat",
+      "label": "child2_chairSeat",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17671999.999999996
+    },
+    {
+      "object": "child2_chairBack",
+      "label": "child2_chairBack",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9500000.0
+    },
+    {
+      "object": "child2_chairLeg0",
+      "label": "child2_chairLeg0",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child2_chairLeg1",
+      "label": "child2_chairLeg1",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child2_chairLeg2",
+      "label": "child2_chairLeg2",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child2_chairLeg3",
+      "label": "child2_chairLeg3",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 342000.0
+    },
+    {
+      "object": "child2_closet",
+      "label": "child2_closet",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1558800000.0
+    },
+    {
+      "object": "child2_closetTop",
+      "label": "child2_closetTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25199999.999999996
+    },
+    {
+      "object": "bath_innerReference",
+      "label": "bath_innerReference",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1280000.0
+    },
+    {
+      "object": "tub",
+      "label": "tub",
+      "type": "Part::Feature",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 203400000.00000006
+    },
+    {
+      "object": "vanity",
+      "label": "vanity",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 440100000.0
+    },
+    {
+      "object": "vanityCountertop",
+      "label": "vanityCountertop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18900000.0
+    },
+    {
+      "object": "vanityBasin",
+      "label": "vanityBasin",
+      "type": "Part::Feature",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16600000.000000002
+    },
+    {
+      "object": "washer",
+      "label": "washer",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 409500000.0
+    },
+    {
+      "object": "washerDoorRim",
+      "label": "washerDoorRim",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2718357.2912981776
+    },
+    {
+      "object": "washerDoorGlass",
+      "label": "washerDoorGlass",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1884267.5833627405
+    },
+    {
+      "object": "dryer",
+      "label": "dryer",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 386750000.0
+    },
+    {
+      "object": "dryerDoorRim",
+      "label": "dryerDoorRim",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2718357.2912981776
+    },
+    {
+      "object": "dryerDoorGlass",
+      "label": "dryerDoorGlass",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1884267.5833627405
+    },
+    {
+      "object": "fold_counter",
+      "label": "fold_counter",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 782400000.0
+    },
+    {
+      "object": "fold_counterCountertop",
+      "label": "fold_counterCountertop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33600000.0
+    },
+    {
+      "object": "linen",
+      "label": "linen",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1853250000.0
+    },
+    {
+      "object": "linenTop",
+      "label": "linenTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36750000.0
+    },
+    {
+      "object": "drying_rail",
+      "label": "drying_rail",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 19500000.0
+    },
+    {
+      "object": "toiletTank",
+      "label": "toiletTank",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 54000000.0
+    },
+    {
+      "object": "toiletPedestal",
+      "label": "toiletPedestal",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16985711.832017
+    },
+    {
+      "object": "toiletSeat",
+      "label": "toiletSeat",
+      "type": "Part::Feature",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2521505.0956242396
+    },
+    {
+      "object": "wc_basin",
+      "label": "wc_basin",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 70000000.00000001
+    },
+    {
+      "object": "shoe",
+      "label": "shoe",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1228675000.0000002
+    },
+    {
+      "object": "shoeTop",
+      "label": "shoeTop",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20825000.0
+    },
+    {
+      "object": "strollerBody",
+      "label": "strollerBody",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 129500000.0
+    },
+    {
+      "object": "strollerWheel0",
+      "label": "strollerWheel0",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1134114.9479459156
+    },
+    {
+      "object": "strollerWheel1",
+      "label": "strollerWheel1",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1134114.9479459156
+    },
+    {
+      "object": "strollerWheel2",
+      "label": "strollerWheel2",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1134114.9479459145
+    },
+    {
+      "object": "strollerWheel3",
+      "label": "strollerWheel3",
+      "type": "Part::Cylinder",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1134114.9479459145
+    },
+    {
+      "object": "Rectangle003",
+      "label": "Rectangle003",
+      "type": "Part::Part2DObjectPython",
+      "native_bim_type": "Rectangle",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Structure004",
+      "label": "玄関ポーチ参考",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Structure",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 405000000.0
+    },
+    {
+      "object": "Rectangle004",
+      "label": "Rectangle004",
+      "type": "Part::Part2DObjectPython",
+      "native_bim_type": "Rectangle",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Structure005",
+      "label": "外部1段参考",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Structure",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 121500000.0
+    },
+    {
+      "object": "Wire001",
+      "label": "Wire001",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Wire",
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "Roof001",
+      "label": "Hipped roof - preliminary geometry",
+      "type": "Part::FeaturePython",
+      "native_bim_type": "Roof",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17212695535.81485
+    },
+    {
+      "object": "PlanCutVolume",
+      "label": "PlanCutVolume",
+      "type": "Part::Box",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 189377100000.0
+    },
+    {
+      "object": "PlanCut_Wall",
+      "label": "PlanCut_Wall",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8781199999.99997
+    },
+    {
+      "object": "PlanCut_Wall001",
+      "label": "PlanCut_Wall001",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 968900000.0
+    },
+    {
+      "object": "PlanCut_Wall002",
+      "label": "PlanCut_Wall002",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 546000000.0000002
+    },
+    {
+      "object": "PlanCut_Wall003",
+      "label": "PlanCut_Wall003",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 246000000.00000003
+    },
+    {
+      "object": "PlanCut_Wall004",
+      "label": "PlanCut_Wall004",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 240000000.0
+    },
+    {
+      "object": "PlanCut_Wall005",
+      "label": "PlanCut_Wall005",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 453750000.0
+    },
+    {
+      "object": "PlanCut_Wall006",
+      "label": "PlanCut_Wall006",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 126000000.0
+    },
+    {
+      "object": "PlanCut_Wall007",
+      "label": "PlanCut_Wall007",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 145200000.00000018
+    },
+    {
+      "object": "PlanCut_Wall008",
+      "label": "PlanCut_Wall008",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 456000000.00000006
+    },
+    {
+      "object": "PlanCut_Wall009",
+      "label": "PlanCut_Wall009",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 450000000.0
+    },
+    {
+      "object": "PlanCut_Wall010",
+      "label": "PlanCut_Wall010",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 498000000.0
+    },
+    {
+      "object": "PlanCut_Wall011",
+      "label": "PlanCut_Wall011",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 438000000.0
+    },
+    {
+      "object": "PlanCut_Window",
+      "label": "PlanCut_Window",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 99220000.00000057
+    },
+    {
+      "object": "PlanCut_Window002",
+      "label": "PlanCut_Window002",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.00000024
+    },
+    {
+      "object": "PlanCut_Window003",
+      "label": "PlanCut_Window003",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.00000024
+    },
+    {
+      "object": "PlanCut_Window004",
+      "label": "PlanCut_Window004",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.0
+    },
+    {
+      "object": "PlanCut_Window005",
+      "label": "PlanCut_Window005",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 84000000.0
+    },
+    {
+      "object": "PlanCut_Window006",
+      "label": "PlanCut_Window006",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 84000000.0
+    },
+    {
+      "object": "PlanCut_Window007",
+      "label": "PlanCut_Window007",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.0
+    },
+    {
+      "object": "PlanCut_Window008",
+      "label": "PlanCut_Window008",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 84000000.00000022
+    },
+    {
+      "object": "PlanCut_Window009",
+      "label": "PlanCut_Window009",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.00000024
+    },
+    {
+      "object": "PlanCut_Window010",
+      "label": "PlanCut_Window010",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.00000024
+    },
+    {
+      "object": "PlanCut_Window011",
+      "label": "PlanCut_Window011",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 88800000.00000024
+    },
+    {
+      "object": "PlanCut_Window012",
+      "label": "PlanCut_Window012",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 25788600.0
+    },
+    {
+      "object": "PlanCut_Window013",
+      "label": "PlanCut_Window013",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 68424599.99999999
+    },
+    {
+      "object": "PlanCut_Window014",
+      "label": "PlanCut_Window014",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "PlanCut_Window015",
+      "label": "PlanCut_Window015",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 19452600.000000004
+    },
+    {
+      "object": "PlanCut_Window016",
+      "label": "PlanCut_Window016",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 19452600.000000004
+    },
+    {
+      "object": "PlanCut_Window017",
+      "label": "PlanCut_Window017",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 23676600.0
+    },
+    {
+      "object": "PlanCut_Window018",
+      "label": "PlanCut_Window018",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 17340599.999999996
+    },
+    {
+      "object": "PlanCut_Window019",
+      "label": "PlanCut_Window019",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "PlanCut_Window020",
+      "label": "PlanCut_Window020",
+      "type": "Part::Common",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "object": "FoundationReference",
+      "label": "基礎立上り参考 - 構造形式・地盤・配筋・寸法未検証",
+      "type": "Part::Feature",
+      "native_bim_type": null,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2495999999.999996
+    }
+  ],
+  "openings": [
+    {
+      "id": "D01",
+      "host": "ext_north",
+      "object": "Window",
+      "kind": "door",
+      "rough_width_mm": 1000,
+      "frame_inner_span_mm": 900,
+      "height_mm": 2200,
+      "sill_mm": -150,
+      "expected_wall_cut_mm3": 440000000,
+      "actual_wall_cut_mm3": 439999999.9999237,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D02",
+      "host": "entry_south",
+      "object": "Window001",
+      "kind": "passage",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 900,
+      "height_mm": 2350,
+      "sill_mm": -150,
+      "expected_wall_cut_mm3": 211500000.0,
+      "actual_wall_cut_mm3": 211500000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D03",
+      "host": "service_south",
+      "object": "Window002",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D04",
+      "host": "service_south",
+      "object": "Window003",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D05",
+      "host": "wet_split",
+      "object": "Window004",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D06",
+      "host": "wet_split",
+      "object": "Window005",
+      "kind": "door",
+      "rough_width_mm": 850,
+      "frame_inner_span_mm": 750,
+      "height_mm": 2000,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 170000000.0,
+      "actual_wall_cut_mm3": 170000000.00000012,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D07",
+      "host": "wc_hall",
+      "object": "Window006",
+      "kind": "door",
+      "rough_width_mm": 850,
+      "frame_inner_span_mm": 750,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 178500000.0,
+      "actual_wall_cut_mm3": 178500000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D08",
+      "host": "spine",
+      "object": "Window007",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D09",
+      "host": "private_south",
+      "object": "Window008",
+      "kind": "door",
+      "rough_width_mm": 850,
+      "frame_inner_span_mm": 750,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 178500000.0,
+      "actual_wall_cut_mm3": 178500000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D10",
+      "host": "private_south",
+      "object": "Window009",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D11",
+      "host": "private_north",
+      "object": "Window010",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "D12",
+      "host": "private_north",
+      "object": "Window011",
+      "kind": "door",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 189000000.0,
+      "actual_wall_cut_mm3": 189000000.0,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W01",
+      "host": "ext_south",
+      "object": "Window012",
+      "kind": "window",
+      "rough_width_mm": 2000,
+      "frame_inner_span_mm": 1900,
+      "height_mm": 1200,
+      "sill_mm": 900,
+      "expected_wall_cut_mm3": 480000000,
+      "actual_wall_cut_mm3": 480000000.00011444,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W02",
+      "host": "ext_south",
+      "object": "Window013",
+      "kind": "window",
+      "rough_width_mm": 2400,
+      "frame_inner_span_mm": 2300,
+      "height_mm": 2100,
+      "sill_mm": 0,
+      "expected_wall_cut_mm3": 1008000000,
+      "actual_wall_cut_mm3": 1007999999.999939,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W03",
+      "host": "ext_west",
+      "object": "Window014",
+      "kind": "window",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 900,
+      "sill_mm": 1200,
+      "expected_wall_cut_mm3": 162000000,
+      "actual_wall_cut_mm3": 161999999.99998474,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W04",
+      "host": "ext_north",
+      "object": "Window015",
+      "kind": "window",
+      "rough_width_mm": 1400,
+      "frame_inner_span_mm": 1300,
+      "height_mm": 1300,
+      "sill_mm": 900,
+      "expected_wall_cut_mm3": 364000000,
+      "actual_wall_cut_mm3": 363999999.99998474,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W05",
+      "host": "ext_north",
+      "object": "Window016",
+      "kind": "window",
+      "rough_width_mm": 1400,
+      "frame_inner_span_mm": 1300,
+      "height_mm": 1300,
+      "sill_mm": 900,
+      "expected_wall_cut_mm3": 364000000,
+      "actual_wall_cut_mm3": 364000000.0000229,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W06",
+      "host": "ext_south",
+      "object": "Window017",
+      "kind": "window",
+      "rough_width_mm": 1800,
+      "frame_inner_span_mm": 1700,
+      "height_mm": 1200,
+      "sill_mm": 900,
+      "expected_wall_cut_mm3": 432000000,
+      "actual_wall_cut_mm3": 432000000.00001144,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W07",
+      "host": "ext_east",
+      "object": "Window018",
+      "kind": "window",
+      "rough_width_mm": 1200,
+      "frame_inner_span_mm": 1100,
+      "height_mm": 1200,
+      "sill_mm": 900,
+      "expected_wall_cut_mm3": 288000000,
+      "actual_wall_cut_mm3": 288000000.00006485,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W08",
+      "host": "ext_north",
+      "object": "Window019",
+      "kind": "window",
+      "rough_width_mm": 600,
+      "frame_inner_span_mm": 500,
+      "height_mm": 600,
+      "sill_mm": 1500,
+      "expected_wall_cut_mm3": 72000000,
+      "actual_wall_cut_mm3": 71999999.9999237,
+      "wall_cut_ok": true
+    },
+    {
+      "id": "W09",
+      "host": "ext_north",
+      "object": "Window020",
+      "kind": "window",
+      "rough_width_mm": 900,
+      "frame_inner_span_mm": 800,
+      "height_mm": 600,
+      "sill_mm": 1600,
+      "expected_wall_cut_mm3": 108000000,
+      "actual_wall_cut_mm3": 108000000.00006104,
+      "wall_cut_ok": true
+    }
+  ],
+  "spaces": [
+    {
+      "id": "ldk",
+      "object": "Space",
+      "label": "LDK",
+      "area_m2": 31.000000000000004,
+      "volume_m3": 74.4
+    },
+    {
+      "id": "master",
+      "object": "Space001",
+      "label": "主寝室",
+      "area_m2": 15.2,
+      "volume_m3": 36.48
+    },
+    {
+      "id": "child1",
+      "object": "Space002",
+      "label": "子ども室1",
+      "area_m2": 9.275,
+      "volume_m3": 22.26
+    },
+    {
+      "id": "child2",
+      "object": "Space003",
+      "label": "子ども室2",
+      "area_m2": 9.275,
+      "volume_m3": 22.26
+    },
+    {
+      "id": "fcl",
+      "object": "Space004",
+      "label": "家族収納",
+      "area_m2": 6.0,
+      "volume_m3": 14.4
+    },
+    {
+      "id": "private_hall",
+      "object": "Space005",
+      "label": "個室ホール",
+      "area_m2": 5.4,
+      "volume_m3": 12.96
+    },
+    {
+      "id": "bath",
+      "object": "Space006",
+      "label": "浴室・1616設置枠",
+      "area_m2": 3.61,
+      "volume_m3": 8.664
+    },
+    {
+      "id": "wash",
+      "object": "Space007",
+      "label": "独立洗面",
+      "area_m2": 3.04,
+      "volume_m3": 7.296
+    },
+    {
+      "id": "laundry",
+      "object": "Space008",
+      "label": "脱衣・ランドリー",
+      "area_m2": 7.56,
+      "volume_m3": 18.144
+    },
+    {
+      "id": "wc",
+      "object": "Space009",
+      "label": "トイレ",
+      "area_m2": 1.7999999999999996,
+      "volume_m3": 4.32
+    },
+    {
+      "id": "entry_hall",
+      "object": "Space010",
+      "label": "玄関ホール",
+      "area_m2": 1.6199999999999997,
+      "volume_m3": 3.888
+    },
+    {
+      "id": "entry",
+      "object": "Space011",
+      "label": "玄関・靴収納",
+      "area_m2": 3.399999999999999,
+      "volume_m3": 8.67
+    }
+  ],
+  "native_dimensions": [
+    {
+      "name": "BuildingWidth",
+      "value_mm": 12100.0,
+      "state": [
+        "Up-to-date"
+      ]
+    },
+    {
+      "name": "BuildingDepth",
+      "value_mm": 9100.0,
+      "state": [
+        "Up-to-date"
+      ]
+    }
+  ],
+  "building_bbox_mm": [
+    0.0,
+    0.0,
+    12100.0,
+    9100.0
+  ],
+  "expected_building_bbox_mm": [
+    0,
+    0,
+    12100,
+    9100
+  ],
+  "room_areas_match": true,
+  "status": "pass",
+  "design_status": "基本設計案・敷地法規構造省エネ未確認",
+  "plan_cut_height_mm": 1200,
+  "door_state": "Closed-state single-leaf geometric panels; plan operation/parking is the design reference. Actual product clear opening remains unverified.",
+  "contour_dimension_gate": {
+    "source": "External-wall 1.2m cut contour only",
+    "width_mm": 12100.0,
+    "depth_mm": 9100.0
+  },
+  "camera_views": {
+    "exterior": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "up_direction": [
+        -0.4082482904638631,
+        0.4082482904638631,
+        0.8164965809277261
+      ],
+      "height_mm": 16576.694010602314,
+      "image_size": [
+        1600,
+        1100
+      ]
+    },
+    "south": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "up_direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "height_mm": 9343.75,
+      "image_size": [
+        1600,
+        1000
+      ]
+    },
+    "north": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up_direction": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "height_mm": 9343.75,
+      "image_size": [
+        1600,
+        1000
+      ]
+    },
+    "east": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up_direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "height_mm": 8265.625,
+      "image_size": [
+        1600,
+        1000
+      ]
+    },
+    "west": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "up_direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "height_mm": 8265.625,
+      "image_size": [
+        1600,
+        1000
+      ]
+    },
+    "cutaway": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        0.5205792062953535,
+        -0.5205792062953535,
+        0.6767529681839596
+      ],
+      "up_direction": [
+        -0.4785366129910017,
+        0.4785366129910017,
+        0.7362101738323102
+      ],
+      "height_mm": 14983.441484106907,
+      "image_size": [
+        1800,
+        1300
+      ]
+    },
+    "plan": {
+      "camera_type": "Orthographic",
+      "back_direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "up_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 12707.499999999998,
+      "image_size": [
+        1600,
+        1200
+      ]
+    }
+  },
+  "roof_coverage": [
+    {
+      "xy_mm": [
+        200,
+        200
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549913
+    },
+    {
+      "xy_mm": [
+        200,
+        2375
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549822
+    },
+    {
+      "xy_mm": [
+        200,
+        4550
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549913
+    },
+    {
+      "xy_mm": [
+        200,
+        6725
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549913
+    },
+    {
+      "xy_mm": [
+        200,
+        8900
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549822
+    },
+    {
+      "xy_mm": [
+        3125,
+        200
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        3125,
+        2375
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        3125,
+        4550
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502754996
+    },
+    {
+      "xy_mm": [
+        3125,
+        6725
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502755005
+    },
+    {
+      "xy_mm": [
+        3125,
+        8900
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502755005
+    },
+    {
+      "xy_mm": [
+        6050,
+        200
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        6050,
+        2375
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        6050,
+        4550
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        6050,
+        6725
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502755005
+    },
+    {
+      "xy_mm": [
+        6050,
+        8900
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502755005
+    },
+    {
+      "xy_mm": [
+        8975,
+        200
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        8975,
+        2375
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        8975,
+        4550
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        8975,
+        6725
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502754996
+    },
+    {
+      "xy_mm": [
+        8975,
+        8900
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502754996
+    },
+    {
+      "xy_mm": [
+        11900,
+        200
+      ],
+      "intersects": true,
+      "common_length_mm": 132.4053502754996
+    },
+    {
+      "xy_mm": [
+        11900,
+        2375
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    },
+    {
+      "xy_mm": [
+        11900,
+        4550
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549913
+    },
+    {
+      "xy_mm": [
+        11900,
+        6725
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549822
+    },
+    {
+      "xy_mm": [
+        11900,
+        8900
+      ],
+      "intersects": true,
+      "common_length_mm": 132.40535027549868
+    }
+  ],
+  "roof_geometry": {
+    "native_type": "Roof",
+    "valid": true,
+    "runs_mm": [
+      4550.0,
+      4550.0,
+      4550.0,
+      4550.0
+    ],
+    "pitch_degrees": [
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "volume_m3": 17.21269553581485,
+    "coverage_pass_count": 25
+  },
+  "opening_frame_host_checks": [
+    {
+      "id": "D01",
+      "actual_normal_extent_mm": [
+        9000.0,
+        9100.0
+      ],
+      "host_normal_extent_mm": [
+        8900.0,
+        9100.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D02",
+      "shape": "No leaf/frame by design",
+      "pass": true
+    },
+    {
+      "id": "D03",
+      "actual_normal_extent_mm": [
+        5200.0,
+        5300.000000000001
+      ],
+      "host_normal_extent_mm": [
+        5200.0,
+        5300.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D04",
+      "actual_normal_extent_mm": [
+        5200.0,
+        5300.000000000001
+      ],
+      "host_normal_extent_mm": [
+        5200.0,
+        5300.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D05",
+      "actual_normal_extent_mm": [
+        2100.0,
+        2200.0
+      ],
+      "host_normal_extent_mm": [
+        2100.0,
+        2200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D06",
+      "actual_normal_extent_mm": [
+        2100.0,
+        2200.0
+      ],
+      "host_normal_extent_mm": [
+        2100.0,
+        2200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D07",
+      "actual_normal_extent_mm": [
+        5400.0,
+        5500.0
+      ],
+      "host_normal_extent_mm": [
+        5400.0,
+        5500.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D08",
+      "actual_normal_extent_mm": [
+        6400.0,
+        6500.0
+      ],
+      "host_normal_extent_mm": [
+        6400.0,
+        6500.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D09",
+      "actual_normal_extent_mm": [
+        4200.0,
+        4300.000000000001
+      ],
+      "host_normal_extent_mm": [
+        4200.0,
+        4300.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D10",
+      "actual_normal_extent_mm": [
+        4200.0,
+        4300.000000000001
+      ],
+      "host_normal_extent_mm": [
+        4200.0,
+        4300.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D11",
+      "actual_normal_extent_mm": [
+        5300.0,
+        5400.000000000001
+      ],
+      "host_normal_extent_mm": [
+        5300.0,
+        5400.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "D12",
+      "actual_normal_extent_mm": [
+        5300.0,
+        5400.000000000001
+      ],
+      "host_normal_extent_mm": [
+        5300.0,
+        5400.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W01",
+      "actual_normal_extent_mm": [
+        40.000000000000014,
+        200.00000000000026
+      ],
+      "host_normal_extent_mm": [
+        0.0,
+        200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W02",
+      "actual_normal_extent_mm": [
+        40.000000000000014,
+        200.00000000000045
+      ],
+      "host_normal_extent_mm": [
+        0.0,
+        200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W03",
+      "actual_normal_extent_mm": [
+        0.0,
+        160.0
+      ],
+      "host_normal_extent_mm": [
+        0.0,
+        200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W04",
+      "actual_normal_extent_mm": [
+        8940.0,
+        9100.0
+      ],
+      "host_normal_extent_mm": [
+        8900.0,
+        9100.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W05",
+      "actual_normal_extent_mm": [
+        8940.0,
+        9100.0
+      ],
+      "host_normal_extent_mm": [
+        8900.0,
+        9100.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W06",
+      "actual_normal_extent_mm": [
+        40.000000000000014,
+        200.00000000000026
+      ],
+      "host_normal_extent_mm": [
+        0.0,
+        200.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W07",
+      "actual_normal_extent_mm": [
+        11900.0,
+        12060.0
+      ],
+      "host_normal_extent_mm": [
+        11900.0,
+        12100.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W08",
+      "actual_normal_extent_mm": [
+        9000.0,
+        9100.0
+      ],
+      "host_normal_extent_mm": [
+        8900.0,
+        9100.0
+      ],
+      "pass": true
+    },
+    {
+      "id": "W09",
+      "actual_normal_extent_mm": [
+        9000.0,
+        9100.0
+      ],
+      "host_normal_extent_mm": [
+        8900.0,
+        9100.0
+      ],
+      "pass": true
+    }
+  ],
+  "final_wall_cut_volume_checks": [
+    {
+      "object": "Wall",
+      "design_ids": [
+        "ext_south",
+        "ext_east",
+        "ext_north",
+        "ext_west"
+      ],
+      "expected_volume_after_cut_mm3": 19994000000,
+      "actual_volume_after_cut_mm3": 19993999999.99994,
+      "pass": true
+    },
+    {
+      "object": "Wall001",
+      "design_ids": [
+        "spine"
+      ],
+      "expected_volume_after_cut_mm3": 2347500000.0,
+      "actual_volume_after_cut_mm3": 2347500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall002",
+      "design_ids": [
+        "service_south"
+      ],
+      "expected_volume_after_cut_mm3": 1336500000.0,
+      "actual_volume_after_cut_mm3": 1336500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall003",
+      "design_ids": [
+        "bath_wash"
+      ],
+      "expected_volume_after_cut_mm3": 553500000.0,
+      "actual_volume_after_cut_mm3": 553500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall004",
+      "design_ids": [
+        "wet_split"
+      ],
+      "expected_volume_after_cut_mm3": 653500000.0,
+      "actual_volume_after_cut_mm3": 653499999.9999999,
+      "pass": true
+    },
+    {
+      "object": "Wall005",
+      "design_ids": [
+        "laundry_east"
+      ],
+      "expected_volume_after_cut_mm3": 1068750000.0,
+      "actual_volume_after_cut_mm3": 1068750000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall006",
+      "design_ids": [
+        "wc_hall"
+      ],
+      "expected_volume_after_cut_mm3": 334500000.0,
+      "actual_volume_after_cut_mm3": 334500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall007",
+      "design_ids": [
+        "entry_south"
+      ],
+      "expected_volume_after_cut_mm3": 387000000.0,
+      "actual_volume_after_cut_mm3": 387000000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall008",
+      "design_ids": [
+        "private_south"
+      ],
+      "expected_volume_after_cut_mm3": 1131000000.0,
+      "actual_volume_after_cut_mm3": 1131000000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall009",
+      "design_ids": [
+        "private_north"
+      ],
+      "expected_volume_after_cut_mm3": 1120500000.0,
+      "actual_volume_after_cut_mm3": 1120500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall010",
+      "design_ids": [
+        "master_fcl"
+      ],
+      "expected_volume_after_cut_mm3": 1120500000.0,
+      "actual_volume_after_cut_mm3": 1120500000.0,
+      "pass": true
+    },
+    {
+      "object": "Wall011",
+      "design_ids": [
+        "children_split"
+      ],
+      "expected_volume_after_cut_mm3": 985500000.0,
+      "actual_volume_after_cut_mm3": 985500000.0,
+      "pass": true
+    }
+  ],
+  "foundation_reference": {
+    "ReferenceOnly": true,
+    "bottom_mm": 0,
+    "top_mm": 300,
+    "statement": "Foundation appearance reference GL0..300 only; ground, reinforcement, base slab, structural type and dimensions are not designed. Not for construction or quantity take-off."
+  },
+  "door_actual_operable_width": "Unverified product/opening operation. Native 3D door panels are closed-state single leaf; frame span is not asserted as actual opening width.",
+  "default_view": "Roof-on orthographic axonometric exterior; use Roof group visibility and technical cut objects for cutaway",
+  "roundtrip": {
+    "status": "pass",
+    "reopened_document": "_4人家族の平屋_BIM",
+    "file": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House\\4人家族の平屋_BIM.FCStd",
+    "shape_count": 271,
+    "all_shapes_valid": true,
+    "roof_valid": true,
+    "roof_coverage_pass_count": 25,
+    "roof_runs_mm": [
+      4550.0,
+      4550.0,
+      4550.0,
+      4550.0
+    ],
+    "native_dimensions_mm": [
+      12100.0,
+      9100.0
+    ],
+    "native_types": {
+      "Wire": 13,
+      "Wall": 12,
+      "Window": 21,
+      "Rectangle": 5,
+      "Structure": 5,
+      "Space": 12,
+      "Roof": 1
+    },
+    "roof_visible": true,
+    "camera_type": "OrthographicCamera",
+    "final_dimension_properties": [
+      {
+        "object": "BuildingWidth",
+        "raw_mm": 12100.0,
+        "Arbitrary": false,
+        "ShowUnits": true,
+        "FormatSpec": "%.3w"
+      },
+      {
+        "object": "BuildingDepth",
+        "raw_mm": 9100.0,
+        "Arbitrary": false,
+        "ShowUnits": true,
+        "FormatSpec": "%.3w"
+      }
+    ],
+    "native_page_saved_closed": true,
+    "default_view": "Roof-on 3D orthographic axonometric exterior. Native TechDraw page remains in the document and opens by double click."
+  },
+  "dimension_units_gate": {
+    "svg_dimensions": [
+      "12100 mm",
+      "9100 mm"
+    ],
+    "global_schema_restored": 0,
+    "fcstd_dimensions": "Live measured dimensions, Arbitrary=False, units shown individually"
+  },
+  "dimension_format": "%.3w, Arbitrary=False, ShowUnits=True; SVG exported under temporary fixed-mm schema, restored to prior global schema",
+  "closed_own_unsaved_smokes": [],
+  "existing_documents_preserved": [
+    {
+      "name": "Elbow_CFD",
+      "file": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\CFD-Elbow\\Elbow-CFD.FCStd"
+    },
+    {
+      "name": "House_A",
+      "file": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-a\\House-A.FCStd"
+    },
+    {
+      "name": "House_B",
+      "file": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b\\House-B.FCStd"
+    },
+    {
+      "name": "MCP_Verification",
+      "file": "C:/Users/Aslan/Documents/Codex/2026-10-29/fr/work/MCP_Verification.FCStd"
+    }
+  ]
+}

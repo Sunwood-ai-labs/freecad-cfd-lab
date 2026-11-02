@@ -1,0 +1,148 @@
+import os, json
+from pathlib import Path
+import FreeCAD as App, FreeCADGui as Gui, Part
+from PySide import QtCore
+from CfdOF import CfdTools, CfdAnalysis
+from CfdOF.Solve import CfdPhysicsSelection, CfdFluidMaterial, CfdInitialiseFlowField, CfdSolverFoam, CfdFluidBoundary
+from CfdOF.Mesh import CfdMesh, CfdMeshRefinement, CfdMeshTools
+
+root=Path(__file__).resolve().parent.parent
+root.mkdir(parents=True,exist_ok=True)
+Gui.activateWorkbench('CfdOFWorkbench')
+prefs=App.ParamGet(CfdTools.getPreferencesLocation())
+backup_path=root/'preferences-before.xml'
+if not backup_path.exists(): prefs.Export(str(backup_path))
+prefs.SetString('DefaultOutputPath',str(root))
+App.saveParameter()
+
+def box(dx,dy,dz,x=0,y=0,z=0):
+    return Part.makeBox(dx,dy,dz,App.Vector(x,y,z))
+
+house_jobs={}
+H=4000
+for key in ['a','b']:
+    case_root=root/('case-'+key)
+    case_root.mkdir(exist_ok=True)
+    doc=App.newDocument('House_'+key.upper())
+    doc.Label='House '+key.upper()+(' - opposite windows' if key=='a' else ' - adjacent windows')
+    walls_shape=box(8000,6000,H,30000,27000).cut(box(7600,5600,H+200,30200,27200,-100))
+    openings=[box(400,1200,H+200,29900,29400,-100)]
+    openings.append(box(400,1200,H+200,37700,29400,-100) if key=='a' else box(1200,400,H+200,35900,32700,-100))
+    for opening in openings: walls_shape=walls_shape.cut(opening)
+    walls_shape=walls_shape.removeSplitter()
+    walls=doc.addObject('PartDesign::Feature','HouseWalls')
+    walls.Label='House walls - window openings'
+    walls.Shape=walls_shape
+    walls.ViewObject.ShapeColor=(0.75,0.78,0.82)
+    fluid=doc.addObject('PartDesign::Feature','AirDomain')
+    fluid.Label='Air outside and inside the house'
+    fluid.Shape=box(120000,60000,H).cut(walls_shape).removeSplitter()
+    assert fluid.Shape.isValid() and len(fluid.Shape.Solids)==1
+    fluid.ViewObject.Transparency=80
+    doc.recompute()
+    analysis=CfdAnalysis.makeCfdAnalysis('CfdAnalysis')
+    CfdTools.setActiveAnalysis(analysis)
+    analysis.OutputPath=str(case_root)
+    physics=CfdPhysicsSelection.makeCfdPhysicsSelection()
+    analysis.addObject(physics)
+    physics.Time='Steady'
+    physics.Flow='Isothermal'
+    physics.Turbulence='RANS'
+    physics.TurbulenceModel='kEpsilon'
+    physics.gx='0 mm/s^2';physics.gy='0 mm/s^2';physics.gz='0 mm/s^2'
+    material=CfdFluidMaterial.makeCfdFluidMaterial('FluidProperties')
+    analysis.addObject(material)
+    material.Material={'Name':'Air','Description':'Air at 20 degC, rho 1.2 kg/m3','Density':'1.20 kg/m^3','DynamicViscosity':'1.80e-5 kg/m/s','MolarMass':'0.0289643897748887 kg/mol','Cp':'1004.703 J/kg/K','SutherlandConstant':'1.4579326545176254e-06 kg/m/s/K^0.5','SutherlandTemperature':'110.4 K'}
+    initial=CfdInitialiseFlowField.makeCfdInitialFlowField()
+    analysis.addObject(initial)
+    solver=CfdSolverFoam.makeCfdSolverFoam()
+    analysis.addObject(solver)
+    solver.Parallel=False
+    solver.ConvergenceTol=1e-4
+    solver.MaxIterations=6000
+    solver.SteadyWriteInterval=100
+    solver.URelaxation=0.3
+    solver.pRelaxation=0.1
+    solver.TurbulenceRelaxation=0.3
+    solver.addProperty('App::PropertyString','VelocityAdvectionOverride','HouseDemo','Applied by Run-House-Comparison.FCMacro after CfdOF case writing.')
+    solver.VelocityAdvectionOverride='bounded Gauss upwind'
+    mesh=CfdMesh.makeCfdMesh('AirMesh')
+    mesh.Part=fluid
+    analysis.addObject(mesh)
+    mesh.MeshUtility='cfMesh'
+    mesh.ElementDimension='2D'
+    mesh.CharacteristicLengthMax='1000 mm'
+    mesh.CellsBetweenLevels=3
+    mesh.EdgeRefinement=1
+    mesh.PointInMesh={'x':'1000 mm','y':'1000 mm','z':'2000 mm'}
+    faces={'windInlet':[],'windOutlet':[],'farfield':[],'houseWalls':[],'top':[],'bottom':[]}
+    for i,face in enumerate(fluid.Shape.Faces,1):
+        bb=face.BoundBox;c=face.CenterOfMass
+        if bb.ZLength<1e-5:
+            faces['top' if c.z>H/2 else 'bottom'].append('Face'+str(i))
+        elif bb.XLength<1e-5 and abs(c.x)<1e-4: faces['windInlet'].append('Face'+str(i))
+        elif bb.XLength<1e-5 and abs(c.x-120000)<1e-4: faces['windOutlet'].append('Face'+str(i))
+        elif bb.YLength<1e-5 and (abs(c.y)<1e-4 or abs(c.y-60000)<1e-4): faces['farfield'].append('Face'+str(i))
+        else: faces['houseWalls'].append('Face'+str(i))
+    assert len(faces['top'])==1 and len(faces['bottom'])==1
+    extrusion=CfdMeshRefinement.makeCfdMeshRefinement(mesh)
+    extrusion.Label='planar2D'
+    extrusion.Extrusion=True
+    extrusion.ExtrusionType='2DPlanar'
+    extrusion.ExtrusionThickness='1000 mm'
+    extrusion.ShapeRefs=[(fluid,tuple(faces['top']))]
+    surf=CfdMeshRefinement.makeCfdMeshRefinement(mesh)
+    surf.Label='wallRefinement'
+    surf.RelativeLength=0.125
+    surf.RefinementThickness='500 mm'
+    surf.NumberLayers=0
+    surf.ShapeRefs=[(fluid,tuple(faces['houseWalls']))]
+    region=doc.addObject('PartDesign::Feature','NearHouseRefinement')
+    region.Shape=box(14000,12000,H+1000,27000,24000,-500)
+    region.Visibility=False
+    volume=CfdMeshRefinement.makeCfdMeshRefinement(mesh)
+    volume.Label='nearHouseRefinement'
+    volume.Internal=True
+    volume.RelativeLength=0.25
+    volume.ShapeRefs=[(region,('Solid1',))]
+    def boundary(label,kind,subtype,refs):
+        bc=CfdFluidBoundary.makeCfdFluidBoundary()
+        analysis.addObject(bc)
+        bc.Label=label
+        bc.BoundaryType=kind;bc.BoundarySubType=subtype
+        bc.ShapeRefs=[(fluid,tuple(refs))]
+        return bc
+    inlet=boundary('windInlet','inlet','uniformVelocityInlet',faces['windInlet'])
+    inlet.VelocityIsCartesian=True
+    inlet.Ux='2000 mm/s';inlet.Uy='0 mm/s';inlet.Uz='0 mm/s'
+    inlet.TurbulenceInletSpecification='intensityAndLengthScale'
+    inlet.TurbulenceIntensityPercentage=5
+    inlet.TurbulenceLengthScale='1000 mm'
+    outlet=boundary('windOutlet','outlet','staticPressureOutlet',faces['windOutlet'])
+    outlet.Pressure='0 Pa'
+    far=boundary('farfield','wall','slipWall',faces['farfield'])
+    wallbc=boundary('houseWalls','wall','fixedWall',faces['houseWalls'])
+    initial.PotentialFlow=True
+    initial.UseInletUValues=False
+    initial.Ux='2000 mm/s';initial.Uy='0 mm/s';initial.Uz='0 mm/s'
+    initial.UseOutletPValue=True;initial.BoundaryP=outlet;initial.Pressure='0 Pa'
+    initial.UseInletTurbulenceValues=False
+    initial.k='15000 mm^2/s^2'
+    initial.omega='0.2236 1/s'
+    initial.epsilon='0.000301869 W/kg'
+    doc.recompute()
+    walls.Visibility=True;fluid.Visibility=False;region.Visibility=False
+    doc.saveAs(str(case_root/('House-'+key.upper()+'.FCStd')))
+    walls.Shape.exportBrep(str(case_root/'house-walls.brep'))
+    fluid.Shape.exportBrep(str(case_root/'air-domain.brep'))
+    writer=CfdMeshTools.CfdMeshTools(mesh)
+    writer.writeMesh()
+    cmd=CfdTools.makeRunCommand('export OMP_NUM_THREADS=4 && ./Allmesh',writer.mesh_case_dir,source_env=False)
+    metadata={'key':key,'case_root':str(case_root),'document':doc.Name,'domain_m':[0,120,0,60],'house_outer_m':[30,38,27,33],'house_inner_m':[30.2,37.8,27.2,32.8],'west_window_m':[30,30.2,29.4,30.6],'other_window_m':([37.8,38,29.4,30.6] if key=='a' else [35.9,37.1,32.8,33]),'window_width_m':1.2,'wall_thickness_m':0.2,'wind_m_s':[2,0,0],'turbulence':'steady RANS kEpsilon','turbulence_intensity_percent':5,'turbulence_length_scale_m':1,'density_kg_m3':1.2,'face_refs':faces,'mesh_command':cmd,'mesh_dir':writer.mesh_case_dir,'case_dir':str(case_root/'case'),'convergence_tolerance':solver.ConvergenceTol,'max_iterations':solver.MaxIterations,'limitations':'2D planar steady incompressible RANS demonstration; not validated against experiment, full 3D house, thermal buoyancy, furniture or mesh-independent solution'}
+    (case_root/'setup.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
+    house_jobs[key]={'doc':doc,'analysis':analysis,'mesh':mesh,'writer':writer,'root':case_root,'metadata':metadata}
+    print('Created case',key,'valid solid',len(fluid.Shape.Faces),'faces')
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().fitAll()
+print('Both house cases and mesh inputs created')
+

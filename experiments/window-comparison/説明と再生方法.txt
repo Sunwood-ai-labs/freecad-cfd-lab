@@ -1,0 +1,74 @@
+架空の家：窓の配置と風の通り道を比較
+
+再生
+窓配置と風通し比較.mp4：12秒、1600×1000、24fpsのH.264動画です。
+preview.webp：960×600、120フレームのループ再生プレビューです。
+comparison-poster.png：比較結果を1枚にした静止画です。
+
+今回のテーマ
+外の風が同じでも、窓の位置を変えると室内の流れはどう変わるか。
+8m×6mのワンルームの平屋を、上から見た2Dモデルとして比較しました。
+
+比較条件
+A：図の左と右の壁に窓（向かい合う配置）。
+B：図の左と上の壁に窓（隣り合う配置）。
+左の窓は共通、窓幅はどちらも1.2m、壁厚0.2mです。
+外の風は両案とも左から右へ2m/s。窓から入る風速そのものは固定せず、外部の風と圧力から室内への流れを計算しました。
+家の外側も120m×60mの領域で計算しています。
+
+結果の見方
+色は風の速さで、紫が遅く、黄色が速い領域です。2案で同じ色の目盛りを使っています。
+白い粒子は、計算済みの定常速度場から求めた流線に沿って動きます。表示の移動倍率は両案共通です。
+粒子は経路と方向を見せるための表示で、粒子の数は流量や換気回数を表しません。経路の端で再表示してループします。
+これは流れの時間変化そのものを解いた非定常CFD動画ではありません。
+
+今回の比較結果
+A：室内の平均風速 約0.57m/s、0.1m/s未満の低速域 約6%。
+B：室内の平均風速 約0.52m/s、0.1m/s未満の低速域 約2%。
+Aでは主に中央を横切り、Bでは上側の窓へ向けて斜めに抜ける流れが見られました。
+この例では平均風速が高い案と、低速域の少ない案が分かれました。一方を常に優れた窓配置と断定する結果ではありません。
+平均風速は室内7.6m×5.6m＝42.56m²の面積重み付きの速さの平均です。ベクトル平均や換気回数ではありません。
+
+確認した範囲
+両案ともメッシュ品質チェックMesh OK、solver終了コード0、残差1e-4以下で収束。
+A：13,712セル／1,429反復。B：13,711セル／2,026反復。
+U・p・k・epsilonの全内部値が有限、乱流量は非負でした。
+採用条件は2D定常RANS kEpsilon、一次風上、緩和係数U=0.3・p=0.1・乱流=0.3です。
+数値の詳細はsolver-validation.json、表示・集計の詳細はanimation-summary.jsonを参照してください。
+
+省略・未検証
+家具、室内の間仕切り、温度差による対流、上下方向の3D流れ、開口高さの効果を省いた簡略例です。
+実験との一致、メッシュ独立性、異なる風向き、実際の住宅の換気性能は検証していません。
+室内の速さや低速域は今回の比較指標であり、新鮮空気の到達量、汚染物の除去性能、健康影響を測ったものではありません。
+
+使用したツール
+FreeCAD：家の壁と窓を切り抜いた形を作成。
+CfdOF：FreeCAD内で空気・外の風・壁・乱流モデル・格子を設定。
+OpenFOAM：外の風と室内の流れを計算。
+ParaView/VTK：速度場を表示し、流線と粒子の移動を計算。
+FFmpeg：フレームから動画とアニメーションWebPを出力。
+
+保存内容
+case-a/House-A.FCStd、case-b/House-B.FCStd：FreeCADのモデルと解析条件。
+case-a/case、case-b/case：OpenFOAMの入力と計算結果。
+House-a-flow.pvsm、House-b-flow.pvsm：ParaViewの表示状態。
+Run-House-Comparison.FCMacro：ケースを再生成して再計算する補助マクロ。
+このマクロは構文確認済みで、同じAPI列を使う実計算は確認済みですが、マクロファイル自体の通し再実行は未実行です。
+通常のCfdOF GUIでケースを書き直すと、今回使用した一次風上の上書きは自動反映されません。再現時は補助マクロを使ってください。
+
+設定変更
+CfdOFの既定出力先をこのHouse-Airflowフォルダへ変更しています。
+変更内容と旧設定への復旧方法はsettings-change.json、復旧用設定はcfdof-settings-recovery.xmlです。
+
+動画を再生成する場合
+Render-House-Animation.pyをParaView付属のpvpython.exeで実行します。
+このPCのPowerShellでは次のコマンドで、保存済みCFD結果から動画を再描画できます（CFDの再計算はしません）。
+
+uv run -- "C:\Users\Aslan\AppData\Local\Programs\ParaView-6.1.0-Windows-Python3.12-msvc2017-AMD64\bin\pvpython.exe" "C:\Users\Aslan\Documents\Codex\2026-10-29\fr-2\outputs\House-Airflow\Render-House-Animation.py" --root "C:\Users\Aslan\Documents\Codex\2026-10-29\fr-2\outputs\House-Airflow" --work "C:\Users\Aslan\Documents\Codex\2026-10-29\fr-2\work\house-airflow-animation\replay" --frames 288 --fps 24 --time-scale 3
+
+動画・プレビューは全フレームのデコードを確認し、先頭・中盤・終盤の画面と、粒子が動いていることを確認しています。
+
+モデルの公式資料
+https://www.openfoam.com/documentation/user-guide/a-reference/a.1-standard-solvers
+https://doc.openfoam.com/2212/tools/processing/models/turbulence/ras/
+https://github.com/jaheyns/CfdOF

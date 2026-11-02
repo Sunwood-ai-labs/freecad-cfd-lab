@@ -1,0 +1,16 @@
+{
+  "a": {
+    "path": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-a\\House-A.FCStd",
+    "bytes": 39326,
+    "zip_crc": "pass",
+    "xml": "pass",
+    "contains_final_physics_and_override": true
+  },
+  "b": {
+    "path": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b\\House-B.FCStd",
+    "bytes": 39563,
+    "zip_crc": "pass",
+    "xml": "pass",
+    "contains_final_physics_and_override": true
+  }
+}

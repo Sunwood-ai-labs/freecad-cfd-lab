@@ -1,0 +1,29 @@
+{
+  "source": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\work\\family-house\\house-design.json",
+  "furniture_outside_rooms": [],
+  "furniture_3d_bbox_collisions_excluding_intentional_wet_floor": [],
+  "hinged_door_arc_furniture_collisions": [],
+  "planar_route_body_mm": [
+    600,
+    600
+  ],
+  "route_resolution_mm": 25,
+  "all_doors_fully_open": true,
+  "reachable_from_genkan": {
+    "ldk": true,
+    "master": true,
+    "child1": true,
+    "child2": true,
+    "fcl": true,
+    "private_hall": true,
+    "bath": true,
+    "wash": true,
+    "laundry": true,
+    "wc": true,
+    "entry_hall": true,
+    "entry": true
+  },
+  "limits": "Basic-plan geometric check only. Does not validate steps, legal access, wheelchair movement, body postures, window products, structural or code compliance.",
+  "source_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+  "design_revision": "R4-frozen"
+}

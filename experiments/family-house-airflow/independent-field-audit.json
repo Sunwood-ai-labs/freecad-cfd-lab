@@ -1,0 +1,121 @@
+{
+  "status": "pass",
+  "source_case": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House-Airflow\\case",
+  "source_time": "697",
+  "cells": 538479,
+  "fields": {
+    "U": {
+      "cells": 538479,
+      "components": 3,
+      "finite": true,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": -2.38450383773911,
+      "max_component": 2.47370442104472,
+      "sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25",
+      "maximum_speed_m_s": 2.9469688014505837
+    },
+    "p": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": -4.18474908446963,
+      "max_component": 2.34230671751843,
+      "sha256": "ad7308eb387846a39adfccd2ff45b8938b7f829a2af10a7662ac9ffee0c67158"
+    },
+    "k": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": 2.09900944429334e-06,
+      "max_component": 0.318419774999838,
+      "sha256": "f992ffaa9c743ed5589599123acd4dffa841f587f61594485fef7c00b16dead4"
+    },
+    "epsilon": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "dimensions": [
+        0,
+        2,
+        -3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": 1.03925486213817e-07,
+      "max_component": 2.14379800918141,
+      "sha256": "3fff2aa8c02a2453c1207118b4327f61b3f892e922571b4add9d1baad746d7e1"
+    },
+    "nut": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "dimensions": [
+        0,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": 1.53538811322517e-06,
+      "max_component": 0.0814036132978849,
+      "sha256": "41cfe47a7ee08f2b76097f3610f00edd8daf13e7438fbf7cc57e842e9c564138"
+    },
+    "C": {
+      "cells": 538479,
+      "components": 3,
+      "finite": true,
+      "dimensions": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "min_component": -24.3805476146383,
+      "max_component": 58.480547360596,
+      "sha256": "11c019ad0faae39655142b5dd98b7d9c25e8de7583d260ac6a57c0db2b35d9c5"
+    }
+  },
+  "initial_residuals": {
+    "Ux": 2.43065667540355e-06,
+    "Uy": 1.31317195250143e-07,
+    "Uz": 1.73777544723071e-06,
+    "p": 9.99976356193392e-06,
+    "epsilon": 1.86136046617446e-07,
+    "k": 9.02441442262104e-07
+  },
+  "residual_tolerance": 1e-05,
+  "scope": "Finite fields, correct counts, turbulence nonnegativity and residual gate; not a statement of physics accuracy or iterative observable stability"
+}

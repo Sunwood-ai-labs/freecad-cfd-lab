@@ -1,0 +1,309 @@
+{
+  "status": "postprocessing_only; solver convergence is verified separately",
+  "source_iteration": 697.0,
+  "source_U_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25",
+  "source_cells": 538479,
+  "room_method": "Original cell-centered |U| copied to tetrahedra, clipped to exact clear room bbox, volume weighted. Polyhedra tetrahedralized first to avoid clipping loss. Furniture union volume subtracted analytically for mesh-volume consistency check.",
+  "room_metric_limitations": "Speed/low-speed volume are not fresh-air replacement, contaminant removal, ACH or a health/comfort criterion.",
+  "rooms": [
+    {
+      "id": "ldk",
+      "name": "LDK",
+      "clipped_air_volume_m3": 69.96409747184762,
+      "analytic_air_volume_m3": 69.94369999999999,
+      "furniture_solid_volume_m3": 4.4563000000000015,
+      "relative_volume_error": 0.00029162700640129565,
+      "volume_weighted_mean_speed_m_s": 0.35339623730343855,
+      "volume_fraction_below_0_1_m_s": 0.08051993012089455,
+      "maximum_cell_speed_m_s": 2.075132369995117,
+      "clipped_tetrahedra": 451614
+    },
+    {
+      "id": "master",
+      "name": "主寝室",
+      "clipped_air_volume_m3": 31.770371178509397,
+      "analytic_air_volume_m3": 31.740000000000002,
+      "furniture_solid_volume_m3": 4.74,
+      "relative_volume_error": 0.000956873929092455,
+      "volume_weighted_mean_speed_m_s": 0.38446252769935657,
+      "volume_fraction_below_0_1_m_s": 0.04831535386463394,
+      "maximum_cell_speed_m_s": 1.846828579902649,
+      "clipped_tetrahedra": 304424
+    },
+    {
+      "id": "child1",
+      "name": "子ども室1",
+      "clipped_air_volume_m3": 19.75081516096578,
+      "analytic_air_volume_m3": 19.718400000000006,
+      "furniture_solid_volume_m3": 2.5415999999999994,
+      "relative_volume_error": 0.0016439042197020327,
+      "volume_weighted_mean_speed_m_s": 0.2618151797988842,
+      "volume_fraction_below_0_1_m_s": 0.13263134665636503,
+      "maximum_cell_speed_m_s": 1.2210733890533447,
+      "clipped_tetrahedra": 233653
+    },
+    {
+      "id": "child2",
+      "name": "子ども室2",
+      "clipped_air_volume_m3": 19.750333584319677,
+      "analytic_air_volume_m3": 19.718400000000006,
+      "furniture_solid_volume_m3": 2.5415999999999994,
+      "relative_volume_error": 0.0016194815157249273,
+      "volume_weighted_mean_speed_m_s": 0.2900965820402599,
+      "volume_fraction_below_0_1_m_s": 0.07391375851553379,
+      "maximum_cell_speed_m_s": 1.298046588897705,
+      "clipped_tetrahedra": 237007
+    },
+    {
+      "id": "fcl",
+      "name": "家族収納",
+      "clipped_air_volume_m3": 9.121920344457278,
+      "analytic_air_volume_m3": 9.120000000000003,
+      "furniture_solid_volume_m3": 5.279999999999996,
+      "relative_volume_error": 0.00021056408522755383,
+      "volume_weighted_mean_speed_m_s": 0.10185643605933535,
+      "volume_fraction_below_0_1_m_s": 0.5884453892109159,
+      "maximum_cell_speed_m_s": 0.5245298147201538,
+      "clipped_tetrahedra": 412959
+    },
+    {
+      "id": "private_hall",
+      "name": "個室ホール",
+      "clipped_air_volume_m3": 12.969702109529157,
+      "analytic_air_volume_m3": 12.96,
+      "furniture_solid_volume_m3": 0.0,
+      "relative_volume_error": 0.0007486195624348987,
+      "volume_weighted_mean_speed_m_s": 0.5887201994260466,
+      "volume_fraction_below_0_1_m_s": 0.04813762275462913,
+      "maximum_cell_speed_m_s": 1.4475253820419312,
+      "clipped_tetrahedra": 107810
+    },
+    {
+      "id": "bath",
+      "name": "浴室・1616設置枠",
+      "clipped_air_volume_m3": 8.065967390588824,
+      "analytic_air_volume_m3": 8.055000000000001,
+      "furniture_solid_volume_m3": 0.6090000000000002,
+      "relative_volume_error": 0.0013615630774453838,
+      "volume_weighted_mean_speed_m_s": 0.16756132608072208,
+      "volume_fraction_below_0_1_m_s": 0.15354645081177062,
+      "maximum_cell_speed_m_s": 1.6291258335113525,
+      "clipped_tetrahedra": 75214
+    },
+    {
+      "id": "wash",
+      "name": "独立洗面",
+      "clipped_air_volume_m3": 6.836699960196051,
+      "analytic_air_volume_m3": 6.837000000000003,
+      "furniture_solid_volume_m3": 0.4589999999999999,
+      "relative_volume_error": -4.388471609658084e-05,
+      "volume_weighted_mean_speed_m_s": 0.2925916020592583,
+      "volume_fraction_below_0_1_m_s": 0.04887883349801489,
+      "maximum_cell_speed_m_s": 0.7839322090148926,
+      "clipped_tetrahedra": 31532
+    },
+    {
+      "id": "laundry",
+      "name": "脱衣・ランドリー",
+      "clipped_air_volume_m3": 15.399421814448932,
+      "analytic_air_volume_m3": 15.371849999999998,
+      "furniture_solid_volume_m3": 2.772150000000001,
+      "relative_volume_error": 0.0017936562254337117,
+      "volume_weighted_mean_speed_m_s": 0.22833376978013228,
+      "volume_fraction_below_0_1_m_s": 0.13364211336010498,
+      "maximum_cell_speed_m_s": 1.6698330640792847,
+      "clipped_tetrahedra": 271386
+    },
+    {
+      "id": "wc",
+      "name": "トイレ",
+      "clipped_air_volume_m3": 4.054067936648921,
+      "analytic_air_volume_m3": 4.039999999999999,
+      "furniture_solid_volume_m3": 0.2799999999999999,
+      "relative_volume_error": 0.0034821625368618345,
+      "volume_weighted_mean_speed_m_s": 0.03655404801065775,
+      "volume_fraction_below_0_1_m_s": 0.9656486432855643,
+      "maximum_cell_speed_m_s": 0.22137680649757385,
+      "clipped_tetrahedra": 205674
+    },
+    {
+      "id": "entry_hall",
+      "name": "玄関ホール",
+      "clipped_air_volume_m3": 3.882818372953685,
+      "analytic_air_volume_m3": 3.8880000000000012,
+      "furniture_solid_volume_m3": 0.0,
+      "relative_volume_error": -0.0013327230057397332,
+      "volume_weighted_mean_speed_m_s": 0.17154757216754504,
+      "volume_fraction_below_0_1_m_s": 0.20610829899972938,
+      "maximum_cell_speed_m_s": 0.7686319947242737,
+      "clipped_tetrahedra": 21510
+    },
+    {
+      "id": "entry",
+      "name": "玄関・靴収納",
+      "clipped_air_volume_m3": 7.428212900089761,
+      "analytic_air_volume_m3": 7.420500000000003,
+      "furniture_solid_volume_m3": 1.2494999999999987,
+      "relative_volume_error": 0.001039404364902365,
+      "volume_weighted_mean_speed_m_s": 0.06967095630359878,
+      "volume_fraction_below_0_1_m_s": 0.8454310718409266,
+      "maximum_cell_speed_m_s": 0.2697768807411194,
+      "clipped_tetrahedra": 56400
+    }
+  ],
+  "windows": [
+    {
+      "id": "W01",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 0.1,
+      "integrated_mesh_area_m2": 1.045000008828815,
+      "geometric_aperture_area_m2": 1.045,
+      "relative_area_error": 8.44862680613127e-09,
+      "inward_reference_flux_m3_s": 0.5249763406738867,
+      "outward_reference_flux_m3_s": 0.002886793634901432,
+      "net_inward_reference_flux_m3_s": 0.5220895455086862,
+      "net_direction": "inflow"
+    },
+    {
+      "id": "W02",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 0.1,
+      "integrated_mesh_area_m2": 2.2999997645775636,
+      "geometric_aperture_area_m2": 2.3,
+      "relative_area_error": -1.0235758096183399e-07,
+      "inward_reference_flux_m3_s": 1.9470007698068654,
+      "outward_reference_flux_m3_s": 5.483645287054691e-05,
+      "net_inward_reference_flux_m3_s": 1.9469459328610137,
+      "net_direction": "inflow"
+    },
+    {
+      "id": "W03",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "plane_axis": "x",
+      "plane_coordinate_m": 0.1,
+      "integrated_mesh_area_m2": 0.32000004689244577,
+      "geometric_aperture_area_m2": 0.32,
+      "relative_area_error": 1.4653889299914846e-07,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.4167819691706932,
+      "net_inward_reference_flux_m3_s": -0.4167819691706932,
+      "net_direction": "outflow"
+    },
+    {
+      "id": "W04",
+      "connects": [
+        "child1",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 9.0,
+      "integrated_mesh_area_m2": 0.7800000529765043,
+      "geometric_aperture_area_m2": 0.78,
+      "relative_area_error": 6.791859524933003e-08,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.665631589762007,
+      "net_inward_reference_flux_m3_s": -0.665631589762007,
+      "net_direction": "outflow"
+    },
+    {
+      "id": "W05",
+      "connects": [
+        "child2",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 9.0,
+      "integrated_mesh_area_m2": 0.7800006003182034,
+      "geometric_aperture_area_m2": 0.78,
+      "relative_area_error": 7.696387222689866e-07,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.7477833956530678,
+      "net_inward_reference_flux_m3_s": -0.7477833956530681,
+      "net_direction": "outflow"
+    },
+    {
+      "id": "W06",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 0.1,
+      "integrated_mesh_area_m2": 0.9350002010390881,
+      "geometric_aperture_area_m2": 0.935,
+      "relative_area_error": 2.150150674262956e-07,
+      "inward_reference_flux_m3_s": 0.8695668650346456,
+      "outward_reference_flux_m3_s": 6.574032597278154e-05,
+      "net_inward_reference_flux_m3_s": 0.8695011253548545,
+      "net_direction": "inflow"
+    },
+    {
+      "id": "W07",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "plane_axis": "x",
+      "plane_coordinate_m": 12.0,
+      "integrated_mesh_area_m2": 0.6049997098791096,
+      "geometric_aperture_area_m2": 0.605,
+      "relative_area_error": -4.795386618556774e-07,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.7344647133673629,
+      "net_inward_reference_flux_m3_s": -0.7344647133673629,
+      "net_direction": "outflow"
+    },
+    {
+      "id": "W08",
+      "connects": [
+        "bath",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 9.0,
+      "integrated_mesh_area_m2": 0.24999817286522585,
+      "geometric_aperture_area_m2": 0.25,
+      "relative_area_error": -7.308539096584354e-06,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.24536278119375646,
+      "net_inward_reference_flux_m3_s": -0.24536278119375646,
+      "net_direction": "outflow"
+    },
+    {
+      "id": "W09",
+      "connects": [
+        "laundry",
+        "outside"
+      ],
+      "plane_axis": "y",
+      "plane_coordinate_m": 9.0,
+      "integrated_mesh_area_m2": 0.3999964369347424,
+      "geometric_aperture_area_m2": 0.4,
+      "relative_area_error": -8.907663144042122e-06,
+      "inward_reference_flux_m3_s": 0.0,
+      "outward_reference_flux_m3_s": 0.4094578288558796,
+      "net_inward_reference_flux_m3_s": -0.4094578288558796,
+      "net_direction": "outflow"
+    }
+  ],
+  "window_method": "vtkCutter at wall-centre plane, clipped to real aperture bbox. Point-interpolated U integrated over triangular faces; positive/negative normal flux split by exact clipping of the linear scalar on each triangle.",
+  "window_flux_limitations": "Reference interpolated plane flux, not OpenFOAM conservative face phi. Sash/mesh geometry causes aperture area differences. Do not use for conservation certification or product airflow rating.",
+  "reference_flux_totals": {
+    "inward_m3_s": 3.3415439755153975,
+    "outward_m3_s": 3.222489648416512,
+    "relative_difference": 0.03562853817613538
+  },
+  "max_room_volume_relative_error": 0.0034821625368618345,
+  "max_window_area_relative_error": 8.907663144042122e-06
+}

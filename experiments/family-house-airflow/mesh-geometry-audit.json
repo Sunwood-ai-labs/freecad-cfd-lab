@@ -1,0 +1,857 @@
+{
+  "mesh_cells": 538479,
+  "mesh_volume_m3": 130376.29355849666,
+  "rooms": {
+    "ldk": {
+      "cells": 64077,
+      "cell_center_selected_volume_m3": 69.97180742063492,
+      "precise_box_clipped_mesh_volume_m3": 69.96407721585776,
+      "analytic_room_minus_furniture_m3": 69.94369999999999,
+      "relative_volume_error": 0.00029133740219295707
+    },
+    "master": {
+      "cells": 45614,
+      "cell_center_selected_volume_m3": 31.72543491344608,
+      "precise_box_clipped_mesh_volume_m3": 31.770370934347635,
+      "analytic_room_minus_furniture_m3": 31.740000000000002,
+      "relative_volume_error": 0.0009568662365353967
+    },
+    "child1": {
+      "cells": 34696,
+      "cell_center_selected_volume_m3": 19.699147924868544,
+      "precise_box_clipped_mesh_volume_m3": 19.750718144848538,
+      "analytic_room_minus_furniture_m3": 19.718400000000006,
+      "relative_volume_error": 0.0016389841391051734
+    },
+    "child2": {
+      "cells": 35055,
+      "cell_center_selected_volume_m3": 19.70083912724231,
+      "precise_box_clipped_mesh_volume_m3": 19.750288326153964,
+      "analytic_room_minus_furniture_m3": 19.718400000000006,
+      "relative_volume_error": 0.0016171862906705172
+    },
+    "fcl": {
+      "cells": 65626,
+      "cell_center_selected_volume_m3": 9.08483622287443,
+      "precise_box_clipped_mesh_volume_m3": 9.12192034355047,
+      "analytic_room_minus_furniture_m3": 9.120000000000003,
+      "relative_volume_error": 0.00021056398579675885
+    },
+    "private_hall": {
+      "cells": 13603,
+      "cell_center_selected_volume_m3": 12.957887083414402,
+      "precise_box_clipped_mesh_volume_m3": 12.969662252133002,
+      "analytic_room_minus_furniture_m3": 12.96,
+      "relative_volume_error": 0.0007455441460649077
+    },
+    "bath": {
+      "cells": 11230,
+      "cell_center_selected_volume_m3": 7.995895154568167,
+      "precise_box_clipped_mesh_volume_m3": 8.06596213302916,
+      "analytic_room_minus_furniture_m3": 8.055000000000001,
+      "relative_volume_error": 0.0013609103698520785
+    },
+    "wash": {
+      "cells": 4900,
+      "cell_center_selected_volume_m3": 6.7882776322607405,
+      "precise_box_clipped_mesh_volume_m3": 6.836622591045651,
+      "analytic_room_minus_furniture_m3": 6.837000000000003,
+      "relative_volume_error": -5.5200958659127355e-05
+    },
+    "laundry": {
+      "cells": 36776,
+      "cell_center_selected_volume_m3": 15.452133605854181,
+      "precise_box_clipped_mesh_volume_m3": 15.39940265927606,
+      "analytic_room_minus_furniture_m3": 15.371849999999998,
+      "relative_volume_error": 0.0017924101052287996
+    },
+    "wc": {
+      "cells": 29908,
+      "cell_center_selected_volume_m3": 4.078352874016505,
+      "precise_box_clipped_mesh_volume_m3": 4.054048434108493,
+      "analytic_room_minus_furniture_m3": 4.039999999999999,
+      "relative_volume_error": 0.0034773351753697728
+    },
+    "entry_hall": {
+      "cells": 2495,
+      "cell_center_selected_volume_m3": 3.804493085714549,
+      "precise_box_clipped_mesh_volume_m3": 3.8827906063358917,
+      "analytic_room_minus_furniture_m3": 3.8880000000000012,
+      "relative_volume_error": -0.0013398646255425798
+    },
+    "entry": {
+      "cells": 6845,
+      "cell_center_selected_volume_m3": 7.482188766444429,
+      "precise_box_clipped_mesh_volume_m3": 7.428178512260905,
+      "analytic_room_minus_furniture_m3": 7.420500000000003,
+      "relative_volume_error": 0.0010347701988951614
+    }
+  },
+  "point_checks": [
+    {
+      "label": "ldk: upper_air",
+      "point_m": [
+        3.3000000000000003,
+        2.7,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "ldk: ceiling_sealed",
+      "point_m": [
+        3.3000000000000003,
+        2.7,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "ldk: floor_sealed",
+      "point_m": [
+        3.3000000000000003,
+        2.7,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "master: upper_air",
+      "point_m": [
+        10.0,
+        2.2,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "master: ceiling_sealed",
+      "point_m": [
+        10.0,
+        2.2,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "master: floor_sealed",
+      "point_m": [
+        10.0,
+        2.2,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child1: upper_air",
+      "point_m": [
+        7.825,
+        7.15,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child1: ceiling_sealed",
+      "point_m": [
+        7.825,
+        7.15,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child1: floor_sealed",
+      "point_m": [
+        7.825,
+        7.15,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child2: upper_air",
+      "point_m": [
+        10.575,
+        7.15,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child2: ceiling_sealed",
+      "point_m": [
+        10.575,
+        7.15,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child2: floor_sealed",
+      "point_m": [
+        10.575,
+        7.15,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "fcl: upper_air",
+      "point_m": [
+        7.25,
+        2.2,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "fcl: ceiling_sealed",
+      "point_m": [
+        7.25,
+        2.2,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "fcl: floor_sealed",
+      "point_m": [
+        7.25,
+        2.2,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "private_hall: upper_air",
+      "point_m": [
+        9.2,
+        4.8,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "private_hall: ceiling_sealed",
+      "point_m": [
+        9.2,
+        4.8,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "private_hall: floor_sealed",
+      "point_m": [
+        9.2,
+        4.8,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "bath: upper_air",
+      "point_m": [
+        1.1500000000000001,
+        7.95,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "bath: ceiling_sealed",
+      "point_m": [
+        1.1500000000000001,
+        7.95,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "bath: floor_sealed",
+      "point_m": [
+        1.1500000000000001,
+        7.95,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "wash: upper_air",
+      "point_m": [
+        1.1500000000000001,
+        6.1,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "wash: ceiling_sealed",
+      "point_m": [
+        1.1500000000000001,
+        6.1,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "wash: floor_sealed",
+      "point_m": [
+        1.1500000000000001,
+        6.1,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "laundry: upper_air",
+      "point_m": [
+        3.25,
+        7.1,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "laundry: ceiling_sealed",
+      "point_m": [
+        3.25,
+        7.1,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "laundry: floor_sealed",
+      "point_m": [
+        3.25,
+        7.1,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "wc: upper_air",
+      "point_m": [
+        4.9,
+        6.199999999999999,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "wc: ceiling_sealed",
+      "point_m": [
+        4.9,
+        6.199999999999999,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "wc: floor_sealed",
+      "point_m": [
+        4.9,
+        6.199999999999999,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "entry_hall: upper_air",
+      "point_m": [
+        5.95,
+        6.199999999999999,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "entry_hall: ceiling_sealed",
+      "point_m": [
+        5.95,
+        6.199999999999999,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "entry_hall: floor_sealed",
+      "point_m": [
+        5.95,
+        6.199999999999999,
+        0.38
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "entry: upper_air",
+      "point_m": [
+        5.4,
+        8.05,
+        2.7800000000000002
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "entry: ceiling_sealed",
+      "point_m": [
+        5.4,
+        8.05,
+        2.92
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "entry: floor_sealed",
+      "point_m": [
+        5.4,
+        8.05,
+        0.22999999999999998
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "closed_entrance",
+      "point_m": [
+        5.9,
+        9.0,
+        1.4
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W01: aperture_not_plugged",
+      "point_m": [
+        1.1749999999999998,
+        0.09999999999999999,
+        1.95
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W01: retained_glass_closed",
+      "point_m": [
+        2.125,
+        0.09999999999999999,
+        1.95
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W02: aperture_not_plugged",
+      "point_m": [
+        4.225,
+        0.09999999999999999,
+        1.5
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W02: retained_glass_closed",
+      "point_m": [
+        5.375,
+        0.09999999999999999,
+        1.5
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W03: aperture_not_plugged",
+      "point_m": [
+        0.09999999999999999,
+        3.05,
+        2.1
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W03: retained_glass_closed",
+      "point_m": [
+        0.09999999999999999,
+        3.4499999999999997,
+        2.1
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W04: aperture_not_plugged",
+      "point_m": [
+        7.9750000000000005,
+        9.0,
+        2.0
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W04: retained_glass_closed",
+      "point_m": [
+        8.625,
+        9.0,
+        2.0
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W05: aperture_not_plugged",
+      "point_m": [
+        10.725000000000001,
+        9.0,
+        2.0
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W05: retained_glass_closed",
+      "point_m": [
+        11.375000000000002,
+        9.0,
+        2.0
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W06: aperture_not_plugged",
+      "point_m": [
+        10.125,
+        0.09999999999999999,
+        1.95
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W06: retained_glass_closed",
+      "point_m": [
+        10.975,
+        0.09999999999999999,
+        1.95
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W07: aperture_not_plugged",
+      "point_m": [
+        12.0,
+        2.575,
+        1.95
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W07: retained_glass_closed",
+      "point_m": [
+        12.0,
+        3.125,
+        1.95
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W08: aperture_not_plugged",
+      "point_m": [
+        1.15,
+        9.0,
+        2.25
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W09: aperture_not_plugged",
+      "point_m": [
+        3.55,
+        9.0,
+        2.35
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "table: thin_top_retained",
+      "point_m": [
+        1.8,
+        2.05,
+        1.13
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "table: open_below_top",
+      "point_m": [
+        1.8,
+        2.05,
+        0.9900000000000001
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "master_closet: top_air_gap",
+      "point_m": [
+        10.65,
+        3.9000000000000004,
+        2.75
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "fcl_storage: top_air_gap",
+      "point_m": [
+        6.8,
+        2.2,
+        2.75
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child1_desk: thin_top_retained",
+      "point_m": [
+        7.1,
+        8.600000000000001,
+        1.13
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child1_desk: open_below_top",
+      "point_m": [
+        7.1,
+        8.600000000000001,
+        0.9900000000000001
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child1_closet: top_air_gap",
+      "point_m": [
+        8.850000000000001,
+        7.199999999999999,
+        2.75
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child2_desk: thin_top_retained",
+      "point_m": [
+        9.85,
+        8.600000000000001,
+        1.13
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "child2_desk: open_below_top",
+      "point_m": [
+        9.85,
+        8.600000000000001,
+        0.9900000000000001
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "child2_closet: top_air_gap",
+      "point_m": [
+        11.600000000000001,
+        7.199999999999999,
+        2.75
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "fold_counter: thin_top_retained",
+      "point_m": [
+        4.0,
+        6.85,
+        1.26
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "fold_counter: open_below_top",
+      "point_m": [
+        4.0,
+        6.85,
+        1.1199999999999999
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W08: flap_retained",
+      "point_m": [
+        1.15,
+        9.276776695296636,
+        2.323223304703363
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W08: gap_beneath_flap",
+      "point_m": [
+        1.15,
+        9.276776695296636,
+        2.223223304703363
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    },
+    {
+      "label": "W09: flap_retained",
+      "point_m": [
+        3.55,
+        9.276776695296636,
+        2.423223304703363
+      ],
+      "expected_fluid": false,
+      "actual_fluid": false,
+      "pass": true
+    },
+    {
+      "label": "W09: gap_beneath_flap",
+      "point_m": [
+        3.55,
+        9.276776695296636,
+        2.323223304703363
+      ],
+      "expected_fluid": true,
+      "actual_fluid": true,
+      "pass": true
+    }
+  ],
+  "point_check_pass_count": 69,
+  "point_check_total": 69,
+  "failed": [],
+  "scope": "Independent cell locator on actual OpenFOAM mesh; finite point sampling is not exhaustive leak proof. Room volume uses cell centres and includes boundary approximation error.",
+  "source_case": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House-Airflow\\meshCase",
+  "mesh_owner_sha256": "0880c08aff3d7d4b15a517782d4f59297b446d79543605ea270cbdd50fd3d949"
+}

@@ -1,0 +1,86 @@
+solid MeshRefinement011
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex 3.0300000000000002 8.77 1.98
+   vertex 3.0300000000000002 8.77 2.730606689453125
+   vertex 3.0300000000000002 9.58416015625 1.98
+  endloop
+ endfacet
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex 3.0300000000000002 9.58416015625 1.98
+   vertex 3.0300000000000002 8.77 2.730606689453125
+   vertex 3.0300000000000002 9.58416015625 2.730606689453125
+  endloop
+ endfacet
+ facet normal 1.0 0.0 0.0
+  outer loop
+   vertex 4.07 8.77 2.730606689453125
+   vertex 4.07 8.77 1.98
+   vertex 4.07 9.58416015625 1.98
+  endloop
+ endfacet
+ facet normal 1.0 -0.0 0.0
+  outer loop
+   vertex 4.07 8.77 2.730606689453125
+   vertex 4.07 9.58416015625 1.98
+   vertex 4.07 9.58416015625 2.730606689453125
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 4.07 8.77 1.98
+   vertex 4.07 8.77 2.730606689453125
+   vertex 3.0300000000000002 8.77 1.98
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 3.0300000000000002 8.77 1.98
+   vertex 4.07 8.77 2.730606689453125
+   vertex 3.0300000000000002 8.77 2.730606689453125
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 4.07 9.58416015625 2.730606689453125
+   vertex 4.07 9.58416015625 1.98
+   vertex 3.0300000000000002 9.58416015625 1.98
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 4.07 9.58416015625 2.730606689453125
+   vertex 3.0300000000000002 9.58416015625 1.98
+   vertex 3.0300000000000002 9.58416015625 2.730606689453125
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 3.0300000000000002 9.58416015625 1.98
+   vertex 4.07 9.58416015625 1.98
+   vertex 3.0300000000000002 8.77 1.98
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 3.0300000000000002 8.77 1.98
+   vertex 4.07 9.58416015625 1.98
+   vertex 4.07 8.77 1.98
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 4.07 9.58416015625 2.730606689453125
+   vertex 3.0300000000000002 9.58416015625 2.730606689453125
+   vertex 3.0300000000000002 8.77 2.730606689453125
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 4.07 9.58416015625 2.730606689453125
+   vertex 3.0300000000000002 8.77 2.730606689453125
+   vertex 4.07 8.77 2.730606689453125
+  endloop
+ endfacet
+endsolid MeshRefinement011

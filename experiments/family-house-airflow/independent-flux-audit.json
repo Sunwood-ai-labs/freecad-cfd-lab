@@ -1,0 +1,160 @@
+{
+  "case": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House-Airflow\\case",
+  "time": "697",
+  "cells": 538479,
+  "finite_phi": true,
+  "mesh_owner_sha256": "80f902941c578adba0338a50ce3bc497d7d31e31324a73a14f84c9f483505921",
+  "maximum_cell_flux_divergence_m3_s": 5.530920610397061e-09,
+  "sum_absolute_cell_flux_divergence_m3_s": 7.640061979883868e-06,
+  "method": "Conservative phi on boundary of cells whose centres lie in room bbox; discretized region may differ from exact architectural volume",
+  "offset_m": [
+    0,
+    0,
+    0
+  ],
+  "patches": {
+    "windInlet": {
+      "faces": 448,
+      "signed_outflow_m3_s": -3104.807693011655,
+      "sum_abs_m3_s": 3104.807693011655
+    },
+    "windOutlet": {
+      "faces": 448,
+      "signed_outflow_m3_s": 3104.807691840175,
+      "sum_abs_m3_s": 3104.807691840175
+    },
+    "farfield": {
+      "faces": 2640,
+      "signed_outflow_m3_s": 0.0,
+      "sum_abs_m3_s": 0.0
+    },
+    "ground": {
+      "faces": 5234,
+      "signed_outflow_m3_s": 0.0,
+      "sum_abs_m3_s": 0.0
+    },
+    "houseWalls": {
+      "faces": 136083,
+      "signed_outflow_m3_s": 0.0,
+      "sum_abs_m3_s": 0.0
+    }
+  },
+  "global": {
+    "boundary_faces": 144853,
+    "inflow_m3_s": 3104.807693011655,
+    "outflow_m3_s": 3104.807691840175,
+    "net_outflow_m3_s": -1.1714801075868309e-06,
+    "relative_imbalance": 3.7731164806877245e-10,
+    "signed_definition": "positive is out of cell-centre-defined region"
+  },
+  "rooms": {
+    "ldk": {
+      "cells": 64067,
+      "boundary_faces": 15602,
+      "inflow_m3_s": 2.9231863776902305,
+      "outflow_m3_s": 2.9231862008107585,
+      "net_outflow_m3_s": -1.7687947195810239e-07,
+      "relative_imbalance": 6.050913253703123e-08,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "master": {
+      "cells": 45617,
+      "boundary_faces": 14150,
+      "inflow_m3_s": 1.05879671247295,
+      "outflow_m3_s": 1.0587964496407882,
+      "net_outflow_m3_s": -2.62832161812554e-07,
+      "relative_imbalance": 2.4823666216216056e-07,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "child1": {
+      "cells": 34699,
+      "boundary_faces": 11085,
+      "inflow_m3_s": 0.8103246151927911,
+      "outflow_m3_s": 0.8103245355726252,
+      "net_outflow_m3_s": -7.962016590479237e-08,
+      "relative_imbalance": 9.825712364155354e-08,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "child2": {
+      "cells": 35058,
+      "boundary_faces": 11181,
+      "inflow_m3_s": 0.8911735125198481,
+      "outflow_m3_s": 0.8911736065600033,
+      "net_outflow_m3_s": 9.404015521852216e-08,
+      "relative_imbalance": 1.0552394564458005e-07,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "fcl": {
+      "cells": 65655,
+      "boundary_faces": 16056,
+      "inflow_m3_s": 0.08661855899277805,
+      "outflow_m3_s": 0.08661852585498676,
+      "net_outflow_m3_s": -3.3137791288773144e-08,
+      "relative_imbalance": 3.8257149130749284e-07,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "private_hall": {
+      "cells": 13645,
+      "boundary_faces": 6489,
+      "inflow_m3_s": 1.7114896783129536,
+      "outflow_m3_s": 1.7114895555937983,
+      "net_outflow_m3_s": -1.2271915528216937e-07,
+      "relative_imbalance": 7.170312321318575e-08,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "bath": {
+      "cells": 11241,
+      "boundary_faces": 3891,
+      "inflow_m3_s": 0.28867850544435975,
+      "outflow_m3_s": 0.2886785060522975,
+      "net_outflow_m3_s": 6.079377556922338e-10,
+      "relative_imbalance": 2.1059335660483803e-09,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "wash": {
+      "cells": 4913,
+      "boundary_faces": 1880,
+      "inflow_m3_s": 0.7434495976983464,
+      "outflow_m3_s": 0.743449592426851,
+      "net_outflow_m3_s": -5.271495351344413e-09,
+      "relative_imbalance": 7.0905887469231165e-09,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "laundry": {
+      "cells": 36792,
+      "boundary_faces": 12593,
+      "inflow_m3_s": 0.7637779460886338,
+      "outflow_m3_s": 0.7637779199051191,
+      "net_outflow_m3_s": -2.6183514689748222e-08,
+      "relative_imbalance": 3.428157990661557e-08,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "wc": {
+      "cells": 29924,
+      "boundary_faces": 11672,
+      "inflow_m3_s": 0.03356105688871374,
+      "outflow_m3_s": 0.03356100626421808,
+      "net_outflow_m3_s": -5.0624495658013746e-08,
+      "relative_imbalance": 1.5084297203714784e-06,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "entry_hall": {
+      "cells": 2495,
+      "boundary_faces": 1189,
+      "inflow_m3_s": 0.25984005392314224,
+      "outflow_m3_s": 0.2598400242083901,
+      "net_outflow_m3_s": -2.9714752158849222e-08,
+      "relative_imbalance": 1.1435785865268682e-07,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    },
+    "entry": {
+      "cells": 6851,
+      "boundary_faces": 3042,
+      "inflow_m3_s": 0.10163662892417683,
+      "outflow_m3_s": 0.10163657696652846,
+      "net_outflow_m3_s": -5.195764836429806e-08,
+      "relative_imbalance": 5.112098749660382e-07,
+      "signed_definition": "positive is out of cell-centre-defined region"
+    }
+  }
+}

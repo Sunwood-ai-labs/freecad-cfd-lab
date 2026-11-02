@@ -1,0 +1,42 @@
+{
+  "common_speed_scale_m_s": [
+    0,
+    2.7
+  ],
+  "particle_method": "VTK Runge-Kutta45 streamlines from the actual steady velocity field; positions interpolated in physical IntegrationTime, never normalized to equal path duration",
+  "common_time_scale": 3.0,
+  "fps": 24,
+  "frames": 288,
+  "duration_s": 12.0,
+  "particle_caveat": "Particles show flow paths and direction; particle counts are not air-volume measurements. Paths are faded and recycled at ends.",
+  "cases": {
+    "a": {
+      "latest_iteration": 1429.0,
+      "cells": 13712,
+      "streamlines": 100,
+      "turbulence_model": "steady RANS kEpsilon",
+      "source_case": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-a\\case",
+      "indoor_area_m2": 42.559999999999974,
+      "extrusion_depth_m": 1.0,
+      "clipped_volume_m3": 42.559979858400766,
+      "area_weighted_mean_speed_m_s": 0.5659736005035548,
+      "area_fraction_below_0_1_m_s": 0.05707287616663418,
+      "method": "Polyhedral cells tetrahedralized without volume loss, then clipped to the room; volume-weighted original cell-speed mean; constant depth makes this area-weighted",
+      "validation": "2D comparative demonstration only; no mesh independence or experimental validation"
+    },
+    "b": {
+      "latest_iteration": 2026.0,
+      "cells": 13711,
+      "streamlines": 101,
+      "turbulence_model": "steady RANS kEpsilon",
+      "source_case": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b\\case",
+      "indoor_area_m2": 42.559999999999974,
+      "extrusion_depth_m": 1.0,
+      "clipped_volume_m3": 42.559979858400766,
+      "area_weighted_mean_speed_m_s": 0.5174495558237007,
+      "area_fraction_below_0_1_m_s": 0.022183515578367483,
+      "method": "Polyhedral cells tetrahedralized without volume loss, then clipped to the room; volume-weighted original cell-speed mean; constant depth makes this area-weighted",
+      "validation": "2D comparative demonstration only; no mesh independence or experimental validation"
+    }
+  }
+}

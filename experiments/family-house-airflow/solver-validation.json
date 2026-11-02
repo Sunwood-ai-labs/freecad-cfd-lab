@@ -1,0 +1,211 @@
+{
+  "status": "pass",
+  "cells": 538479,
+  "final_time": "697",
+  "converged_iteration": 697,
+  "solver_reported_convergence_iteration_count": 697,
+  "convergence_tolerance": 1e-05,
+  "initial_residuals_at_final_iteration": {
+    "Ux": 2.43065667540355e-06,
+    "Uy": 1.31317195250143e-07,
+    "Uz": 1.73777544723071e-06,
+    "p": 9.99976356193392e-06,
+    "epsilon": 1.86136046617446e-07,
+    "k": 9.02441442262104e-07
+  },
+  "fields": {
+    "U": {
+      "cells": 538479,
+      "components": 3,
+      "finite": true,
+      "minimum_component": -2.38450383773911,
+      "maximum_component": 2.47370442104472,
+      "max_speed_m_s": 2.9469688014505837
+    },
+    "p": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "minimum_component": -4.18474908446963,
+      "maximum_component": 2.34230671751843
+    },
+    "k": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "minimum_component": 2.09900944429334e-06,
+      "maximum_component": 0.318419774999838
+    },
+    "epsilon": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "minimum_component": 1.03925486213817e-07,
+      "maximum_component": 2.14379800918141
+    },
+    "nut": {
+      "cells": 538479,
+      "components": 1,
+      "finite": true,
+      "minimum_component": 1.53538811322517e-06,
+      "maximum_component": 0.0814036132978849
+    }
+  },
+  "mesh_quality": "Mesh OK",
+  "global_mass_balance": {
+    "inflow_m3_s": 3104.807693011655,
+    "net_outflow_m3_s": -1.1714801075868309e-06,
+    "relative_imbalance": 3.7731164806877245e-10
+  },
+  "boundary_fluxes": {
+    "windInlet": {
+      "net_outflow_m3_s": -3104.807693011655,
+      "inflow_m3_s": 3104.807693011655,
+      "outflow_m3_s": 0.0
+    },
+    "windOutlet": {
+      "net_outflow_m3_s": 3104.807691840175,
+      "inflow_m3_s": -0.0,
+      "outflow_m3_s": 3104.807691840175
+    },
+    "farfield": {
+      "net_outflow_m3_s": 0.0,
+      "inflow_m3_s": -0.0,
+      "outflow_m3_s": 0.0
+    },
+    "ground": {
+      "net_outflow_m3_s": 0.0,
+      "inflow_m3_s": -0.0,
+      "outflow_m3_s": 0.0
+    },
+    "houseWalls": {
+      "net_outflow_m3_s": 0.0,
+      "inflow_m3_s": -0.0,
+      "outflow_m3_s": 0.0
+    }
+  },
+  "room_cellset_mass_balances": {
+    "ldk": {
+      "name": "LDK",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 64067,
+      "inflow_m3_s": 2.9231863776902305,
+      "outflow_m3_s": 2.9231862008107585,
+      "net_outflow_m3_s": -1.7687947195810239e-07,
+      "relative_mass_imbalance": 6.050913253703123e-08,
+      "sum_cell_divergence_m3_s": -1.7687947228524544e-07
+    },
+    "master": {
+      "name": "主寝室",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 45617,
+      "inflow_m3_s": 1.05879671247295,
+      "outflow_m3_s": 1.0587964496407882,
+      "net_outflow_m3_s": -2.6283216197908743e-07,
+      "relative_mass_imbalance": 2.4823666231944616e-07,
+      "sum_cell_divergence_m3_s": -2.628321618848152e-07
+    },
+    "child1": {
+      "name": "子ども室1",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 34699,
+      "inflow_m3_s": 0.8103246151927911,
+      "outflow_m3_s": 0.8103245355726252,
+      "net_outflow_m3_s": -7.962016590479237e-08,
+      "relative_mass_imbalance": 9.825712364155354e-08,
+      "sum_cell_divergence_m3_s": -7.962016587469981e-08
+    },
+    "child2": {
+      "name": "子ども室2",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 35058,
+      "inflow_m3_s": 0.8911735125198481,
+      "outflow_m3_s": 0.8911736065600033,
+      "net_outflow_m3_s": 9.40401549409664e-08,
+      "relative_mass_imbalance": 1.0552395646843459e-07,
+      "sum_cell_divergence_m3_s": 9.404015491827636e-08
+    },
+    "fcl": {
+      "name": "家族収納",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 65655,
+      "inflow_m3_s": 0.08661855899277805,
+      "outflow_m3_s": 0.08661852585498676,
+      "net_outflow_m3_s": -3.313779129267627e-08,
+      "relative_mass_imbalance": 3.8257149135255393e-07,
+      "sum_cell_divergence_m3_s": -3.3137791288614405e-08
+    },
+    "private_hall": {
+      "name": "個室ホール",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 13645,
+      "inflow_m3_s": 1.7114896783129536,
+      "outflow_m3_s": 1.7114895555937983,
+      "net_outflow_m3_s": -1.22719155698503e-07,
+      "relative_mass_imbalance": 7.170312345644381e-08,
+      "sum_cell_divergence_m3_s": -1.2271915569932296e-07
+    },
+    "bath": {
+      "name": "浴室・1616設置枠",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 11241,
+      "inflow_m3_s": 0.28867850544435975,
+      "outflow_m3_s": 0.2886785060522975,
+      "net_outflow_m3_s": 6.079377279366582e-10,
+      "relative_mass_imbalance": 2.105933474336325e-09,
+      "sum_cell_divergence_m3_s": 6.079377382900743e-10
+    },
+    "wash": {
+      "name": "独立洗面",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 4913,
+      "inflow_m3_s": 0.7434495976983464,
+      "outflow_m3_s": 0.743449592426851,
+      "net_outflow_m3_s": -5.271495295833262e-09,
+      "relative_mass_imbalance": 7.090588672256116e-09,
+      "sum_cell_divergence_m3_s": -5.27149529939041e-09
+    },
+    "laundry": {
+      "name": "脱衣・ランドリー",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 36792,
+      "inflow_m3_s": 0.7637779460886338,
+      "outflow_m3_s": 0.7637779199051191,
+      "net_outflow_m3_s": -2.6183514689748222e-08,
+      "relative_mass_imbalance": 3.428157990661557e-08,
+      "sum_cell_divergence_m3_s": -2.6183514675478708e-08
+    },
+    "wc": {
+      "name": "トイレ",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 29924,
+      "inflow_m3_s": 0.03356105688871374,
+      "outflow_m3_s": 0.03356100626421808,
+      "net_outflow_m3_s": -5.0624495652809576e-08,
+      "relative_mass_imbalance": 1.5084297202164127e-06,
+      "sum_cell_divergence_m3_s": -5.062449565248313e-08
+    },
+    "entry_hall": {
+      "name": "玄関ホール",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 2495,
+      "inflow_m3_s": 0.25984005392314224,
+      "outflow_m3_s": 0.2598400242083901,
+      "net_outflow_m3_s": -2.971475215191033e-08,
+      "relative_mass_imbalance": 1.1435785862598233e-07,
+      "sum_cell_divergence_m3_s": -2.9714752149125284e-08
+    },
+    "entry": {
+      "name": "玄関・靴収納",
+      "selection": "cell centres inside clear-room bbox; conservative phi across selected cell-set boundary",
+      "cells": 6851,
+      "inflow_m3_s": 0.10163662892417683,
+      "outflow_m3_s": 0.10163657696652846,
+      "net_outflow_m3_s": -5.1957648341746654e-08,
+      "relative_mass_imbalance": 5.112098747441556e-07,
+      "sum_cell_divergence_m3_s": -5.195764835400719e-08
+    }
+  },
+  "max_absolute_cell_flux_divergence_m3_s": 5.530920610397061e-09,
+  "caveat": "Cell-set boundary mass fluxes are numerical conservation diagnostics, not exact architectural door/window opening flow or fresh-air delivery."
+}

@@ -1,0 +1,1321 @@
+{
+  "final_field_verified": true,
+  "offset_m": [
+    0,
+    0,
+    0
+  ],
+  "case_file": "case/pv.foam",
+  "building_shell_stl": "building-shell.stl",
+  "windows": [
+    {
+      "id": "W01",
+      "name": "ダイニング南腰窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 0.95,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        0.7,
+        -0.01,
+        1.4,
+        1.65,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 1.045,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        0.7,
+        -0.01,
+        1.4,
+        1.65,
+        0.21,
+        2.5
+      ],
+      "inward_normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "W02",
+      "name": "リビング南掃出窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 1.15,
+      "clear_height_m": 2.0,
+      "aperture_bbox_m": [
+        3.65,
+        -0.01,
+        0.5,
+        4.8,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 2.3,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        3.65,
+        -0.01,
+        0.5,
+        4.8,
+        0.21,
+        2.5
+      ],
+      "inward_normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "W03",
+      "name": "LDK西窓",
+      "kind": "window",
+      "host": "ext_west",
+      "axis": "y",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 0.4,
+      "clear_height_m": 0.8,
+      "aperture_bbox_m": [
+        -0.01,
+        2.85,
+        1.7,
+        0.21,
+        3.25,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "x",
+      "area_m2": 0.32,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        -0.01,
+        2.85,
+        1.7,
+        0.21,
+        3.25,
+        2.5
+      ],
+      "inward_normal": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "W04",
+      "name": "子ども室1北窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "child1",
+        "outside"
+      ],
+      "clear_width_m": 0.65,
+      "clear_height_m": 1.2,
+      "aperture_bbox_m": [
+        7.65,
+        8.89,
+        1.4,
+        8.3,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.78,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        7.65,
+        8.89,
+        1.4,
+        8.3,
+        9.11,
+        2.6
+      ],
+      "inward_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "W05",
+      "name": "子ども室2北窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "child2",
+        "outside"
+      ],
+      "clear_width_m": 0.65,
+      "clear_height_m": 1.2,
+      "aperture_bbox_m": [
+        10.4,
+        8.89,
+        1.4,
+        11.05,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.78,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        10.4,
+        8.89,
+        1.4,
+        11.05,
+        9.11,
+        2.6
+      ],
+      "inward_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "W06",
+      "name": "主寝室南窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "clear_width_m": 0.85,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        9.7,
+        -0.01,
+        1.4,
+        10.55,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 0.935,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        9.7,
+        -0.01,
+        1.4,
+        10.55,
+        0.21,
+        2.5
+      ],
+      "inward_normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "W07",
+      "name": "主寝室東窓",
+      "kind": "window",
+      "host": "ext_east",
+      "axis": "y",
+      "original_operation": "sliding",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "clear_width_m": 0.55,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        11.89,
+        2.3,
+        1.4,
+        12.11,
+        2.85,
+        2.5
+      ],
+      "plane_coordinate_m": 12.0,
+      "plane_axis": "x",
+      "area_m2": 0.605,
+      "surrogate": false,
+      "opening_side": "negative coordinate half",
+      "open_bbox_m": [
+        11.89,
+        2.3,
+        1.4,
+        12.11,
+        2.85,
+        2.5
+      ],
+      "inward_normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "W08",
+      "name": "浴室北高窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "awning",
+      "connects": [
+        "bath",
+        "outside"
+      ],
+      "clear_width_m": 0.5,
+      "clear_height_m": 0.5,
+      "aperture_bbox_m": [
+        0.9,
+        8.89,
+        2.0,
+        1.4,
+        9.11,
+        2.5
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.25,
+      "surrogate": false,
+      "opening_side": "whole frame opening",
+      "flap_angle_degrees": 45,
+      "flap_thickness_m": 0.03,
+      "flap_bbox_m": [
+        0.9,
+        9.089393398282201,
+        2.1358400076889286,
+        1.4,
+        9.464159992311071,
+        2.510606601717799
+      ],
+      "open_bbox_m": [
+        0.9,
+        8.89,
+        2.0,
+        1.4,
+        9.11,
+        2.5
+      ],
+      "inward_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "W09",
+      "name": "ランドリー北高窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "awning",
+      "connects": [
+        "laundry",
+        "outside"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 0.5,
+      "aperture_bbox_m": [
+        3.15,
+        8.89,
+        2.1,
+        3.95,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.4,
+      "surrogate": false,
+      "opening_side": "whole frame opening",
+      "flap_angle_degrees": 45,
+      "flap_thickness_m": 0.03,
+      "flap_bbox_m": [
+        3.15,
+        9.089393398282201,
+        2.235840007688928,
+        3.95,
+        9.464159992311073,
+        2.6106066017177985
+      ],
+      "open_bbox_m": [
+        3.15,
+        8.89,
+        2.1,
+        3.95,
+        9.11,
+        2.6
+      ],
+      "inward_normal": [
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "kitchen",
+      "name": "I型キッチン2550",
+      "room": "ldk",
+      "kind": "kitchen",
+      "bbox_m": [
+        2.9,
+        4.55,
+        0.45,
+        5.45,
+        5.2,
+        1.3
+      ]
+    },
+    {
+      "id": "fridge",
+      "name": "冷蔵庫750×750",
+      "room": "ldk",
+      "kind": "fridge",
+      "bbox_m": [
+        2.1,
+        4.45,
+        0.45,
+        2.85,
+        5.2,
+        2.3
+      ]
+    },
+    {
+      "id": "table",
+      "name": "4人ダイニング1600",
+      "room": "ldk",
+      "kind": "dining_table",
+      "bbox_m": [
+        1.0,
+        1.65,
+        1.09,
+        2.6,
+        2.45,
+        1.17
+      ]
+    },
+    {
+      "id": "sofa",
+      "name": "ソファ2200・東向き",
+      "room": "ldk",
+      "kind": "sofa",
+      "bbox_m": [
+        3.5,
+        0.6,
+        0.45,
+        4.4,
+        2.8,
+        1.23
+      ]
+    },
+    {
+      "id": "tv",
+      "name": "TVボード1800",
+      "room": "ldk",
+      "kind": "tv_unit",
+      "bbox_m": [
+        6.0,
+        0.8,
+        0.45,
+        6.4,
+        2.6,
+        0.95
+      ]
+    },
+    {
+      "id": "queen",
+      "name": "クイーン1600×2000",
+      "room": "master",
+      "kind": "bed",
+      "bbox_m": [
+        9.0,
+        0.2,
+        0.45,
+        10.6,
+        2.2,
+        0.9
+      ]
+    },
+    {
+      "id": "master_closet",
+      "name": "主寝室収納2500",
+      "room": "master",
+      "kind": "wardrobe",
+      "bbox_m": [
+        9.4,
+        3.6,
+        0.45,
+        11.9,
+        4.2,
+        2.65
+      ]
+    },
+    {
+      "id": "fcl_storage",
+      "name": "家族収納・片側600",
+      "room": "fcl",
+      "kind": "wardrobe",
+      "bbox_m": [
+        6.5,
+        0.2,
+        0.45,
+        7.1,
+        4.2,
+        2.65
+      ]
+    },
+    {
+      "id": "child1_bed",
+      "name": "ベッド1000×2000",
+      "room": "child1",
+      "kind": "bed",
+      "bbox_m": [
+        6.5,
+        5.4,
+        0.45,
+        7.5,
+        7.4,
+        0.9
+      ]
+    },
+    {
+      "id": "child1_desk",
+      "name": "机1200×600",
+      "room": "child1",
+      "kind": "desk",
+      "bbox_m": [
+        6.5,
+        8.3,
+        1.09,
+        7.7,
+        8.9,
+        1.17
+      ]
+    },
+    {
+      "id": "child1_closet",
+      "name": "個室収納1200×600",
+      "room": "child1",
+      "kind": "wardrobe",
+      "bbox_m": [
+        8.55,
+        6.6,
+        0.45,
+        9.15,
+        7.8,
+        2.65
+      ]
+    },
+    {
+      "id": "child2_bed",
+      "name": "ベッド1000×2000",
+      "room": "child2",
+      "kind": "bed",
+      "bbox_m": [
+        9.25,
+        5.4,
+        0.45,
+        10.25,
+        7.4,
+        0.9
+      ]
+    },
+    {
+      "id": "child2_desk",
+      "name": "机1200×600",
+      "room": "child2",
+      "kind": "desk",
+      "bbox_m": [
+        9.25,
+        8.3,
+        1.09,
+        10.45,
+        8.9,
+        1.17
+      ]
+    },
+    {
+      "id": "child2_closet",
+      "name": "個室収納1200×600",
+      "room": "child2",
+      "kind": "wardrobe",
+      "bbox_m": [
+        11.3,
+        6.6,
+        0.45,
+        11.9,
+        7.8,
+        2.65
+      ]
+    },
+    {
+      "id": "tub",
+      "name": "浴槽参考750×1400",
+      "room": "bath",
+      "kind": "bathtub",
+      "bbox_m": [
+        0.45,
+        7.25,
+        0.45,
+        1.2,
+        8.65,
+        1.03
+      ]
+    },
+    {
+      "id": "vanity",
+      "name": "洗面台900×600",
+      "room": "wash",
+      "kind": "vanity",
+      "bbox_m": [
+        0.2,
+        5.65,
+        0.45,
+        0.8,
+        6.55,
+        1.3
+      ]
+    },
+    {
+      "id": "washer",
+      "name": "ドラム洗濯機650×700",
+      "room": "laundry",
+      "kind": "washer",
+      "bbox_m": [
+        2.35,
+        8.2,
+        0.45,
+        3.0,
+        8.9,
+        1.35
+      ]
+    },
+    {
+      "id": "dryer",
+      "name": "積層乾燥機参考",
+      "room": "laundry",
+      "kind": "dryer",
+      "bbox_m": [
+        2.35,
+        8.2,
+        1.35,
+        3.0,
+        8.9,
+        2.22
+      ]
+    },
+    {
+      "id": "fold_counter",
+      "name": "畳み台1600×600",
+      "room": "laundry",
+      "kind": "counter",
+      "bbox_m": [
+        3.7,
+        6.05,
+        1.22,
+        4.3,
+        7.65,
+        1.3
+      ]
+    },
+    {
+      "id": "linen",
+      "name": "リネン収納2100×500",
+      "room": "laundry",
+      "kind": "wardrobe",
+      "bbox_m": [
+        2.2,
+        5.3,
+        0.45,
+        4.3,
+        5.8,
+        2.25
+      ]
+    },
+    {
+      "id": "toilet",
+      "name": "便器参考400×700",
+      "room": "wc",
+      "kind": "toilet",
+      "bbox_m": [
+        4.7,
+        6.35,
+        0.45,
+        5.1,
+        7.05,
+        1.2
+      ]
+    },
+    {
+      "id": "wc_basin",
+      "name": "WC手洗い250×350",
+      "room": "wc",
+      "kind": "small_basin",
+      "bbox_m": [
+        4.4,
+        5.35,
+        0.45,
+        4.65,
+        5.7,
+        1.25
+      ]
+    },
+    {
+      "id": "shoe",
+      "name": "壁面靴収納・土間",
+      "room": "entry",
+      "kind": "wardrobe",
+      "bbox_m": [
+        4.4,
+        7.2,
+        0.3,
+        4.75,
+        8.9,
+        2.4
+      ]
+    }
+  ],
+  "apertures": [
+    {
+      "id": "D02",
+      "name": "玄関框150・ホール開口",
+      "kind": "passage",
+      "host": "entry_south",
+      "axis": "x",
+      "original_operation": "open",
+      "connects": [
+        "entry",
+        "entry_hall"
+      ],
+      "clear_width_m": 0.9,
+      "clear_height_m": 2.35,
+      "aperture_bbox_m": [
+        5.5,
+        7.09,
+        0.3,
+        6.4,
+        7.21,
+        2.65
+      ],
+      "plane_coordinate_m": 7.15,
+      "plane_axis": "y",
+      "area_m2": 2.115,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D03",
+      "name": "玄関ホール→LDK",
+      "kind": "door",
+      "host": "service_south",
+      "axis": "x",
+      "original_operation": "hinged_in",
+      "connects": [
+        "entry_hall",
+        "ldk"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        5.55,
+        5.19,
+        0.45,
+        6.35,
+        5.31,
+        2.5
+      ],
+      "plane_coordinate_m": 5.25,
+      "plane_axis": "y",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D04",
+      "name": "LDK→独立洗面",
+      "kind": "door",
+      "host": "service_south",
+      "axis": "x",
+      "original_operation": "sliding_outset",
+      "connects": [
+        "ldk",
+        "wash"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        1.15,
+        5.19,
+        0.45,
+        1.95,
+        5.31,
+        2.5
+      ],
+      "plane_coordinate_m": 5.25,
+      "plane_axis": "y",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D05",
+      "name": "洗面→脱衣",
+      "kind": "door",
+      "host": "wet_split",
+      "axis": "y",
+      "original_operation": "hinged_in",
+      "connects": [
+        "wash",
+        "laundry"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        2.09,
+        5.95,
+        0.45,
+        2.21,
+        6.75,
+        2.5
+      ],
+      "plane_coordinate_m": 2.15,
+      "plane_axis": "x",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D06",
+      "name": "脱衣→浴室",
+      "kind": "door",
+      "host": "wet_split",
+      "axis": "y",
+      "original_operation": "sliding_outset",
+      "connects": [
+        "laundry",
+        "bath"
+      ],
+      "clear_width_m": 0.75,
+      "clear_height_m": 1.95,
+      "aperture_bbox_m": [
+        2.09,
+        7.15,
+        0.45,
+        2.21,
+        7.9,
+        2.4
+      ],
+      "plane_coordinate_m": 2.15,
+      "plane_axis": "x",
+      "area_m2": 1.4625,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D07",
+      "name": "ホール→トイレ",
+      "kind": "door",
+      "host": "wc_hall",
+      "axis": "y",
+      "original_operation": "sliding_outset",
+      "connects": [
+        "entry_hall",
+        "wc"
+      ],
+      "clear_width_m": 0.75,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        5.39,
+        5.425,
+        0.45,
+        5.51,
+        6.175,
+        2.5
+      ],
+      "plane_coordinate_m": 5.45,
+      "plane_axis": "x",
+      "area_m2": 1.5375,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D08",
+      "name": "LDK→個室ホール",
+      "kind": "door",
+      "host": "spine",
+      "axis": "y",
+      "original_operation": "sliding_outset",
+      "connects": [
+        "ldk",
+        "private_hall"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        6.39,
+        4.4,
+        0.45,
+        6.51,
+        5.2,
+        2.5
+      ],
+      "plane_coordinate_m": 6.45,
+      "plane_axis": "x",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D09",
+      "name": "ホール→家族収納",
+      "kind": "door",
+      "host": "private_south",
+      "axis": "x",
+      "original_operation": "hinged_in",
+      "connects": [
+        "private_hall",
+        "fcl"
+      ],
+      "clear_width_m": 0.75,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        7.2,
+        4.19,
+        0.45,
+        7.95,
+        4.31,
+        2.5
+      ],
+      "plane_coordinate_m": 4.25,
+      "plane_axis": "y",
+      "area_m2": 1.5375,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D10",
+      "name": "ホール→主寝室",
+      "kind": "door",
+      "host": "private_south",
+      "axis": "x",
+      "original_operation": "hinged_in",
+      "connects": [
+        "private_hall",
+        "master"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        8.25,
+        4.19,
+        0.45,
+        9.05,
+        4.31,
+        2.5
+      ],
+      "plane_coordinate_m": 4.25,
+      "plane_axis": "y",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D11",
+      "name": "ホール→子ども室1",
+      "kind": "door",
+      "host": "private_north",
+      "axis": "x",
+      "original_operation": "hinged_in",
+      "connects": [
+        "private_hall",
+        "child1"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        8.25,
+        5.29,
+        0.45,
+        9.05,
+        5.41,
+        2.5
+      ],
+      "plane_coordinate_m": 5.35,
+      "plane_axis": "y",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "D12",
+      "name": "ホール→子ども室2",
+      "kind": "door",
+      "host": "private_north",
+      "axis": "x",
+      "original_operation": "hinged_in",
+      "connects": [
+        "private_hall",
+        "child2"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 2.05,
+      "aperture_bbox_m": [
+        11.0,
+        5.29,
+        0.45,
+        11.8,
+        5.41,
+        2.5
+      ],
+      "plane_coordinate_m": 5.35,
+      "plane_axis": "y",
+      "area_m2": 1.64,
+      "surrogate": false,
+      "opening_side": "whole frame opening"
+    },
+    {
+      "id": "W01",
+      "name": "ダイニング南腰窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 0.95,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        0.7,
+        -0.01,
+        1.4,
+        1.65,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 1.045,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W02",
+      "name": "リビング南掃出窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 1.15,
+      "clear_height_m": 2.0,
+      "aperture_bbox_m": [
+        3.65,
+        -0.01,
+        0.5,
+        4.8,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 2.3,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W03",
+      "name": "LDK西窓",
+      "kind": "window",
+      "host": "ext_west",
+      "axis": "y",
+      "original_operation": "sliding",
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "clear_width_m": 0.4,
+      "clear_height_m": 0.8,
+      "aperture_bbox_m": [
+        -0.01,
+        2.85,
+        1.7,
+        0.21,
+        3.25,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "x",
+      "area_m2": 0.32,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W04",
+      "name": "子ども室1北窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "child1",
+        "outside"
+      ],
+      "clear_width_m": 0.65,
+      "clear_height_m": 1.2,
+      "aperture_bbox_m": [
+        7.65,
+        8.89,
+        1.4,
+        8.3,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.78,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W05",
+      "name": "子ども室2北窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "child2",
+        "outside"
+      ],
+      "clear_width_m": 0.65,
+      "clear_height_m": 1.2,
+      "aperture_bbox_m": [
+        10.4,
+        8.89,
+        1.4,
+        11.05,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.78,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W06",
+      "name": "主寝室南窓",
+      "kind": "window",
+      "host": "ext_south",
+      "axis": "x",
+      "original_operation": "sliding",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "clear_width_m": 0.85,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        9.7,
+        -0.01,
+        1.4,
+        10.55,
+        0.21,
+        2.5
+      ],
+      "plane_coordinate_m": 0.1,
+      "plane_axis": "y",
+      "area_m2": 0.935,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W07",
+      "name": "主寝室東窓",
+      "kind": "window",
+      "host": "ext_east",
+      "axis": "y",
+      "original_operation": "sliding",
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "clear_width_m": 0.55,
+      "clear_height_m": 1.1,
+      "aperture_bbox_m": [
+        11.89,
+        2.3,
+        1.4,
+        12.11,
+        2.85,
+        2.5
+      ],
+      "plane_coordinate_m": 12.0,
+      "plane_axis": "x",
+      "area_m2": 0.605,
+      "surrogate": false,
+      "opening_side": "negative coordinate half"
+    },
+    {
+      "id": "W08",
+      "name": "浴室北高窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "awning",
+      "connects": [
+        "bath",
+        "outside"
+      ],
+      "clear_width_m": 0.5,
+      "clear_height_m": 0.5,
+      "aperture_bbox_m": [
+        0.9,
+        8.89,
+        2.0,
+        1.4,
+        9.11,
+        2.5
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.25,
+      "surrogate": false,
+      "opening_side": "whole frame opening",
+      "flap_angle_degrees": 45,
+      "flap_thickness_m": 0.03,
+      "flap_bbox_m": [
+        0.9,
+        9.089393398282201,
+        2.1358400076889286,
+        1.4,
+        9.464159992311071,
+        2.510606601717799
+      ]
+    },
+    {
+      "id": "W09",
+      "name": "ランドリー北高窓",
+      "kind": "window",
+      "host": "ext_north",
+      "axis": "x",
+      "original_operation": "awning",
+      "connects": [
+        "laundry",
+        "outside"
+      ],
+      "clear_width_m": 0.8,
+      "clear_height_m": 0.5,
+      "aperture_bbox_m": [
+        3.15,
+        8.89,
+        2.1,
+        3.95,
+        9.11,
+        2.6
+      ],
+      "plane_coordinate_m": 9.0,
+      "plane_axis": "y",
+      "area_m2": 0.4,
+      "surrogate": false,
+      "opening_side": "whole frame opening",
+      "flap_angle_degrees": 45,
+      "flap_thickness_m": 0.03,
+      "flap_bbox_m": [
+        3.15,
+        9.089393398282201,
+        2.235840007688928,
+        3.95,
+        9.464159992311073,
+        2.6106066017177985
+      ]
+    }
+  ],
+  "omitted_furniture_ids": [
+    "dining_chair1",
+    "dining_chair2",
+    "dining_chair3",
+    "dining_chair4",
+    "child1_chair",
+    "child2_chair",
+    "bath_inner",
+    "drying_rail",
+    "stroller"
+  ],
+  "window_note": "引違い7窓＋外倒し高窓2窓を開放",
+  "door_note": "室内扉は開口近似・玄関は閉鎖",
+  "result_lines": [
+    "同じ家でも、部屋ごとに差",
+    "主寝室・LDKより",
+    "子ども室は平均風速が低め",
+    "窓なしのトイレは弱い流れ"
+  ],
+  "room_metrics": [
+    {
+      "id": "ldk",
+      "label": "LDK",
+      "mean_speed_m_s": 0.35339623730343855
+    },
+    {
+      "id": "master",
+      "label": "主寝室",
+      "mean_speed_m_s": 0.38446252769935657
+    },
+    {
+      "id": "child1",
+      "label": "子ども室1",
+      "mean_speed_m_s": 0.2618151797988842
+    },
+    {
+      "id": "child2",
+      "label": "子ども室2",
+      "mean_speed_m_s": 0.2900965820402599
+    }
+  ],
+  "final_iteration": 697,
+  "source_U_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25"
+}

@@ -1,0 +1,48 @@
+cartesianMesh: error while loading shared libraries: libmeshTools.so: cannot open shared object file: No such file or directory
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : cartesianMesh -version
+Date   : Oct 30 2026
+Time   : 16:38:22
+Host   : b01da7258ce5
+PID    : 489
+I/O    : uncollated
+Case   : /root
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+cfMesh-CfdOF (cfMesh 1.1.2) 1.32
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -version
+Date   : Oct 30 2026
+Time   : 16:38:22
+Host   : b01da7258ce5
+PID    : 490
+I/O    : uncollated
+Case   : /root
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+hisa 1.13.4
+4.15.2

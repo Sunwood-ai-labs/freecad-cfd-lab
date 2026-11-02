@@ -1,0 +1,92 @@
+{
+  "a": {
+    "status": "pass",
+    "cells": 13712,
+    "converged_iteration": 1429,
+    "initial_residuals_at_final_iteration": {
+      "Ux": 2.26400110680788e-06,
+      "Uy": 5.03533009903495e-06,
+      "p": 9.97399021829433e-05,
+      "k": 3.76679029323623e-06,
+      "epsilon": 2.17920294651377e-06
+    },
+    "tolerance": 0.0001,
+    "fields": {
+      "U": {
+        "cells": 13712,
+        "components": 3,
+        "finite": true,
+        "minimum_component": -2.74166272126303,
+        "maximum_component": 2.74119835796819
+      },
+      "p": {
+        "cells": 13712,
+        "components": 1,
+        "finite": true,
+        "minimum_component": -6.5271359528339,
+        "maximum_component": 2.63279515561139
+      },
+      "k": {
+        "cells": 13712,
+        "components": 1,
+        "finite": true,
+        "minimum_component": 0.000581740352928341,
+        "maximum_component": 0.521184404466527
+      },
+      "epsilon": {
+        "cells": 13712,
+        "components": 1,
+        "finite": true,
+        "minimum_component": 7.02609519633504e-05,
+        "maximum_component": 1.37836488744085
+      }
+    },
+    "model": "steady RANS kEpsilon",
+    "mesh_quality": "Mesh OK"
+  },
+  "b": {
+    "status": "pass",
+    "cells": 13711,
+    "converged_iteration": 2026,
+    "initial_residuals_at_final_iteration": {
+      "Ux": 3.94422379572047e-06,
+      "Uy": 7.89912630263606e-06,
+      "p": 9.96991342108752e-05,
+      "k": 7.64881170995478e-06,
+      "epsilon": 2.69196907072936e-06
+    },
+    "tolerance": 0.0001,
+    "fields": {
+      "U": {
+        "cells": 13711,
+        "components": 3,
+        "finite": true,
+        "minimum_component": -2.86964563721317,
+        "maximum_component": 2.66912610015231
+      },
+      "p": {
+        "cells": 13711,
+        "components": 1,
+        "finite": true,
+        "minimum_component": -6.63127665722691,
+        "maximum_component": 2.77297772598375
+      },
+      "k": {
+        "cells": 13711,
+        "components": 1,
+        "finite": true,
+        "minimum_component": 0.000408362632042321,
+        "maximum_component": 0.515470523273089
+      },
+      "epsilon": {
+        "cells": 13711,
+        "components": 1,
+        "finite": true,
+        "minimum_component": 6.86010218816933e-05,
+        "maximum_component": 1.2979305156791
+      }
+    },
+    "model": "steady RANS kEpsilon",
+    "mesh_quality": "Mesh OK"
+  }
+}

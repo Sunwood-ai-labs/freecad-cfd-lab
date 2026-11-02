@@ -1,0 +1,72 @@
+# Recalculate the two saved fictional-house cases. This replaces their CFD results.
+# Keep this macro beside case-a/ and case-b/. CfdOF and the verified Podman image are required.
+from pathlib import Path
+import re
+import FreeCAD as App, FreeCADGui as Gui
+from PySide import QtCore
+from CfdOF import CfdTools
+from CfdOF.Mesh import CfdMeshTools
+from CfdOF.Solve import CfdCaseWriterFoam, CfdRunnableFoam
+from CfdOF.CfdConsoleProcess import CfdConsoleProcess
+
+root=Path(__file__).resolve().parent.parent
+Gui.activateWorkbench('CfdOFWorkbench')
+prefs=App.ParamGet(CfdTools.getPreferencesLocation())
+if Path(CfdTools.getDefaultOutputPath()).resolve()!=root:
+    raise RuntimeError('Set the CfdOF default output directory to the folder containing this macro first.')
+if prefs.GetString('DockerURL','')!='localhost/cfdof-openfoam:verified-20261030':
+    raise RuntimeError('This demonstration requires the locally verified CfdOF image.')
+
+def run_checked(command,working_dir,log_file):
+    process=CfdConsoleProcess()
+    process.process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
+    process.process.setStandardOutputFile(str(log_file))
+    process.start(command,env_vars=CfdTools.getRunEnvironment(),working_dir=str(working_dir))
+    if not process.waitForStarted(): raise RuntimeError('Process failed to start: '+str(log_file))
+    process.waitForFinished()
+    if process.exitCode()!=0: raise RuntimeError('Process failed: '+str(log_file))
+
+for key in ['a','b']:
+    folder=root/('case-'+key)
+    docfile=str(folder/('House-'+key.upper()+'.FCStd'))
+    doc=next((d for d in App.listDocuments().values() if d.FileName==docfile),None)
+    if doc is None: doc=App.openDocument(docfile)
+    App.setActiveDocument(doc.Name)
+    analysis=doc.CfdAnalysis
+    CfdTools.setActiveAnalysis(analysis)
+    analysis.OutputPath=str(folder)
+    physics=CfdTools.getPhysicsModel(analysis)
+    physics.Time='Steady';physics.Flow='Isothermal'
+    physics.Turbulence='RANS';physics.TurbulenceModel='kEpsilon'
+    solver=CfdTools.getSolver(analysis)
+    solver.Parallel=False;solver.ConvergenceTol=1e-4;solver.MaxIterations=6000
+    solver.URelaxation=0.3;solver.pRelaxation=0.1;solver.TurbulenceRelaxation=0.3
+    mesh=CfdTools.getMesh(analysis)
+    writer=CfdMeshTools.CfdMeshTools(mesh)
+    writer.writeMesh()
+    mesh_dir=Path(writer.mesh_case_dir)
+    run_checked(CfdTools.makeRunCommand('export OMP_NUM_THREADS=4 && ./Allmesh',str(mesh_dir),source_env=False),mesh_dir,folder/'mesh-run.log')
+    run_checked(CfdTools.makeRunCommand('checkMesh -meshQuality',str(mesh_dir)),mesh_dir,folder/'mesh-check.log')
+    if 'Mesh OK.' not in (folder/'mesh-check.log').read_text(encoding='utf-8'):
+        raise RuntimeError('Mesh quality failed for case '+key)
+    CfdCaseWriterFoam.CfdCaseWriterFoam(analysis).writeCase()
+    case_dir=folder/solver.InputCaseName
+    # CfdOF's standard template uses second-order linearUpwindV. The stable,
+    # first-order override below is intentionally identical in both cases.
+    scheme_file=case_dir/'system'/'fvSchemes'
+    scheme_text=scheme_file.read_text(encoding='utf-8')
+    original='bounded Gauss linearUpwindV grad(U)'
+    if original not in scheme_text: raise RuntimeError('CfdOF template changed; review the velocity scheme override.')
+    scheme_file.write_text(scheme_text.replace(original,solver.VelocityAdvectionOverride),encoding='utf-8')
+    runnable=CfdRunnableFoam.CfdRunnableFoam(analysis,solver)
+    run_checked(runnable.getSolverCmd(str(case_dir)),case_dir,folder/'solver-run.log')
+    log=(folder/'solver-run.log').read_text(encoding='utf-8')
+    if not re.search(r'SIMPLE solution converged in \d+ iterations',log):
+        raise RuntimeError('No residual-based convergence for case '+key)
+    runnable.processOutput(log)
+    doc.recompute()
+    analysis.NeedsMeshRewrite=False;analysis.NeedsMeshRerun=False;analysis.NeedsCaseRewrite=False
+    doc.save()
+    print('House '+key.upper()+': mesh quality and CFD convergence passed.')
+App.saveParameter()
+print('Both house cases recalculated. Re-render the comparison animation separately.')

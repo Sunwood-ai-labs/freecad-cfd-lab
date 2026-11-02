@@ -1,0 +1,58 @@
+solid patch_4_0
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -25.0 -25.0 0.0
+   vertex 0.0 9.1 0.0
+   vertex 0.0 0.0 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -25.0 -25.0 0.0
+   vertex 12.1 0.0 0.0
+   vertex 37.1 -25.0 0.0
+  endloop
+ endfacet
+ facet normal 0.0 -0.0 -1.0
+  outer loop
+   vertex 0.0 0.0 0.0
+   vertex 12.1 0.0 0.0
+   vertex -25.0 -25.0 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 12.1 0.0 0.0
+   vertex 12.1 9.1 0.0
+   vertex 37.1 -25.0 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -25.0 -25.0 0.0
+   vertex -25.0 59.1 0.0
+   vertex 0.0 9.1 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 0.0 9.1 0.0
+   vertex 37.1 59.1 0.0
+   vertex 12.1 9.1 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -25.0 59.1 0.0
+   vertex 37.1 59.1 0.0
+   vertex 0.0 9.1 0.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 12.1 9.1 0.0
+   vertex 37.1 59.1 0.0
+   vertex 37.1 -25.0 0.0
+  endloop
+ endfacet
+endsolid patch_4_0

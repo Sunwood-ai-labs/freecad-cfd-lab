@@ -1,0 +1,74 @@
+{
+  "washer_west_150mm_gap": {
+    "point_m": [
+      2.275,
+      8.55,
+      1.5
+    ],
+    "fluid": true
+  },
+  "washer_west_150mm_gap_low": {
+    "point_m": [
+      2.275,
+      8.55,
+      0.9
+    ],
+    "fluid": true
+  },
+  "washer_south_air": {
+    "point_m": [
+      2.675,
+      8.1,
+      1.5
+    ],
+    "fluid": true
+  },
+  "dryer_top_air": {
+    "point_m": [
+      2.675,
+      8.55,
+      2.5
+    ],
+    "fluid": true
+  },
+  "linen_top_air": {
+    "point_m": [
+      3.25,
+      5.55,
+      2.55
+    ],
+    "fluid": true
+  },
+  "linen_north_aisle": {
+    "point_m": [
+      3.25,
+      5.9,
+      1.5
+    ],
+    "fluid": true
+  },
+  "wc_basin_south_50mm_gap": {
+    "point_m": [
+      4.525,
+      5.325,
+      0.85
+    ],
+    "fluid": true
+  },
+  "wc_toilet_north_50mm_gap": {
+    "point_m": [
+      4.9,
+      7.075,
+      0.95
+    ],
+    "fluid": true
+  },
+  "wc_toilet_east_air": {
+    "point_m": [
+      5.2,
+      6.7,
+      0.95
+    ],
+    "fluid": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "iteration": 242.0,
+  "cells": 10823,
+  "speed_point_range_m_per_s": [
+    0.0,
+    4.366943692392291
+  ],
+  "gauge_pressure_point_range_Pa": [
+    -8.710039901733397,
+    1.4680512428283692
+  ],
+  "density_kg_per_m3": 1.2,
+  "pressure_conversion": "p_Pa = rho * OpenFOAM_kinematic_p",
+  "scope": "Official CfdOF Elbow example; integration demonstration, not accuracy validation"
+}

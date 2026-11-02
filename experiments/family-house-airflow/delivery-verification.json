@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "final_iteration": 697,
+  "source_U_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25",
+  "source_design_and_bim_unchanged": true,
+  "numeric_and_media_hashes_match": true,
+  "parent_visual_review_frames": [
+    0,
+    13,
+    19.9
+  ],
+  "limitations": [
+    "steady field visualization, not transient CFD",
+    "no grid/domain independence or experiment validation",
+    "final whole CFD replay wrapper not executed"
+  ]
+}

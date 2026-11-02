@@ -1,0 +1,5228 @@
+{
+  "method": "Geometric room visits of actual RK45 trajectories. Counts depend on seed placement and do not measure airflow rate or ventilation efficiency.",
+  "trajectories": [
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.2012211094582716
+      },
+      "local_z_range_m": [
+        0.0018329932354390621,
+        2.770770311355591
+      ],
+      "duration_s": 174.53204706249534,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.3335342241752126
+      },
+      "local_z_range_m": [
+        0.000697819865308702,
+        2.715909481048584
+      ],
+      "duration_s": 155.48908989400286,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.4986349112687625
+      },
+      "local_z_range_m": [
+        0.001598255941644311,
+        2.589808464050293
+      ],
+      "duration_s": 231.25191470181431,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.6798192992330906
+      },
+      "local_z_range_m": [
+        0.0016960882348939776,
+        2.4964687824249268
+      ],
+      "duration_s": 189.75428126490536,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.7726636801159766,
+        "child2": 80.06572732946924,
+        "private_hall": 73.2817022010087
+      },
+      "local_z_range_m": [
+        0.7186676263809204,
+        5.772987365722656
+      ],
+      "duration_s": 142.71699727651048,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0899004802284949
+      },
+      "local_z_range_m": [
+        1.7426608800888062,
+        1.9422845840454102
+      ],
+      "duration_s": 4.708194815663584,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.10344092533497941
+      },
+      "local_z_range_m": [
+        0.0018344338750466704,
+        2.002089738845825
+      ],
+      "duration_s": 114.02069013447093,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.15940657863230598
+      },
+      "local_z_range_m": [
+        0.002176299225538969,
+        2.087575674057007
+      ],
+      "duration_s": 169.91176773492543,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.18100046996133728
+      },
+      "local_z_range_m": [
+        0.0021830557379871607,
+        2.150658130645752
+      ],
+      "duration_s": 156.8151687175126,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.372757002262634
+      },
+      "local_z_range_m": [
+        0.0010986997513100505,
+        2.2245655059814453
+      ],
+      "duration_s": 147.84497093088706,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.09086273939923385
+      },
+      "local_z_range_m": [
+        0.003918774425983429,
+        2.4535441398620605
+      ],
+      "duration_s": 99.63413934361375,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.14615776162769237
+      },
+      "local_z_range_m": [
+        0.0070028845220804214,
+        2.4723923206329346
+      ],
+      "duration_s": 66.58663411379698,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.12313685355118228
+      },
+      "local_z_range_m": [
+        0.0033708864357322454,
+        2.503671646118164
+      ],
+      "duration_s": 63.440937305963445,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.12411473473052001,
+        "wash": 15.095913720954078
+      },
+      "local_z_range_m": [
+        0.45645737648010254,
+        2.5053722858428955
+      ],
+      "duration_s": 15.095913720954078,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.25505695692321456,
+        "wash": 14.206394558017763,
+        "laundry": 17.182101687629874
+      },
+      "local_z_range_m": [
+        0.5275220274925232,
+        2.490435838699341
+      ],
+      "duration_s": 34.307866031014534,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.15526004896431667,
+        "wash": 21.871900504860704,
+        "laundry": 25.80371937718314
+      },
+      "local_z_range_m": [
+        0.6486431956291199,
+        5.799806118011475
+      ],
+      "duration_s": 146.00075996367974,
+      "termination_reason": 3
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.1344517818857621,
+        "wash": 26.72234723610105,
+        "laundry": 29.40124406877181
+      },
+      "local_z_range_m": [
+        0.6478981375694275,
+        6.148219108581543
+      ],
+      "duration_s": 162.86872042921425,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.11298217554967198,
+        "wash": 69.48111726617716,
+        "laundry": 71.41229082950576
+      },
+      "local_z_range_m": [
+        1.0694129467010498,
+        5.042542457580566
+      ],
+      "duration_s": 158.97494360969515,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.11937388870854908,
+        "wash": 21.86884051785309,
+        "laundry": 24.68427059575328
+      },
+      "local_z_range_m": [
+        0.967883288860321,
+        6.110601902008057
+      ],
+      "duration_s": 125.22631191694599,
+      "termination_reason": 3
+    },
+    {
+      "seed_tag": "W01",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.1677217196476005,
+        "wash": 20.97232911948409,
+        "laundry": 22.937092092620837
+      },
+      "local_z_range_m": [
+        0.7526393532752991,
+        3.7447988986968994
+      ],
+      "duration_s": 137.46111313935114,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.16782620434097037
+      },
+      "local_z_range_m": [
+        0.5400000214576721,
+        1.0280253887176514
+      ],
+      "duration_s": 3.2759653823156274,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.1979173174754457
+      },
+      "local_z_range_m": [
+        0.5303344130516052,
+        0.7342145442962646
+      ],
+      "duration_s": 2.79350813139079,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.1975898522096981
+      },
+      "local_z_range_m": [
+        0.45834940671920776,
+        0.5889254808425903
+      ],
+      "duration_s": 1.6453128649291102,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.1786255250041676,
+        "child1": 109.8690935558643,
+        "private_hall": 107.20283622498825
+      },
+      "local_z_range_m": [
+        0.48856186866760254,
+        2.6219642162323
+      ],
+      "duration_s": 110.79249053627862,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.2979292727623387,
+        "private_hall": 68.51605066374519
+      },
+      "local_z_range_m": [
+        0.5400000214576721,
+        2.6848766803741455
+      ],
+      "duration_s": 71.3063204173394,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.06708916382263175
+      },
+      "local_z_range_m": [
+        0.007823889143764973,
+        2.607591390609741
+      ],
+      "duration_s": 116.83737962507615,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.08572869811481879,
+        "child2": 36.359345189846124,
+        "private_hall": 26.82660389680519
+      },
+      "local_z_range_m": [
+        0.48066580295562744,
+        2.5938124656677246
+      ],
+      "duration_s": 72.20623055911244,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0829612543583843,
+        "private_hall": 16.794466181445838
+      },
+      "local_z_range_m": [
+        0.5194719433784485,
+        2.208127021789551
+      ],
+      "duration_s": 18.958699881064238,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.07783535073789721,
+        "child2": 15.62106580387551,
+        "private_hall": 9.167464045054842
+      },
+      "local_z_range_m": [
+        0.9199231863021851,
+        2.2590887546539307
+      ],
+      "duration_s": 20.58007357757398,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.08840664341546668,
+        "child1": 11.238728364776458,
+        "private_hall": 9.01796618675769
+      },
+      "local_z_range_m": [
+        0.7388437390327454,
+        2.258688449859619
+      ],
+      "duration_s": 23.514815586179868,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "wash"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.07430262492216921,
+        "wash": 10.135317240605598
+      },
+      "local_z_range_m": [
+        1.2621256113052368,
+        2.594449043273926
+      ],
+      "duration_s": 15.808746985352766,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.07254479588247387,
+        "child2": 45.231471743136005,
+        "private_hall": 36.07602167441517
+      },
+      "local_z_range_m": [
+        0.830841600894928,
+        2.6384024620056152
+      ],
+      "duration_s": 59.55592370120969,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.07354280429010453
+      },
+      "local_z_range_m": [
+        1.3263466358184814,
+        2.575100898742676
+      ],
+      "duration_s": 8.280313877082568,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.07484715369127534,
+        "child1": 11.942118824043535,
+        "private_hall": 8.982597540790097
+      },
+      "local_z_range_m": [
+        0.12335214763879776,
+        4.160802364349365
+      ],
+      "duration_s": 162.96093036308812,
+      "termination_reason": 3
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.09182579506960484,
+        "child1": 12.733091625884532,
+        "private_hall": 8.016590567503487
+      },
+      "local_z_range_m": [
+        1.1046864986419678,
+        2.845781087875366
+      ],
+      "duration_s": 45.38657700489572,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.13215773825995697
+      },
+      "local_z_range_m": [
+        2.4600000381469727,
+        2.8489444255828857
+      ],
+      "duration_s": 6.546784175476302,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.13833669611905375
+      },
+      "local_z_range_m": [
+        2.4600000381469727,
+        2.8499231338500977
+      ],
+      "duration_s": 5.1176463794581055,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.14207664709334542
+      },
+      "local_z_range_m": [
+        2.4600000381469727,
+        2.8464086055755615
+      ],
+      "duration_s": 5.770765135667198,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.14448321569970926
+      },
+      "local_z_range_m": [
+        2.4600000381469727,
+        2.847996473312378
+      ],
+      "duration_s": 69.55723882654584,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W02",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.12021213796502084,
+        "child2": 19.14269714441055,
+        "private_hall": 10.3681741878933
+      },
+      "local_z_range_m": [
+        0.7253333926200867,
+        3.9994029998779297
+      ],
+      "duration_s": 104.7910561730283,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.2097284495830536,
+        1.7759461402893066
+      ],
+      "duration_s": 44.32952810298848,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0078272121027112,
+        1.761694073677063
+      ],
+      "duration_s": 72.71665466679111,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.004233914893120527,
+        1.7984488010406494
+      ],
+      "duration_s": 90.36247233492084,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.005281052086502314,
+        1.8723424673080444
+      ],
+      "duration_s": 86.57552385862769,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0023954357020556927,
+        2.0517802238464355
+      ],
+      "duration_s": 224.1760864066188,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0014680863823741674,
+        1.9968791007995605
+      ],
+      "duration_s": 107.3853797983497,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.001962342532351613,
+        1.9975849390029907
+      ],
+      "duration_s": 132.18280420565003,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0012731057358905673,
+        1.9926484823226929
+      ],
+      "duration_s": 135.86845598738415,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0008378321654163301,
+        1.9839080572128296
+      ],
+      "duration_s": 130.89250266497197,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.001386360265314579,
+        1.983486294746399
+      ],
+      "duration_s": 122.20870599392236,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0023235692642629147,
+        2.2200000286102295
+      ],
+      "duration_s": 181.31319527350374,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.002951326547190547,
+        2.2377078533172607
+      ],
+      "duration_s": 161.41777822183985,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.000978483003564179,
+        2.229044198989868
+      ],
+      "duration_s": 166.93199787767043,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0008548655896447599,
+        2.2201197147369385
+      ],
+      "duration_s": 153.2525685190635,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0027010478079319,
+        2.2356324195861816
+      ],
+      "duration_s": 121.597157145628,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.006743740756064653,
+        2.539151906967163
+      ],
+      "duration_s": 57.95195087236958,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.005872303154319525,
+        2.5389232635498047
+      ],
+      "duration_s": 54.76605739506364,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0012660915963351727,
+        2.5275015830993652
+      ],
+      "duration_s": 57.98784687575069,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.007639793679118156,
+        2.51084566116333
+      ],
+      "duration_s": 54.63673844514915,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W03",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.005487262271344662,
+        2.487370491027832
+      ],
+      "duration_s": 57.65090155703821,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.641628086566925,
+        3.9554457664489746
+      ],
+      "duration_s": 97.77022705927938,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.5916281938552856,
+        5.9379563331604
+      ],
+      "duration_s": 105.63954368659493,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6036678552627563,
+        5.992389678955078
+      ],
+      "duration_s": 101.14155394408427,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6282731294631958,
+        6.086841106414795
+      ],
+      "duration_s": 110.78657679670637,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.9124550819396973,
+        4.365670204162598
+      ],
+      "duration_s": 87.6791271330977,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.554948091506958,
+        4.798867702484131
+      ],
+      "duration_s": 82.32567863255342,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.222299575805664,
+        4.463111877441406
+      ],
+      "duration_s": 78.98731619682748,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.9774825572967529,
+        4.1493000984191895
+      ],
+      "duration_s": 89.95478847080413,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.8073346614837646,
+        5.603531837463379
+      ],
+      "duration_s": 102.76795850468271,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6479659080505371,
+        4.647887229919434
+      ],
+      "duration_s": 93.3245645307985,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.8550992012023926,
+        3.8096818923950195
+      ],
+      "duration_s": 66.69443242919766,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.8585987091064453,
+        6.4973320960998535
+      ],
+      "duration_s": 93.73198501774996,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.797102451324463,
+        5.749374866485596
+      ],
+      "duration_s": 84.72795742951456,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.6976865530014038,
+        5.538704872131348
+      ],
+      "duration_s": 85.13011345637202,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.6226425170898438,
+        5.452523708343506
+      ],
+      "duration_s": 85.26842115756286,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.9273375868797302,
+        6.130828857421875
+      ],
+      "duration_s": 85.13473532951608,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.2677061557769775,
+        5.001559257507324
+      ],
+      "duration_s": 92.4424549418028,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.324480652809143,
+        5.36369514465332
+      ],
+      "duration_s": 87.64527073306411,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.3487848043441772,
+        5.501964092254639
+      ],
+      "duration_s": 86.70388068458185,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W04",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.3757884502410889,
+        5.688450336456299
+      ],
+      "duration_s": 86.24327617237412,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.015358767472207546,
+        1.444798231124878
+      ],
+      "duration_s": 24.322145720576525,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.004009786993265152,
+        1.4498873949050903
+      ],
+      "duration_s": 29.6890912924624,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.008034337311983109,
+        1.5088621377944946
+      ],
+      "duration_s": 32.46148773167744,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0028376872651278973,
+        1.5835514068603516
+      ],
+      "duration_s": 40.7698519087751,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.010169089771807194,
+        1.7379766702651978
+      ],
+      "duration_s": 44.93739104034495,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.2802731990814209,
+        5.306516647338867
+      ],
+      "duration_s": 129.70873311245427,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.23389574885368347,
+        4.562369346618652
+      ],
+      "duration_s": 118.61419527139648,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.15012341737747192,
+        4.0139336585998535
+      ],
+      "duration_s": 123.61276777380782,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.039866238832473755,
+        4.271082878112793
+      ],
+      "duration_s": 307.653952953644,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0042445543222129345,
+        1.8945897817611694
+      ],
+      "duration_s": 70.13559464912682,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.7601739764213562,
+        3.855917453765869
+      ],
+      "duration_s": 91.97217432420989,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6976413130760193,
+        3.9532814025878906
+      ],
+      "duration_s": 104.97213144847471,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6319417953491211,
+        4.367298603057861
+      ],
+      "duration_s": 108.81989338315259,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.5413549542427063,
+        2.940596580505371
+      ],
+      "duration_s": 32.710992244476955,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.40963685512542725,
+        3.0030601024627686
+      ],
+      "duration_s": 59.89611757753002,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.8765193223953247,
+        6.040018081665039
+      ],
+      "duration_s": 70.558346680145,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.782585859298706,
+        6.2751145362854
+      ],
+      "duration_s": 87.65992727065368,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.4709983170032501,
+        2.6118099689483643
+      ],
+      "duration_s": 125.18722286224437,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.3546205163002014,
+        2.5956103801727295
+      ],
+      "duration_s": 131.48208999862004,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W05",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.25330087542533875,
+        2.559999942779541
+      ],
+      "duration_s": 153.88939330512287,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.3571664038277504
+      },
+      "local_z_range_m": [
+        0.007192137651145458,
+        2.3595216274261475
+      ],
+      "duration_s": 247.48693856300704,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.26450965376316227
+      },
+      "local_z_range_m": [
+        0.0006421672878786922,
+        2.4197537899017334
+      ],
+      "duration_s": 265.1938844083517,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.2508613411661763
+      },
+      "local_z_range_m": [
+        1.3648875951766968,
+        1.9369442462921143
+      ],
+      "duration_s": 5.46328720596385,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.15757464511443786
+      },
+      "local_z_range_m": [
+        0.008203718811273575,
+        1.9545036554336548
+      ],
+      "duration_s": 51.527010803098044,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.11630613454533843
+      },
+      "local_z_range_m": [
+        0.0014146803878247738,
+        2.046931028366089
+      ],
+      "duration_s": 190.11173409838167,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.18543994908198183
+      },
+      "local_z_range_m": [
+        0.003173066070303321,
+        2.3352181911468506
+      ],
+      "duration_s": 119.10573739245007,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.061227834831576136
+      },
+      "local_z_range_m": [
+        0.004408582113683224,
+        2.2820000648498535
+      ],
+      "duration_s": 128.04899862311976,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.058166838667201265
+      },
+      "local_z_range_m": [
+        0.002278626896440983,
+        2.260315418243408
+      ],
+      "duration_s": 306.2636428484335,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.058027129492184276
+      },
+      "local_z_range_m": [
+        0.6314740180969238,
+        2.8467280864715576
+      ],
+      "duration_s": 17.988195869182977,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.05705072196196033
+      },
+      "local_z_range_m": [
+        0.002132478868588805,
+        2.3034095764160156
+      ],
+      "duration_s": 265.7983736087782,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.16623014976031966
+      },
+      "local_z_range_m": [
+        0.6237185597419739,
+        2.58585786819458
+      ],
+      "duration_s": 35.74084501981324,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.061656904996809814
+      },
+      "local_z_range_m": [
+        0.0015010860515758395,
+        2.552643060684204
+      ],
+      "duration_s": 375.0325136318496,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.06495998007679907
+      },
+      "local_z_range_m": [
+        2.119999885559082,
+        2.534409284591675
+      ],
+      "duration_s": 3.9315054081344223,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.05862554124992577
+      },
+      "local_z_range_m": [
+        0.46444833278656006,
+        2.521662950515747
+      ],
+      "duration_s": 8.089712424209226,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.05814718489268511
+      },
+      "local_z_range_m": [
+        1.5340991020202637,
+        2.530734062194824
+      ],
+      "duration_s": 4.730339171426573,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.1303193591080172
+      },
+      "local_z_range_m": [
+        1.3296501636505127,
+        2.8479034900665283
+      ],
+      "duration_s": 179.06032428883327,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.08860982922661288
+      },
+      "local_z_range_m": [
+        1.3483185768127441,
+        2.8481502532958984
+      ],
+      "duration_s": 34.314054012743526,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.08611842264629066
+      },
+      "local_z_range_m": [
+        2.0696492195129395,
+        2.7981913089752197
+      ],
+      "duration_s": 10.909646518639013,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.08402286747625266
+      },
+      "local_z_range_m": [
+        2.4600000381469727,
+        2.8392210006713867
+      ],
+      "duration_s": 16.027312875194422,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W06",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.07821551458559031
+      },
+      "local_z_range_m": [
+        2.3264007568359375,
+        2.8107542991638184
+      ],
+      "duration_s": 8.977750019675671,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0015362876001745462,
+        1.7991557121276855
+      ],
+      "duration_s": 302.54451597534097,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0005160468281246722,
+        1.4615132808685303
+      ],
+      "duration_s": 37.334125249069814,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.11609839648008347,
+        1.4454643726348877
+      ],
+      "duration_s": 9.727956630893301,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.006214749999344349,
+        1.440000057220459
+      ],
+      "duration_s": 59.644050475108344,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0031465657521039248,
+        1.440000057220459
+      ],
+      "duration_s": 22.962261721289625,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.001721637207083404,
+        1.78703773021698
+      ],
+      "duration_s": 180.08293934541155,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0008734366856515408,
+        1.7813024520874023
+      ],
+      "duration_s": 188.543636172387,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0030144373886287212,
+        1.7799999713897705
+      ],
+      "duration_s": 136.03394014053777,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.002407871186733246,
+        1.7799999713897705
+      ],
+      "duration_s": 113.38376937193507,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.003232896327972412,
+        1.7799999713897705
+      ],
+      "duration_s": 85.84249351167745,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.016678381711244583,
+        2.119999885559082
+      ],
+      "duration_s": 196.48310389486585,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0027770409360527992,
+        2.119999885559082
+      ],
+      "duration_s": 238.08547237439302,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0016965375980362296,
+        2.119999885559082
+      ],
+      "duration_s": 379.07632515785906,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.002038273261860013,
+        2.1250624656677246
+      ],
+      "duration_s": 307.53707444319826,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.002191683975979686,
+        2.196458339691162
+      ],
+      "duration_s": 219.02073887259584,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0011382967932149768,
+        2.5319783687591553
+      ],
+      "duration_s": 181.14417786777148,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0026991048362106085,
+        2.5717976093292236
+      ],
+      "duration_s": 59.877012740246414,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.014994167722761631,
+        2.570647954940796
+      ],
+      "duration_s": 43.102258872689966,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.016049398109316826,
+        2.5588650703430176
+      ],
+      "duration_s": 74.5248852456052,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W07",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0005927056772634387,
+        2.537412166595459
+      ],
+      "duration_s": 131.8729613877063,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.013428853824734688,
+        2.0447967052459717
+      ],
+      "duration_s": 32.0944773583766,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.004431881010532379,
+        2.0418906211853027
+      ],
+      "duration_s": 34.39979798277564,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.01169251836836338,
+        2.041071653366089
+      ],
+      "duration_s": 31.75000425233867,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.007826181128621101,
+        2.0411078929901123
+      ],
+      "duration_s": 44.25106682757241,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.005333597306162119,
+        2.2360422611236572
+      ],
+      "duration_s": 1350.258129955481,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.006052873097360134,
+        2.180000066757202
+      ],
+      "duration_s": 43.685289886232184,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.012475229799747467,
+        2.180000066757202
+      ],
+      "duration_s": 34.898683195377984,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.05808711051940918,
+        2.441027879714966
+      ],
+      "duration_s": 312.45534090886713,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.013875477947294712,
+        2.180000066757202
+      ],
+      "duration_s": 70.03119575677921,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.003449374344199896,
+        2.180000066757202
+      ],
+      "duration_s": 163.56262864489705,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        9.527250222163275e-05,
+        2.319999933242798
+      ],
+      "duration_s": 69.15687218862823,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.007871167734265327,
+        2.319999933242798
+      ],
+      "duration_s": 38.8897678949751,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.014703058637678623,
+        2.319999933242798
+      ],
+      "duration_s": 73.02078701810846,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.013328044675290585,
+        2.319999933242798
+      ],
+      "duration_s": 54.598527299146305,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.5438473224639893,
+        4.452177047729492
+      ],
+      "duration_s": 123.73985049935882,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0038574046920984983,
+        2.4600000381469727
+      ],
+      "duration_s": 89.64234318928186,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W08",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.01625985838472843,
+        2.4600000381469727
+      ],
+      "duration_s": 88.34664786990885,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.599103569984436,
+        5.795740127563477
+      ],
+      "duration_s": 117.48118069096645,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.46318319439888,
+        3.965416669845581
+      ],
+      "duration_s": 128.529949861716,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.34702053666114807,
+        4.6506171226501465
+      ],
+      "duration_s": 148.2151572273692,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.34368517994880676,
+        5.1147613525390625
+      ],
+      "duration_s": 146.1030124163324,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.5581475496292114,
+        5.851012706756592
+      ],
+      "duration_s": 116.91863345489493,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.8177696466445923,
+        4.843240261077881
+      ],
+      "duration_s": 104.780024836181,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.8434003591537476,
+        4.904750823974609
+      ],
+      "duration_s": 104.49877614568047,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.9639320373535156,
+        5.532171249389648
+      ],
+      "duration_s": 98.24984297653985,
+      "termination_reason": 3
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.8964321613311768,
+        5.00552225112915
+      ],
+      "duration_s": 87.83513887352692,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.428020715713501,
+        4.383391380310059
+      ],
+      "duration_s": 90.91197826571234,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.7544151544570923,
+        3.844398260116577
+      ],
+      "duration_s": 110.07587691946448,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.785151481628418,
+        3.056467056274414
+      ],
+      "duration_s": 53.82405217517056,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.0036941510625183582,
+        2.897724151611328
+      ],
+      "duration_s": 280.4053354051576,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.4128481149673462,
+        3.719372510910034
+      ],
+      "duration_s": 91.01639027190271,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        1.2347596883773804,
+        3.655927896499634
+      ],
+      "duration_s": 96.64795472634678,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        0.6836724281311035,
+        3.4000437259674072
+      ],
+      "duration_s": 129.91851652959153,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        2.427100419998169,
+        2.559999942779541
+      ],
+      "duration_s": 0.46710573682816947,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "W09",
+      "visited_room_ids": [],
+      "first_room_entry_time_s": {},
+      "local_z_range_m": [
+        2.375622034072876,
+        2.559999942779541
+      ],
+      "duration_s": 0.7839579046560754,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.00241491524502635,
+        2.2028727531433105
+      ],
+      "duration_s": 172.04413861542253,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.121297597885132
+      ],
+      "duration_s": 2.2719118651647046,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.0005799251375719905,
+        2.656991481781006
+      ],
+      "duration_s": 367.0351956314033,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.0023379868362098932,
+        2.080810785293579
+      ],
+      "duration_s": 162.80051584001302,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.4502173066139221,
+        1.149999976158142
+      ],
+      "duration_s": 6.445262208974093,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry",
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "bath": 26.13189033114344,
+        "wash": 3.898744456578254,
+        "laundry": 8.008826834951574
+      },
+      "local_z_range_m": [
+        0.008683500811457634,
+        2.0638532638549805
+      ],
+      "duration_s": 75.96458419500662,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "wash": 22.307586995190135,
+        "laundry": 24.377060819610467
+      },
+      "local_z_range_m": [
+        1.0484215021133423,
+        5.656532287597656
+      ],
+      "duration_s": 118.81818558540284,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.003549405373632908,
+        2.7978527545928955
+      ],
+      "duration_s": 307.57029580084605,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0
+      },
+      "local_z_range_m": [
+        0.9331398010253906,
+        1.8714897632598877
+      ],
+      "duration_s": 22.314917947798264,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child1": 98.69210422874917,
+        "private_hall": 58.74088015328766
+      },
+      "local_z_range_m": [
+        1.1004478931427002,
+        2.809077024459839
+      ],
+      "duration_s": 130.22535493258619,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "private_hall": 45.611855584428106
+      },
+      "local_z_range_m": [
+        0.6343183517456055,
+        2.691999673843384
+      ],
+      "duration_s": 48.90457001990588,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child2": 86.688055464269,
+        "private_hall": 80.33287016559106
+      },
+      "local_z_range_m": [
+        0.5899908542633057,
+        4.307957172393799
+      ],
+      "duration_s": 172.80716091602733,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child2": 35.56854997108517,
+        "private_hall": 28.68296146036775
+      },
+      "local_z_range_m": [
+        0.7785818576812744,
+        5.2888078689575195
+      ],
+      "duration_s": 111.15547391068976,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child1": 78.44765881416747,
+        "private_hall": 75.99341644632565
+      },
+      "local_z_range_m": [
+        0.6993988752365112,
+        2.644075870513916
+      ],
+      "duration_s": 82.39724943258483,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "private_hall": 24.845714971603684
+      },
+      "local_z_range_m": [
+        1.5345284938812256,
+        2.682344913482666
+      ],
+      "duration_s": 27.615337810829494,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child2": 5.853921714203335,
+        "private_hall": 0.3966928340519888
+      },
+      "local_z_range_m": [
+        0.7514916658401489,
+        1.4367287158966064
+      ],
+      "duration_s": 9.718879341070597,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "ldk",
+      "visited_room_ids": [
+        "ldk",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 0.0,
+        "child1": 2.9423237304726397,
+        "private_hall": 0.36452593472816197
+      },
+      "local_z_range_m": [
+        1.0127805471420288,
+        2.049999952316284
+      ],
+      "duration_s": 17.05426611893673,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.4378081560134888
+      ],
+      "duration_s": 4.10655934958163,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.011787284165620804,
+        2.7361488342285156
+      ],
+      "duration_s": 117.09956895353422,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.848398208618164
+      ],
+      "duration_s": 21.481847313239026,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.002925582928583026,
+        2.493415355682373
+      ],
+      "duration_s": 138.1727175526195,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.0020883053075522184,
+        2.388920545578003
+      ],
+      "duration_s": 239.57338115542433,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0,
+        "private_hall": 35.23631781822216
+      },
+      "local_z_range_m": [
+        0.700390636920929,
+        2.4101192951202393
+      ],
+      "duration_s": 44.95179942703634,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.0024400115944445133,
+        1.967063069343567
+      ],
+      "duration_s": 212.18478001020097,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.001374585903249681,
+        2.4387598037719727
+      ],
+      "duration_s": 286.3137889698129,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.0004778551810886711,
+        2.480635404586792
+      ],
+      "duration_s": 209.21579573571626,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.11421090364456177,
+        2.605841636657715
+      ],
+      "duration_s": 140.554444098525,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.2512757778167725
+      ],
+      "duration_s": 11.482639752282564,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.08525416254997253,
+        2.655804395675659
+      ],
+      "duration_s": 143.8444291968394,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.0024621703196316957,
+        1.5107342004776
+      ],
+      "duration_s": 89.19264401073085,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "master",
+      "visited_room_ids": [
+        "master"
+      ],
+      "first_room_entry_time_s": {
+        "master": 0.0
+      },
+      "local_z_range_m": [
+        0.0016473402502015233,
+        2.049999952316284
+      ],
+      "duration_s": 321.73835666702547,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.685993492603302,
+        1.4433064460754395
+      ],
+      "duration_s": 26.870277096332355,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.6816104650497437,
+        2.0536508560180664
+      ],
+      "duration_s": 29.628151605449,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.00099515914917,
+        1.150339961051941
+      ],
+      "duration_s": 3.318865841838175,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.4721086025238037,
+        4.71952486038208
+      ],
+      "duration_s": 105.11074209031777,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.9994704723358154,
+        5.929025173187256
+      ],
+      "duration_s": 87.2470164776528,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.8721149563789368,
+        1.1996276378631592
+      ],
+      "duration_s": 11.675241450064837,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.9699153900146484,
+        4.105251789093018
+      ],
+      "duration_s": 135.76610156148448,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.7311455607414246,
+        4.884275436401367
+      ],
+      "duration_s": 108.8709616613625,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.4727376699447632,
+        4.644210338592529
+      ],
+      "duration_s": 133.48106966923964,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        0.7000261545181274,
+        4.1213765144348145
+      ],
+      "duration_s": 92.42117697684105,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.5190963745117188,
+        4.660927772521973
+      ],
+      "duration_s": 85.51585124774446,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.0785369873046875,
+        3.3020665645599365
+      ],
+      "duration_s": 79.4929133818149,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.845911741256714
+      ],
+      "duration_s": 4.711933863664883,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        3.497271776199341
+      ],
+      "duration_s": 98.15547843345962,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child1",
+      "visited_room_ids": [
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 0.0
+      },
+      "local_z_range_m": [
+        1.4475167989730835,
+        3.45007061958313
+      ],
+      "duration_s": 89.83066455326453,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.002974276663735509,
+        1.6434143781661987
+      ],
+      "duration_s": 63.32652861074187,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.010163281112909317,
+        2.049999952316284
+      ],
+      "duration_s": 57.0945618842149,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.7068336606025696,
+        5.8336405754089355
+      ],
+      "duration_s": 112.8435177588204,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.45440608263015747,
+        2.049999952316284
+      ],
+      "duration_s": 14.767541180517927,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.001928705838508904,
+        2.049999952316284
+      ],
+      "duration_s": 42.73347165485848,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.013246688060462475,
+        1.6550732851028442
+      ],
+      "duration_s": 51.29581523338443,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.46973392367362976,
+        2.5228588581085205
+      ],
+      "duration_s": 71.48111664149953,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.010226491838693619,
+        1.9311639070510864
+      ],
+      "duration_s": 105.10003483172883,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.5266268253326416,
+        6.178340435028076
+      ],
+      "duration_s": 116.20652723525406,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.00257029477506876,
+        1.6508551836013794
+      ],
+      "duration_s": 45.81003641452534,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.461158812046051,
+        3.9815664291381836
+      ],
+      "duration_s": 89.19757994447451,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.5074877738952637,
+        3.608609199523926
+      ],
+      "duration_s": 107.83098166747604,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.8466501235961914
+      ],
+      "duration_s": 4.096041296526416,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.6576566100120544,
+        6.246345520019531
+      ],
+      "duration_s": 104.26753614737659,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "child2",
+      "visited_room_ids": [
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.0
+      },
+      "local_z_range_m": [
+        0.6921584606170654,
+        5.92494010925293
+      ],
+      "duration_s": 88.16069132756961,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 52.456849330315045,
+        "fcl": 0.0,
+        "private_hall": 40.34227908937772
+      },
+      "local_z_range_m": [
+        0.6154975891113281,
+        2.7476465702056885
+      ],
+      "duration_s": 86.29137923456088,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl"
+      ],
+      "first_room_entry_time_s": {
+        "fcl": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.8448638916015625
+      ],
+      "duration_s": 73.63036331940204,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 497.33147578068696,
+        "fcl": 0.0,
+        "private_hall": 491.10874389351443
+      },
+      "local_z_range_m": [
+        0.7680498361587524,
+        2.848393201828003
+      ],
+      "duration_s": 502.97322410768,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 349.7516453801654,
+        "fcl": 0.0,
+        "private_hall": 343.1302986469455
+      },
+      "local_z_range_m": [
+        1.1693302392959595,
+        2.8469455242156982
+      ],
+      "duration_s": 355.47341635800274,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 84.60274745105451,
+        "fcl": 0.0,
+        "private_hall": 67.66053873887252
+      },
+      "local_z_range_m": [
+        0.8875389695167542,
+        2.842808961868286
+      ],
+      "duration_s": 88.21561248121647,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 16.41285375336714,
+        "fcl": 0.0,
+        "private_hall": 4.615134104651048
+      },
+      "local_z_range_m": [
+        0.013087346218526363,
+        2.787752389907837
+      ],
+      "duration_s": 77.37603890482258,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 69.97479198378561,
+        "fcl": 0.0,
+        "private_hall": 56.797134402851306
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.841019868850708
+      ],
+      "duration_s": 75.59665719998499,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 151.3742854316207,
+        "fcl": 0.0,
+        "private_hall": 137.3113713550053
+      },
+      "local_z_range_m": [
+        0.0008758999756537378,
+        2.7198872566223145
+      ],
+      "duration_s": 200.1493985352867,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 65.52697615047657,
+        "fcl": 0.0,
+        "private_hall": 58.348654769133326
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.8416452407836914
+      ],
+      "duration_s": 71.16664869220494,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 139.24232491730353,
+        "fcl": 0.0,
+        "private_hall": 128.13512445660078
+      },
+      "local_z_range_m": [
+        1.1267496347427368,
+        2.8161730766296387
+      ],
+      "duration_s": 161.4070755619112,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 78.49525373818672,
+        "fcl": 0.0,
+        "private_hall": 72.0331782824698
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.7226247787475586
+      ],
+      "duration_s": 81.60402940355267,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "fcl",
+      "visited_room_ids": [
+        "fcl",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 14.35978353174168,
+        "fcl": 0.0,
+        "private_hall": 4.120378634417784
+      },
+      "local_z_range_m": [
+        1.2210357189178467,
+        2.8142991065979004
+      ],
+      "duration_s": 39.76760692154837,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 36.78297929225573,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.0350435972213745,
+        6.0891594886779785
+      ],
+      "duration_s": 127.40370201283065,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 8.963096483183527,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.4039397239685059,
+        2.8485989570617676
+      ],
+      "duration_s": 17.05460510443535,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 6.541228310714257,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.9612600207328796,
+        2.846686840057373
+      ],
+      "duration_s": 34.86676913794887,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.5000686645507812,
+        2.049999952316284
+      ],
+      "duration_s": 2.6228017035601336,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.6681198477745056,
+        1.149999976158142
+      ],
+      "duration_s": 2.3373737613664223,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 2.166540023238302,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.3981367349624634,
+        3.8135077953338623
+      ],
+      "duration_s": 81.6050081169339,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 5.501494591210766,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.67622971534729
+      ],
+      "duration_s": 17.164954525242813,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 20.669576363105897,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.5952297449111938,
+        3.570089340209961
+      ],
+      "duration_s": 102.54296147248708,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 3.6379156572721,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.46784675121307373,
+        2.8239173889160156
+      ],
+      "duration_s": 142.9901617598006,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.9998441934585571,
+        2.049999952316284
+      ],
+      "duration_s": 14.944803303496617,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 2.5853414095949234,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.4386043846607208,
+        4.07546329498291
+      ],
+      "duration_s": 100.3692735944954,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 11.041087370013875,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        5.7834696769714355
+      ],
+      "duration_s": 101.11187902633306,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child1"
+      ],
+      "first_room_entry_time_s": {
+        "child1": 8.116908955450052,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.2349947690963745,
+        4.408420562744141
+      ],
+      "duration_s": 96.8567188325002,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.5193233489990234
+      ],
+      "duration_s": 1.5485579163726095,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.6629788875579834
+      ],
+      "duration_s": 3.3668643177279933,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "private_hall",
+      "visited_room_ids": [
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "child2": 0.6734873011696284,
+        "private_hall": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.849386215209961
+      ],
+      "duration_s": 4.457990555714658,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        1.0564117431640625,
+        1.1526752710342407
+      ],
+      "duration_s": 10.663757643103322,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.0038774958811700344,
+        2.828233242034912
+      ],
+      "duration_s": 172.1674139143447,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.6379541158676147
+      ],
+      "duration_s": 13.580979957915755,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.013182239606976509,
+        2.438483715057373
+      ],
+      "duration_s": 48.71499047372353,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.00613899203017354,
+        2.265023708343506
+      ],
+      "duration_s": 57.485885091685205,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.5572388172149658
+      ],
+      "duration_s": 16.415299387734514,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.014687707647681236,
+        2.7507333755493164
+      ],
+      "duration_s": 100.50962970472266,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.003534599207341671,
+        2.182713270187378
+      ],
+      "duration_s": 313.0303458359535,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.015506853349506855,
+        2.38602352142334
+      ],
+      "duration_s": 169.44496701958604,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.013231419026851654,
+        2.303741455078125
+      ],
+      "duration_s": 95.83663692110491,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.008247345685958862,
+        2.2150216102600098
+      ],
+      "duration_s": 1174.8534483940675,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        1.1021428108215332,
+        1.4317601919174194
+      ],
+      "duration_s": 22.328776165701335,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.3824693560600281,
+        3.619441032409668
+      ],
+      "duration_s": 244.18851021557677,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.03550325334072113,
+        2.508965015411377
+      ],
+      "duration_s": 256.70431460684136,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.5148664712905884,
+        5.8902716636657715
+      ],
+      "duration_s": 153.57337192796257,
+      "termination_reason": 3
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.009358091279864311,
+        2.1220951080322266
+      ],
+      "duration_s": 59.55691580062613,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "bath",
+      "visited_room_ids": [
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 0.0
+      },
+      "local_z_range_m": [
+        0.009075697511434555,
+        2.3511881828308105
+      ],
+      "duration_s": 120.7317038053009,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 21.0045535932876
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        2.817988634109497
+      ],
+      "duration_s": 55.35466519693932,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 15.132938665361213
+      },
+      "local_z_range_m": [
+        1.7810370922088623,
+        2.6445188522338867
+      ],
+      "duration_s": 26.615835904790945,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 10.340224143711788
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.7030322551727295
+      ],
+      "duration_s": 33.8071141300817,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry",
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 57.9852888390209,
+        "wash": 0.0,
+        "laundry": 32.31790035243826
+      },
+      "local_z_range_m": [
+        0.39081212878227234,
+        3.8116989135742188
+      ],
+      "duration_s": 235.11406317257425,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 13.281825703628083
+      },
+      "local_z_range_m": [
+        1.275170922279358,
+        3.9763996601104736
+      ],
+      "duration_s": 115.69227353840289,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0
+      },
+      "local_z_range_m": [
+        0.8034018278121948,
+        1.149999976158142
+      ],
+      "duration_s": 7.194640034421673,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 17.50821303679698
+      },
+      "local_z_range_m": [
+        0.41386792063713074,
+        2.7228329181671143
+      ],
+      "duration_s": 160.55156182816359,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0
+      },
+      "local_z_range_m": [
+        0.7217937707901001,
+        1.149999976158142
+      ],
+      "duration_s": 14.524581468364609,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 12.483698990539725
+      },
+      "local_z_range_m": [
+        1.7370691299438477,
+        2.7552928924560547
+      ],
+      "duration_s": 30.369544928228837,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0
+      },
+      "local_z_range_m": [
+        0.9921371340751648,
+        1.149999976158142
+      ],
+      "duration_s": 11.413916011769423,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 9.983398407853125
+      },
+      "local_z_range_m": [
+        1.6820368766784668,
+        2.7550392150878906
+      ],
+      "duration_s": 24.792987262540276,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 1.7225573322820398
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        4.183258056640625
+      ],
+      "duration_s": 100.6018352755295,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 3.0538758191875273
+      },
+      "local_z_range_m": [
+        1.1512202024459839,
+        4.9158244132995605
+      ],
+      "duration_s": 99.18565067544195,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 0.8623994149660601
+      },
+      "local_z_range_m": [
+        0.9453017711639404,
+        5.470530986785889
+      ],
+      "duration_s": 104.77686159433196,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "wash": 0.0,
+        "laundry": 1.1030552595877907
+      },
+      "local_z_range_m": [
+        1.3903310298919678,
+        4.133267402648926
+      ],
+      "duration_s": 102.37414317654034,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wash",
+      "visited_room_ids": [
+        "wash",
+        "laundry",
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 17.41047983199791,
+        "wash": 0.0,
+        "laundry": 1.044528125693027
+      },
+      "local_z_range_m": [
+        1.7556767463684082,
+        2.7939276695251465
+      ],
+      "duration_s": 42.618675767806174,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry",
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 27.592932442745976,
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.8326191902160645,
+        1.149999976158142
+      ],
+      "duration_s": 42.511077755760546,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry",
+        "bath"
+      ],
+      "first_room_entry_time_s": {
+        "bath": 36.294370729106234,
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.805181622505188,
+        2.049999952316284
+      ],
+      "duration_s": 49.23441368483979,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.5771066546440125,
+        5.778622627258301
+      ],
+      "duration_s": 123.99924879472147,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.9738382697105408,
+        5.46772575378418
+      ],
+      "duration_s": 102.80860702693589,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.7214394807815552,
+        3.4307265281677246
+      ],
+      "duration_s": 125.14452763003554,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        0.7844393253326416,
+        4.034531116485596
+      ],
+      "duration_s": 108.07692849565031,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        1.146744966506958,
+        2.750070571899414
+      ],
+      "duration_s": 134.01525900920214,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        2.049999952316284,
+        2.8375749588012695
+      ],
+      "duration_s": 21.165276373258852,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.723323106765747
+      ],
+      "duration_s": 5.028177100307768,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "laundry",
+      "visited_room_ids": [
+        "laundry"
+      ],
+      "first_room_entry_time_s": {
+        "laundry": 0.0
+      },
+      "local_z_range_m": [
+        1.4532877206802368,
+        4.229475975036621
+      ],
+      "duration_s": 90.76044848560379,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 0.0,
+        "entry_hall": 68.29343559827736
+      },
+      "local_z_range_m": [
+        0.4511944651603699,
+        2.6756553649902344
+      ],
+      "duration_s": 81.07126046638048,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 189.90354842263838,
+        "private_hall": 191.78640844027208,
+        "wc": 0.0,
+        "entry_hall": 186.57761494267353
+      },
+      "local_z_range_m": [
+        0.7002636790275574,
+        1.9499807357788086
+      ],
+      "duration_s": 198.31453760855842,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 0.0
+      },
+      "local_z_range_m": [
+        1.1683834791183472,
+        2.21258544921875
+      ],
+      "duration_s": 79.85815179530672,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 0.0
+      },
+      "local_z_range_m": [
+        1.149999976158142,
+        1.5097917318344116
+      ],
+      "duration_s": 47.01436350445831,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 0.0
+      },
+      "local_z_range_m": [
+        0.9276922941207886,
+        2.1880409717559814
+      ],
+      "duration_s": 188.51714892813337,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "entry",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 143.78496862693845,
+        "private_hall": 146.1832223519041,
+        "wc": 0.0,
+        "entry_hall": 45.53159477537791,
+        "entry": 59.2988885422105
+      },
+      "local_z_range_m": [
+        0.5823786854743958,
+        2.426100492477417
+      ],
+      "duration_s": 153.35258577310543,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "entry",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 158.83731824380166,
+        "private_hall": 159.56829020295152,
+        "wc": 0.0,
+        "entry_hall": 29.504030471632415,
+        "entry": 43.15282465389474
+      },
+      "local_z_range_m": [
+        0.49786558747291565,
+        2.681493043899536
+      ],
+      "duration_s": 162.66384531289032,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 208.67409739588788,
+        "private_hall": 210.38674086900104,
+        "wc": 0.0,
+        "entry_hall": 205.34569274470576
+      },
+      "local_z_range_m": [
+        0.6863242983818054,
+        1.9624946117401123
+      ],
+      "duration_s": 216.40286749443115,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 48.64256445032545,
+        "private_hall": 50.88959335976381,
+        "wc": 0.0,
+        "entry_hall": 43.87278115828969
+      },
+      "local_z_range_m": [
+        0.7240534424781799,
+        2.049999952316284
+      ],
+      "duration_s": 61.486526779264814,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 0.0
+      },
+      "local_z_range_m": [
+        0.8602436780929565,
+        2.2249488830566406
+      ],
+      "duration_s": 178.45977129988893,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 57.480466307213064,
+        "child2": 63.925954860892524,
+        "private_hall": 58.31538748475928,
+        "wc": 0.0,
+        "entry_hall": 52.13666893238112
+      },
+      "local_z_range_m": [
+        0.5742629766464233,
+        5.4933929443359375
+      ],
+      "duration_s": 159.02435263314118,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 27.563140896429747,
+        "child2": 33.92836346163009,
+        "private_hall": 28.29202205025472,
+        "wc": 0.0,
+        "entry_hall": 21.133612626883142
+      },
+      "local_z_range_m": [
+        0.5708490610122681,
+        5.383026599884033
+      ],
+      "duration_s": 131.33592304044004,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 432.6653012462532,
+        "child2": 439.82573767213535,
+        "private_hall": 434.1680931729169,
+        "wc": 0.0,
+        "entry_hall": 429.1510677755899
+      },
+      "local_z_range_m": [
+        0.583824634552002,
+        2.141383171081543
+      ],
+      "duration_s": 443.0487108529299,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "wc",
+      "visited_room_ids": [
+        "wc",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 123.24324786724927,
+        "child2": 129.864868112755,
+        "private_hall": 124.29613021367818,
+        "wc": 0.0,
+        "entry_hall": 118.93241449286471
+      },
+      "local_z_range_m": [
+        0.5669063925743103,
+        5.587671279907227
+      ],
+      "duration_s": 227.6110955851304,
+      "termination_reason": 4
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 2.7021433573201366,
+        "child2": 9.631176534953559,
+        "private_hall": 3.846833848706778,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.6082708835601807,
+        1.149999976158142
+      ],
+      "duration_s": 12.66137085221842,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "wc",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 128.2727639386523,
+        "private_hall": 130.35093861823051,
+        "wc": 12.059271888365895,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5443736910820007,
+        2.5861716270446777
+      ],
+      "duration_s": 136.6329495748374,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 8.39337365539215,
+        "child2": 15.25326361971565,
+        "private_hall": 9.115014615788066,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5295814871788025,
+        2.9604833126068115
+      ],
+      "duration_s": 66.06225701541041,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5991958975791931,
+        2.049999952316284
+      ],
+      "duration_s": 17.18229962899366,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.7616701126098633,
+        1.5161210298538208
+      ],
+      "duration_s": 15.006399105448635,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 35.030078081716155,
+        "private_hall": 37.534397213864054,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.6233810782432556,
+        2.049999952316284
+      ],
+      "duration_s": 45.480583449823854,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 2.581928051677016,
+        "child2": 14.497088872322816,
+        "private_hall": 3.052868411640341,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.3803230822086334,
+        2.9661831855773926
+      ],
+      "duration_s": 81.33322072234566,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "entry",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 45.8345463390783,
+        "private_hall": 48.95250513631355,
+        "entry_hall": 0.0,
+        "entry": 12.877344251028157
+      },
+      "local_z_range_m": [
+        0.6071370840072632,
+        2.049999952316284
+      ],
+      "duration_s": 55.07567352443649,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 11.200962688475462,
+        "private_hall": 17.365390561413932,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.6682475209236145,
+        2.6214799880981445
+      ],
+      "duration_s": 26.478631068772263,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 40.99721563885959,
+        "child2": 91.45151957996221,
+        "private_hall": 41.64005743211041,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.2548333704471588,
+        2.97487735748291
+      ],
+      "duration_s": 200.48396571169098,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 14.855470792420505,
+        "child2": 22.22711128539697,
+        "private_hall": 16.174571183371725,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5557883977890015,
+        1.149999976158142
+      ],
+      "duration_s": 25.074867772099143,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 32.938058866813364,
+        "child2": 39.323698759940996,
+        "private_hall": 33.51901023511971,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5392704010009766,
+        5.043249130249023
+      ],
+      "duration_s": 144.26692359655274,
+      "termination_reason": 5
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.4655243456363678,
+        1.149999976158142
+      ],
+      "duration_s": 3.497388873276847,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "entry"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 0.0,
+        "entry": 13.56529151361465
+      },
+      "local_z_range_m": [
+        0.379840224981308,
+        2.8494439125061035
+      ],
+      "duration_s": 58.59551998193633,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 26.622697883600267,
+        "private_hall": 27.11077137029712,
+        "entry_hall": 0.0
+      },
+      "local_z_range_m": [
+        0.5276440978050232,
+        1.6478137969970703
+      ],
+      "duration_s": 30.205462359497236,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "entry",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 183.2216628713282,
+        "private_hall": 186.49242484231513,
+        "entry_hall": 0.0,
+        "entry": 9.303275348222606
+      },
+      "local_z_range_m": [
+        0.5509086847305298,
+        2.6356377601623535
+      ],
+      "duration_s": 194.56460342416145,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "entry",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 32.042314381728225,
+        "child2": 41.550482961635545,
+        "private_hall": 32.55621441327506,
+        "entry_hall": 0.0,
+        "entry": 9.615435157261976
+      },
+      "local_z_range_m": [
+        0.40002766251564026,
+        2.95137095451355
+      ],
+      "duration_s": 104.85928140621155,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry_hall",
+      "visited_room_ids": [
+        "entry_hall",
+        "entry",
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 81.58991232655818,
+        "entry_hall": 0.0,
+        "entry": 21.729768620971512
+      },
+      "local_z_range_m": [
+        0.6360535025596619,
+        2.049999952316284
+      ],
+      "duration_s": 86.71509345792762,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 41.01135133287931,
+        "entry_hall": 22.79275082970438,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.6058789491653442,
+        1.5576790571212769
+      ],
+      "duration_s": 45.32578007076919,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 26.548363285451845,
+        "entry_hall": 7.102687750972928,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.5887381434440613,
+        2.737934112548828
+      ],
+      "duration_s": 98.53907056067399,
+      "termination_reason": 6
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 45.48060596004245,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.7060372829437256,
+        2.0505638122558594
+      ],
+      "duration_s": 68.20287729739927,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 52.75949108865999,
+        "child2": 59.490894614550875,
+        "private_hall": 53.48104439045325,
+        "entry_hall": 31.626899394234506,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.5365709662437439,
+        3.0129246711730957
+      ],
+      "duration_s": 109.81112614160614,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 143.9479098491315,
+        "child2": 150.72028469097506,
+        "private_hall": 144.65446722688574,
+        "entry_hall": 121.87337040241236,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.5495482683181763,
+        2.6479671001434326
+      ],
+      "duration_s": 152.99643563726585,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 117.78248366389099,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.796510636806488,
+        2.605795383453369
+      ],
+      "duration_s": 139.44318161074628,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 96.44236810673213,
+        "child2": 103.2558215269644,
+        "private_hall": 97.3865794744954,
+        "entry_hall": 65.36084565288984,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.5604937672615051,
+        2.5941920280456543
+      ],
+      "duration_s": 105.61524062458824,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall"
+      ],
+      "first_room_entry_time_s": {
+        "entry_hall": 72.30731653656109,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.6427431702613831,
+        2.4478344917297363
+      ],
+      "duration_s": 115.7333645665913,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "wc"
+      ],
+      "first_room_entry_time_s": {
+        "wc": 154.86537909619682,
+        "entry_hall": 135.49777651427263,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.6628024578094482,
+        2.495269298553467
+      ],
+      "duration_s": 210.6126553032496,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 106.22901776502125,
+        "private_hall": 114.27556035195661,
+        "entry_hall": 72.70441263615447,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.7061952948570251,
+        2.5317904949188232
+      ],
+      "duration_s": 123.03338486999708,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall",
+        "child2"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 93.63329523294672,
+        "child2": 103.13148359616267,
+        "private_hall": 94.03980991770898,
+        "entry_hall": 77.29005543159764,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.4260600209236145,
+        2.953141450881958
+      ],
+      "duration_s": 164.6734344284572,
+      "termination_reason": 1
+    },
+    {
+      "seed_tag": "entry",
+      "visited_room_ids": [
+        "entry",
+        "entry_hall",
+        "ldk",
+        "private_hall"
+      ],
+      "first_room_entry_time_s": {
+        "ldk": 74.7390633040572,
+        "private_hall": 77.6017489641587,
+        "entry_hall": 56.30388260160894,
+        "entry": 0.0
+      },
+      "local_z_range_m": [
+        0.642125129699707,
+        1.899999976158142
+      ],
+      "duration_s": 84.0703646788635,
+      "termination_reason": 1
+    }
+  ]
+}

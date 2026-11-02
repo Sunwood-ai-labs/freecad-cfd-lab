@@ -1,0 +1,20 @@
+[
+  {
+    "file": "hisa-master.zip",
+    "source_url": "https://sourceforge.net/projects/hisa/files/hisa-master.zip/download",
+    "bytes": 348837,
+    "sha256": "5c99093e67defb7f8af0ce967bd0d2907d7ccfaa45bf8bf982e84646dad144e6"
+  },
+  {
+    "file": "gmsh-4.15.2-Linux64.tgz",
+    "source_url": "https://gmsh.info/bin/Linux/gmsh-4.15.2-Linux64.tgz",
+    "bytes": 38329303,
+    "sha256": "6c62116e072db29fd1f701fdb9d3d34b46ed5373545063e177b965a008274745"
+  },
+  {
+    "file": "cfmesh-cfdof.zip",
+    "source_url": "https://sourceforge.net/projects/cfmesh-cfdof/files/cfmesh-cfdof.zip/download",
+    "bytes": 15874212,
+    "sha256": "47cfc7c670e7e23696cbba60f18a0182ed918e3c4b241492c563c2310f076378"
+  }
+]

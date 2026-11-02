@@ -1,0 +1,13 @@
+{
+  "image": "localhost/cfdof-openfoam:verified-20261030",
+  "image_id": "7a1a99c95bb8a38aed31d5e3e523e7ca41d99540d9097741eadc721f2ca4b27d",
+  "wsl_distribution": "podman-machine-default",
+  "openfoam": "2306",
+  "cfmesh": "1.32",
+  "hisa": "1.13.4",
+  "gmsh": "4.15.2",
+  "version_exit_code": 0,
+  "help_exit_code": 0,
+  "verified_at": "2026-11-02T17:48:13.4455494+09:00",
+  "scope": "Existing image version/help smoke only; no clean rebuild or CFD rerun."
+}

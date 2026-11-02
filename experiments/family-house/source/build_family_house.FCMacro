@@ -1,0 +1,255 @@
+import os,sys,json,math,traceback
+from pathlib import Path
+import FreeCAD as App,FreeCADGui as Gui,Part,Draft,Arch
+
+ROOT=Path(__file__).resolve().parents[3]
+WORK=Path(__file__).resolve().parent
+OUT=ROOT/'experiments'/'family-house'
+OUT.mkdir(parents=True,exist_ok=True)
+if str(WORK) not in sys.path: sys.path.insert(0,str(WORK))
+import bim_builder_lib
+import importlib
+importlib.reload(bim_builder_lib)
+from bim_builder_lib import FamilyBIM,metadata
+
+def build():
+    spec=json.loads((ROOT/'experiments'/'family-house'/'house-design.json').read_text(encoding='utf-8-sig'))
+    expected_file=str(OUT/'4人家族の平屋_BIM.FCStd')
+    expected_normalized=os.path.normcase(os.path.normpath(expected_file))
+    assert not any((d.FileName and os.path.normcase(os.path.normpath(d.FileName))==expected_normalized) or d.Name=='Family_House_3LDK' for d in App.listDocuments().values()),'Close the family-house document before regenerating this basic-design model.'
+    cfg=spec['building'];x0,y0,x1,y1=cfg['outer_bbox'];ff=cfg['finished_floor_level']
+    doc=App.newDocument('Family_House_3LDK')
+    doc.Label='4人家族の平屋 3LDK - 基本設計'
+    b=FamilyBIM(doc,ff,cfg['wall_height'])
+    progress=[]
+    def log(value):
+        progress.append(value);print(value)
+        (WORK/'build-progress.txt').write_text('\n'.join(progress),encoding='utf-8')
+    log('Create native BIM building')
+    ext=[w for w in spec['walls'] if w['external']]
+    base_z=min(w.get('base_level',ff) for w in ext)
+    ext_height=cfg['wall_top_level']-base_z
+    center=[App.Vector(x0+100,y0+100,base_z),App.Vector(x1-100,y0+100,base_z),
+            App.Vector(x1-100,y1-100,base_z),App.Vector(x0+100,y1-100,base_z)]
+    ext_base=Draft.make_wire(center,closed=True,face=False)
+    doc.recompute()
+    envelope=Arch.makeWall(ext_base,height=ext_height,width=cfg['external_wall_thickness'],align='Center',name='外周壁 断熱構成未確定')
+    b.groups['Walls'].addObject(envelope)
+    envelope.ViewObject.ShapeColor=(.91,.91,.86)
+    metadata(envelope,'DesignIDs',','.join(w['id'] for w in ext))
+    metadata(envelope,'HeightAboveMainFF_mm',cfg['wall_height'])
+    doc.recompute()
+    expected_envelope_volume=((x1-x0)*(y1-y0)-(x1-x0-400)*(y1-y0-400))*ext_height
+    assert abs(envelope.Shape.Volume-expected_envelope_volume)<1,('Envelope ring volume',envelope.Shape.Volume,expected_envelope_volume)
+    for w in ext:
+        sx,sy=w['start'];ex,ey=w['end'];width=w['thickness']
+        if abs(ex-sx)>abs(ey-sy): p0=App.Vector(min(sx,ex),sy,base_z);p1=App.Vector(max(sx,ex),sy,base_z)
+        else: p0=App.Vector(sx,min(sy,ey),base_z);p1=App.Vector(sx,max(sy,ey),base_z)
+        b.walls[w['id']]=envelope
+        b.wall_data[w['id']]={'bbox':None,'p0':p0,'p1':p1,'width':width,'height':ext_height,'z_base':base_z}
+    for w in spec['walls']:
+        if w['external']: continue
+        sx,sy=w['start'];ex,ey=w['end'];t=w['thickness'];z=w.get('base_level',ff)
+        bb=[min(sx,ex),sy-t/2,max(sx,ex),sy+t/2] if abs(ex-sx)>abs(ey-sy) else [sx-t/2,min(sy,ey),sx+t/2,max(sy,ey)]
+        oldff=b.floor_level;b.floor_level=z
+        b.add_wall(w['id'],bb,height=cfg['wall_top_level']-z,label=w['id'])
+        b.wall_data[w['id']]['z_base']=z
+        b.floor_level=oldff
+    log('Walls created; adding native hosted doors/windows')
+    objects={}
+    for o in spec['openings']:
+        data=b.wall_data[o['host']];d=data['p1']-data['p0'];d.normalize()
+        c=App.Vector(o['center'][0],o['center'][1],0)
+        start=App.Vector(data['p0'].x,data['p0'].y,0)
+        offset=(c-start).dot(d)-o['width']/2
+        obj=b.add_opening(o['id'],o['host'],offset,o['width'],o['height'],o['sill'],
+                          kind=o['kind'],operation=o['operation'],label=o['id']+' '+o['name'],frame=o.get('frame_width',50))
+        metadata(obj,'DesignOperation',o['operation'])
+        metadata(obj,'OpeningAxis',o['axis'])
+        metadata(obj,'ClosedOrOpenState','Closed-state single-leaf door; plan specifies travel and opening direction' if o['kind']=='door' else 'No leaf' if o['kind']=='passage' else 'Closed glazing representation; openable area unverified')
+        metadata(obj,'PlanParkingBBox',json.dumps(o.get('parking_bbox')))
+        metadata(obj,'PassageTarget_mm',o.get('clear_width_target','not specified'))
+        objects[o['id']]=obj
+        if o['kind']=='passage': obj.Visibility=False
+        log('Opening '+o['id']+' host cut '+str(b.openings[-1]['wall_cut_ok']))
+    assert all(x['wall_cut_ok'] for x in b.openings),b.openings
+    # Main floor excludes both lowered genkan and its external-door threshold.
+    slab=b.add_slab('MainFloor',cfg['outer_bbox'],top=ff,thickness=cfg['floor_slab_thickness'],label='主床スラブ 参考構成',color=(.69,.65,.59))
+    lower=cfg['genkan_lower_bbox']
+    threshold=cfg.get('genkan_threshold_bbox',cfg.get('threshold_bbox',[5400,8900,6400,9100]))
+    cutboxes=[]
+    for idx,bb in enumerate([lower,threshold]):
+        cut=doc.addObject('Part::Box','GenkanFloorCut'+str(idx));cut.Length=bb[2]-bb[0];cut.Width=bb[3]-bb[1];cut.Height=1200
+        cut.Placement.Base=App.Vector(bb[0],bb[1],0);cutboxes.append(cut);b.groups['Technical'].addObject(cut)
+    slab.Subtractions=cutboxes
+    for idx,bb in enumerate([lower,threshold]):
+        b.add_slab('GenkanFloor'+str(idx),bb,top=cfg['genkan_floor_level'],thickness=cfg['floor_slab_thickness'],label='玄関土間・敷居 参考構成',color=(.57,.61,.63))
+    outer_footing=Part.Face(Part.makePolygon([App.Vector(x0,y0,0),App.Vector(x1,y0,0),App.Vector(x1,y1,0),App.Vector(x0,y1,0),App.Vector(x0,y0,0)]))
+    inner_footing=Part.Face(Part.makePolygon([App.Vector(x0+200,y0+200,0),App.Vector(x1-200,y0+200,0),App.Vector(x1-200,y1-200,0),App.Vector(x0+200,y1-200,0),App.Vector(x0+200,y0+200,0)]))
+    footing=doc.addObject('Part::Feature','FoundationReference')
+    footing.Label='基礎立上り参考 - 構造形式・地盤・配筋・寸法未検証'
+    footing.Shape=outer_footing.cut(inner_footing).extrude(App.Vector(0,0,300))
+    footing.ViewObject.ShapeColor=(.53,.55,.56)
+    b.groups['Structure'].addObject(footing)
+    metadata(footing,'ReferenceOnly','Foundation appearance reference GL0..300 only; ground, reinforcement, base slab, structural type and dimensions are not designed. Not for construction or quantity take-off.')
+    doc.recompute()
+    for cut in cutboxes: cut.Visibility=False
+    for room in spec['rooms']:
+        bb=room['bbox'];z=room.get('floor_level',ff);ch=room.get('clear_height',cfg['ceiling_height'])
+        b.add_space(room['id'],[[bb[0],bb[1]],[bb[2],bb[1]],[bb[2],bb[3]],[bb[0],bb[3]]],room['name'],ceiling_height=ch,floor_level=z)
+        color=(.83,.76,.65) if room['kind'] in ['living','bedroom','storage','circulation'] else (.78,.85,.86) if room['kind'] in ['bath','wash','laundry','wc'] else (.57,.61,.63)
+        finish=b.box_component('Finish_'+room['id'],bb,1,z=z+.2,color=color,group='Structure')
+        metadata(finish,'DesignID',room['id']+' floor finish reference')
+    log('Floor levels and native room spaces created')
+    def box(name,bb,h,z=None,color=(.72,.68,.61)):
+        return b.box_component(name,bb,h,z=ff if z is None else z,color=color)
+    def shape_obj(name,shape,color):
+        obj=doc.addObject('Part::Feature',name);obj.Shape=shape;obj.ViewObject.ShapeColor=color;b.groups['Furniture'].addObject(obj);return obj
+    def cylinder(name,radius,height,base,color=(.75,.76,.77),direction=App.Vector(0,0,1)):
+        obj=doc.addObject('Part::Cylinder',name);obj.Radius=radius;obj.Height=height;obj.Placement=App.Placement(base,App.Rotation(App.Vector(0,0,1),direction));obj.ViewObject.ShapeColor=color;b.groups['Furniture'].addObject(obj);return obj
+    for f in spec['furniture']:
+        name=f['id'];bb=f['bbox'];x,y,xx,yy=bb;w=xx-x;dep=yy-y;h=f['height'];z=ff+f.get('z',0);kind=f['kind']
+        start_names=set(o.Name for o in doc.Objects)
+        if kind=='bed':
+            b.add_bed(name,bb,head='south' if f.get('rotation')==180 else 'north')
+        elif kind in ['desk','dining_table']:
+            # Real bounding dimensions are retained; countertop support remains schematic.
+            box(name+'Top',bb,40,z=z+h-40,color=(.71,.59,.43))
+            for i,(lx,ly) in enumerate([(x+20,y+20),(xx-65,y+20),(x+20,yy-65),(xx-65,yy-65)]): box(name+'Leg'+str(i),[lx,ly,lx+45,ly+45],h-40,z=z,color=(.36,.38,.40))
+        elif kind=='chair':
+            box(name+'Seat',[x+15,y+15,xx-15,yy-15],80,z=z+380,color=(.48,.59,.62))
+            back_south=(name.startswith('child') or yy<=1650)
+            back=[x,y,xx,y+50] if back_south else [x,yy-50,xx,yy]
+            box(name+'Back',back,h-420,z=z+420,color=(.48,.59,.62))
+            for i,(lx,ly) in enumerate([(x+30,y+30),(xx-60,y+30),(x+30,yy-60),(xx-60,yy-60)]): box(name+'Leg'+str(i),[lx,ly,lx+30,ly+30],380,z=z,color=(.34,.36,.38))
+        elif kind=='sofa':
+            box(name+'Base',bb,380,z=z,color=(.39,.53,.57))
+            box(name+'Back',[x,y,x+150,yy],h,z=z,color=(.35,.48,.53))
+            box(name+'Arm1',[x,y,xx,y+160],600,z=z,color=(.35,.48,.53));box(name+'Arm2',[x,yy-160,xx,yy],600,z=z,color=(.35,.48,.53))
+            box(name+'Cushion',[x+160,y+170,xx-25,yy-170],100,z=z+380,color=(.47,.61,.64))
+        elif kind in ['wardrobe','fridge','tv_unit','counter','kitchen','vanity']:
+            color=(.82,.76,.65) if kind=='wardrobe' else (.88,.89,.87) if kind=='fridge' else (.68,.57,.43)
+            cabinet=box(name,bb,max(1,h-35),z=z,color=color)
+            if kind in ['kitchen','counter','vanity']:
+                box(name+'Countertop',bb,35,z=z+h-35,color=(.91,.92,.90))
+            else: box(name+'Top',bb,35,z=z+h-35,color=color)
+            if kind=='kitchen':
+                sinkbb=[x+150,y+100,x+750,yy-100]
+                outer=Part.makeBox(sinkbb[2]-sinkbb[0],sinkbb[3]-sinkbb[1],160,App.Vector(sinkbb[0],sinkbb[1],z+h-150))
+                inner=Part.makeBox(sinkbb[2]-sinkbb[0]-40,sinkbb[3]-sinkbb[1]-40,180,App.Vector(sinkbb[0]+20,sinkbb[1]+20,z+h-120))
+                shape_obj(name+'Sink',outer.cut(inner),(.60,.67,.70))
+                box(name+'Cooktop',[xx-760,y+70,xx-100,yy-70],12,z=z+h,color=(.14,.17,.19))
+                for i,(cx,cy) in enumerate([(xx-620,y+200),(xx-270,y+200),(xx-620,yy-200),(xx-270,yy-200)]): cylinder(name+'Burner'+str(i),78,5,App.Vector(cx,cy,z+h+12),(.35,.37,.39))
+                cylinder(name+'Faucet',18,260,App.Vector(x+780,yy-80,z+h),(.70,.73,.76))
+            if kind=='vanity':
+                shape_obj(name+'Basin',Part.makeBox(w-60,dep-100,100,App.Vector(x+30,y+50,z+h-90)).cut(Part.makeBox(w-100,dep-140,110,App.Vector(x+50,y+70,z+h-60))),(.94,.95,.94))
+            if kind=='fridge':
+                box(name+'Handle',[x+35,y-1,x+60,y+12],400,z=z+850,color=(.52,.55,.57))
+        elif kind in ['washer','dryer']:
+            box(name,bb,h,z=z,color=(.90,.91,.89))
+            cylinder(name+'DoorRim',min(w,dep)*.32,20,App.Vector((x+xx)/2,y-1,z+h*.54),(.34,.38,.41),App.Vector(0,-1,0))
+            cylinder(name+'DoorGlass',min(w,dep)*.26,21,App.Vector((x+xx)/2,y-2,z+h*.54),(.21,.36,.44),App.Vector(0,-1,0))
+        elif kind=='bathtub':
+            outer=Part.makeBox(w,dep,h,App.Vector(x,y,z))
+            inner=Part.makeBox(w-100,dep-100,h,App.Vector(x+50,y+50,z+100))
+            shape_obj(name,outer.cut(inner),(.94,.95,.94))
+        elif kind=='wet_floor':
+            marker=box(name+'Reference',bb,.5,z=z+.3,color=(.51,.77,.81));marker.ViewObject.Transparency=70;metadata(marker,'ReferenceOnly','1616 internal-space marker; not an 80mm physical floor step')
+        elif kind=='toilet':
+            box(name+'Tank',[x,y+dep-180,xx,yy],h,z=z,color=(.96,.96,.93))
+            cylinder(name+'Pedestal',w*.32,330,App.Vector((x+xx)/2,y+dep*.43,z),(.94,.95,.92))
+            outer=Part.Ellipse(App.Vector((x+xx)/2,y+dep*.40,z+410),dep*.36,w*.46).toShape()
+            inner=Part.Ellipse(App.Vector((x+xx)/2,y+dep*.40,z+410),dep*.27,w*.31).toShape()
+            rot=App.Placement(App.Vector((x+xx)/2,y+dep*.40,z+410),App.Rotation(App.Vector(0,0,1),90))
+            # A plan-readable oval seat, transformed about its own center.
+            center=App.Vector((x+xx)/2,y+dep*.40,z+410)
+            seat=Part.Face(Part.Wire(outer)).cut(Part.Face(Part.Wire(inner))).extrude(App.Vector(0,0,35));seat.rotate(center,App.Vector(0,0,1),90)
+            shape_obj(name+'Seat',seat,(.96,.96,.93))
+        elif kind=='drying_rail':
+            box(name,bb,30,z=z,color=(.64,.67,.70))
+        elif kind=='stroller':
+            box(name+'Body',[x+50,y+80,xx-50,yy-80],350,z=z+300,color=(.36,.43,.47))
+            for i,(cx,cy) in enumerate([(x+70,y+100),(xx-110,y+100),(x+70,yy-100),(xx-110,yy-100)]): cylinder(name+'Wheel'+str(i),95,40,App.Vector(cx,cy,z+95),(.19,.21,.23),App.Vector(1,0,0))
+        else:
+            box(name,bb,h,z=z,color=(.82,.83,.80))
+        for obj in doc.Objects:
+            if obj.Name not in start_names and hasattr(obj,'Shape'):
+                metadata(obj,'FurnitureID',name);metadata(obj,'FurnitureRole',kind);metadata(obj,'RoomID',f['room']);metadata(obj,'NominalPlanBBox',json.dumps(bb))
+    log('Furniture and fixtures created')
+    # Optional external reference slabs are excluded from the house floor-area figures.
+    for item in spec.get('external_reference',[]):
+        if isinstance(item,dict) and 'bbox' in item:
+            top=item.get('top_level',item.get('top',300))
+            obj=b.add_slab('External_'+item.get('id','Reference'),item['bbox'],top=top,thickness=item.get('thickness',150),label=item.get('name','External reference slab'),color=(.62,.64,.63))
+            metadata(obj,'ReferenceOnly','External porch/step proposal; site, drainage and foundation unverified')
+    roof=b.add_hip_roof(cfg['outer_bbox'],pitch=cfg['roof']['pitch_degrees'],overhang=cfg['roof']['eaves'],thickness=cfg['roof']['thickness'])
+    doc.recompute()
+    labels=[{'id':r['id'],'label':r['name'],'center':r.get('label_pos',[(r['bbox'][0]+r['bbox'][2])/2,(r['bbox'][1]+r['bbox'][3])/2]),'area_m2':r['area_m2']} for r in spec['rooms']]
+    page,planview=b.add_plan_page(cfg['outer_bbox'],labels,scale=.02)
+    contour_dimensions=bim_builder_lib.dimension_from_envelope(doc,page,planview,doc.getObject('PlanCut_'+envelope.Name),x1-x0,y1-y0)
+    doc.recompute();Gui.updateGui();doc.recompute()
+    log('Native BIM model and linked dimensioned TechDraw plan created')
+    # Visibility modes for final screenshots and saved editable model.
+    def show_original():
+        for obj in b.groups['Technical'].Group: obj.Visibility=False
+        for obj in {o.Name:o for o in b.walls.values()}.values(): obj.Visibility=True
+        for obj in objects.values(): obj.Visibility=(obj.IfcType!='Opening Element')
+        for obj in b.groups['Furniture'].Group: obj.Visibility=True
+        for obj in b.groups['Structure'].Group: obj.Visibility=True
+        for obj in b.groups['Spaces'].Group: obj.Visibility=False
+        roof.Visibility=True
+        for obj in doc.Objects:
+            if obj.Name.endswith('RoomVolume') or obj.Label.endswith('baseline'): obj.Visibility=False
+            if obj.TypeId=='Sketcher::SketchObject': obj.Visibility=False
+        b.groups['Technical'].Visibility=False
+    show_original()
+    cameras={'exterior':bim_builder_lib.camera_view(doc,(1,-1,1),OUT/'exterior.png',(1600,1100))}
+    for key,direction in [('south',(0,-1,0)),('north',(0,1,0)),('east',(1,0,0)),('west',(-1,0,0))]:
+        cameras[key]=bim_builder_lib.camera_view(doc,direction,OUT/(key+'-elevation.png'))
+    # Cutaway uses the linked 1.2m cut geometry plus full furniture, not fictitious rooms.
+    for obj in {o.Name:o for o in b.walls.values()}.values(): obj.Visibility=False
+    for obj in objects.values(): obj.Visibility=False
+    roof.Visibility=False
+    b.groups['Technical'].Visibility=True
+    for obj in b.groups['Technical'].Group: obj.Visibility=obj.Name.startswith('PlanCut_') and hasattr(obj,'Shape') and not obj.Shape.isNull()
+    cameras['cutaway']=bim_builder_lib.camera_view(doc,(1,-1,1.3),OUT/'cutaway.png',(1800,1300))
+    cameras['top']=bim_builder_lib.camera_view(doc,(0,0,1),OUT/'plan-model.png',(1600,1200))
+    show_original()
+    # Technical pages use native geometric edges and dimensions.
+    import TechDrawGui
+    svg_unit_gate=bim_builder_lib.export_plan_svg_mm(doc,page,OUT/'native-floor-plan.svg')
+    report=b.shape_report()
+    report['native_dimensions']=[{'name':o.Name,'value_mm':o.getRawValue(),'state':o.State} for o in doc.Objects if o.TypeId=='TechDraw::DrawViewDimension']
+    report['building_bbox_mm']=[envelope.Shape.BoundBox.XMin,envelope.Shape.BoundBox.YMin,envelope.Shape.BoundBox.XMax,envelope.Shape.BoundBox.YMax]
+    report['expected_building_bbox_mm']=cfg['outer_bbox']
+    report['room_areas_match']=all(abs(r['area_m2']-next(s['area_m2'] for s in b.spaces if s['id']==r['id']))<1e-6 for r in spec['rooms'])
+    report['status']='pass' if all(r['valid'] for r in report['shapes']) and all(o['wall_cut_ok'] for o in report['openings']) and report['room_areas_match'] else 'fail'
+    report['design_status']=spec['status'];report['plan_cut_height_mm']=1200
+    report['door_state']='Closed-state single-leaf geometric panels; plan operation/parking is the design reference. Actual product clear opening remains unverified.'
+    report['contour_dimension_gate']=contour_dimensions
+    report['dimension_units_gate']=svg_unit_gate
+    report['camera_views']=cameras
+    roof_cover=[]
+    for x in [x0+200,x0+(x1-x0)*.25,(x0+x1)/2,x0+(x1-x0)*.75,x1-200]:
+        for y in [y0+200,y0+(y1-y0)*.25,(y0+y1)/2,y0+(y1-y0)*.75,y1-200]:
+            hit=roof.Shape.common(Part.makeLine(App.Vector(x,y,0),App.Vector(x,y,10000)))
+            roof_cover.append({'xy_mm':[x,y],'intersects':not hit.isNull() and hit.Length>0})
+    report['roof_coverage']=roof_cover
+    assert all(r['intersects'] for r in roof_cover),'Roof does not cover the building plan'
+    assert abs(doc.BuildingWidth.getRawValue()-(x1-x0))<1e-5 and abs(doc.BuildingDepth.getRawValue()-(y1-y0))<1e-5
+    (OUT/'native-model-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    assert report['status']=='pass',report
+    page.ViewObject.Visibility=False
+    bim_builder_lib.camera_view(doc,(1,-1,1),OUT/'exterior.png',(1600,1100))
+    doc.recompute();doc.saveAs(str(OUT/'4人家族の平屋_BIM.FCStd'))
+    log('Native model saved '+doc.FileName)
+    return {'document':doc.Name,'file':doc.FileName,'objects':len(doc.Objects),'openings':len(b.openings),'spaces':len(b.spaces),'status':report['status']}
+
+try:
+    family_bim_result=build()
+    repair_source=WORK/'finalize_family_house.FCMacro'
+    exec(compile(repair_source.read_text(encoding='utf-8'),str(repair_source),'exec'),globals())
+    print(json.dumps(family_bim_result,ensure_ascii=False))
+except Exception:
+    (WORK/'build-error.txt').write_text(traceback.format_exc(),encoding='utf-8')
+    raise

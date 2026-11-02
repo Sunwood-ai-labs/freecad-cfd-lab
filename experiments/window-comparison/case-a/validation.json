@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "cells": 13712,
+  "converged_iteration": 1429,
+  "initial_residuals_at_final_iteration": {
+    "Ux": 2.26400110680788e-06,
+    "Uy": 5.03533009903495e-06,
+    "p": 9.97399021829433e-05,
+    "k": 3.76679029323623e-06,
+    "epsilon": 2.17920294651377e-06
+  },
+  "tolerance": 0.0001,
+  "fields": {
+    "U": {
+      "cells": 13712,
+      "components": 3,
+      "finite": true,
+      "minimum_component": -2.74166272126303,
+      "maximum_component": 2.74119835796819
+    },
+    "p": {
+      "cells": 13712,
+      "components": 1,
+      "finite": true,
+      "minimum_component": -6.5271359528339,
+      "maximum_component": 2.63279515561139
+    },
+    "k": {
+      "cells": 13712,
+      "components": 1,
+      "finite": true,
+      "minimum_component": 0.000581740352928341,
+      "maximum_component": 0.521184404466527
+    },
+    "epsilon": {
+      "cells": 13712,
+      "components": 1,
+      "finite": true,
+      "minimum_component": 7.02609519633504e-05,
+      "maximum_component": 1.37836488744085
+    }
+  },
+  "model": "steady RANS kEpsilon",
+  "mesh_quality": "Mesh OK"
+}

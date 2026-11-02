@@ -1,0 +1,2029 @@
+{
+  "schema_version": 1,
+  "design_revision": "R4-frozen",
+  "units": "mm",
+  "north": "+Y",
+  "origin": "southwest exterior corner",
+  "status": "基本設計案・敷地法規構造省エネ未確認",
+  "project": {
+    "name": "4人家族の平屋",
+    "family": "大人2人＋子ども2人",
+    "type": "平屋3LDK",
+    "building_site": "未定。約60坪・南庭を仮定、敷地寸法/接道/建設地/予算は未確定",
+    "client_choice": "平屋で進める"
+  },
+  "building": {
+    "outer_bbox": [
+      0,
+      0,
+      12100,
+      9100
+    ],
+    "external_wall_thickness": 200,
+    "internal_wall_thickness": 100,
+    "wall_height": 2700,
+    "wall_top_level": 3150,
+    "ceiling_height": 2400,
+    "finished_floor_level": 450,
+    "genkan_floor_level": 300,
+    "genkan_lower_bbox": [
+      4400,
+      7200,
+      6400,
+      8900
+    ],
+    "genkan_threshold_bbox": [
+      5400,
+      8900,
+      6400,
+      9100
+    ],
+    "genkan_step_at": "D01の敷居は土間300で外部ポーチ300へ連続。D02で土間300から玄関ホール450へ150mm上がる",
+    "floor_slab_thickness": 200,
+    "roof": {
+      "type": "hip",
+      "pitch_degrees": 25,
+      "eaves": 450,
+      "thickness": 120
+    },
+    "exterior_footprint_m2": 110.11,
+    "wall_center_reference_area_m2": 105.91,
+    "wall_center_reference_tsubo": 32.037776201416605,
+    "area_note": "壁芯による参考面積。申請上の床面積・建築面積算定は未確認。外部ポーチ等を含めていない。"
+  },
+  "rooms": [
+    {
+      "id": "ldk",
+      "name": "LDK",
+      "bbox": [
+        200,
+        200,
+        6400,
+        5200
+      ],
+      "kind": "living",
+      "area_m2": 31.0,
+      "label_pos": [
+        3850,
+        3800
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "master",
+      "name": "主寝室",
+      "bbox": [
+        8100,
+        200,
+        11900,
+        4200
+      ],
+      "kind": "bedroom",
+      "area_m2": 15.2,
+      "label_pos": [
+        10000,
+        2950
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "child1",
+      "name": "子ども室1",
+      "bbox": [
+        6500,
+        5400,
+        9150,
+        8900
+      ],
+      "kind": "bedroom",
+      "area_m2": 9.275,
+      "label_pos": [
+        8250,
+        8100
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "child2",
+      "name": "子ども室2",
+      "bbox": [
+        9250,
+        5400,
+        11900,
+        8900
+      ],
+      "kind": "bedroom",
+      "area_m2": 9.275,
+      "label_pos": [
+        11000,
+        8100
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "fcl",
+      "name": "家族収納",
+      "bbox": [
+        6500,
+        200,
+        8000,
+        4200
+      ],
+      "kind": "storage",
+      "area_m2": 6.0,
+      "label_pos": [
+        7550,
+        2350
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "private_hall",
+      "name": "個室ホール",
+      "bbox": [
+        6500,
+        4300,
+        11900,
+        5300
+      ],
+      "kind": "circulation",
+      "area_m2": 5.4,
+      "label_pos": [
+        10500,
+        4800
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "bath",
+      "name": "浴室・1616設置枠",
+      "bbox": [
+        200,
+        7000,
+        2100,
+        8900
+      ],
+      "kind": "bath",
+      "area_m2": 3.61,
+      "label_pos": [
+        1600,
+        8250
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "wash",
+      "name": "独立洗面",
+      "bbox": [
+        200,
+        5300,
+        2100,
+        6900
+      ],
+      "kind": "wash",
+      "area_m2": 3.04,
+      "label_pos": [
+        1450,
+        6800
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "laundry",
+      "name": "脱衣・ランドリー",
+      "bbox": [
+        2200,
+        5300,
+        4300,
+        8900
+      ],
+      "kind": "laundry",
+      "area_m2": 7.56,
+      "label_pos": [
+        3250,
+        7900
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "wc",
+      "name": "トイレ",
+      "bbox": [
+        4400,
+        5300,
+        5400,
+        7100
+      ],
+      "kind": "wc",
+      "area_m2": 1.8,
+      "label_pos": [
+        4850,
+        5700
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "entry_hall",
+      "name": "玄関ホール",
+      "bbox": [
+        5500,
+        5300,
+        6400,
+        7100
+      ],
+      "kind": "circulation",
+      "area_m2": 1.62,
+      "label_pos": [
+        5950,
+        6750
+      ],
+      "floor_level": 450,
+      "ceiling_level": 2850,
+      "clear_height": 2400
+    },
+    {
+      "id": "entry",
+      "name": "玄関・靴収納",
+      "bbox": [
+        4400,
+        7200,
+        6400,
+        8900
+      ],
+      "kind": "entry",
+      "area_m2": 3.4,
+      "label_pos": [
+        5100,
+        7550
+      ],
+      "floor_level": 300,
+      "ceiling_level": 2850,
+      "clear_height": 2550
+    }
+  ],
+  "walls": [
+    {
+      "id": "ext_south",
+      "start": [
+        100,
+        100
+      ],
+      "end": [
+        12000,
+        100
+      ],
+      "thickness": 200,
+      "height": 2850,
+      "external": true,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "ext_east",
+      "start": [
+        12000,
+        100
+      ],
+      "end": [
+        12000,
+        9000
+      ],
+      "thickness": 200,
+      "height": 2850,
+      "external": true,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "ext_north",
+      "start": [
+        12000,
+        9000
+      ],
+      "end": [
+        100,
+        9000
+      ],
+      "thickness": 200,
+      "height": 2850,
+      "external": true,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "ext_west",
+      "start": [
+        100,
+        9000
+      ],
+      "end": [
+        100,
+        100
+      ],
+      "thickness": 200,
+      "height": 2850,
+      "external": true,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "spine",
+      "start": [
+        6450,
+        100
+      ],
+      "end": [
+        6450,
+        9000
+      ],
+      "thickness": 100,
+      "height": 2850,
+      "external": false,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "service_south",
+      "start": [
+        100,
+        5250
+      ],
+      "end": [
+        6450,
+        5250
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "bath_wash",
+      "start": [
+        100,
+        6950
+      ],
+      "end": [
+        2150,
+        6950
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "wet_split",
+      "start": [
+        2150,
+        5250
+      ],
+      "end": [
+        2150,
+        9000
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "laundry_east",
+      "start": [
+        4350,
+        5250
+      ],
+      "end": [
+        4350,
+        9000
+      ],
+      "thickness": 100,
+      "height": 2850,
+      "external": false,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "wc_hall",
+      "start": [
+        5450,
+        5250
+      ],
+      "end": [
+        5450,
+        7150
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "entry_south",
+      "start": [
+        4350,
+        7150
+      ],
+      "end": [
+        6450,
+        7150
+      ],
+      "thickness": 100,
+      "height": 2850,
+      "external": false,
+      "base_level": 300,
+      "top_level": 3150
+    },
+    {
+      "id": "private_south",
+      "start": [
+        6450,
+        4250
+      ],
+      "end": [
+        12000,
+        4250
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "private_north",
+      "start": [
+        6450,
+        5350
+      ],
+      "end": [
+        12000,
+        5350
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "master_fcl",
+      "start": [
+        8050,
+        100
+      ],
+      "end": [
+        8050,
+        4250
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    },
+    {
+      "id": "children_split",
+      "start": [
+        9200,
+        5350
+      ],
+      "end": [
+        9200,
+        9000
+      ],
+      "thickness": 100,
+      "height": 2700,
+      "external": false,
+      "base_level": 450,
+      "top_level": 3150
+    }
+  ],
+  "openings": [
+    {
+      "id": "D01",
+      "name": "玄関ドア",
+      "host": "ext_north",
+      "center": [
+        5900,
+        9000
+      ],
+      "width": 1000,
+      "height": 2200,
+      "sill": -150,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 900,
+      "connects": [
+        "outside",
+        "entry"
+      ],
+      "operation": "hinged_out",
+      "hinge": "east",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        6350.0,
+        9000
+      ],
+      "closed_vector": [
+        -1,
+        0
+      ],
+      "open_vector": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "D02",
+      "name": "玄関框150・ホール開口",
+      "host": "entry_south",
+      "center": [
+        5950,
+        7150
+      ],
+      "width": 900,
+      "height": 2350,
+      "sill": -150,
+      "kind": "passage",
+      "frame_width": 0,
+      "clear_width_target": 900,
+      "connects": [
+        "entry",
+        "entry_hall"
+      ],
+      "operation": "open",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x"
+    },
+    {
+      "id": "D03",
+      "name": "玄関ホール→LDK",
+      "host": "service_south",
+      "center": [
+        5950,
+        5250
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "entry_hall",
+        "ldk"
+      ],
+      "operation": "hinged_in",
+      "hinge": "west",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        5550.0,
+        5250
+      ],
+      "closed_vector": [
+        1,
+        0
+      ],
+      "open_vector": [
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "D04",
+      "name": "LDK→独立洗面",
+      "host": "service_south",
+      "center": [
+        1550,
+        5250
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "ldk",
+        "wash"
+      ],
+      "operation": "sliding_outset",
+      "hinge": null,
+      "parking_bbox": [
+        200,
+        5150,
+        1100,
+        5190
+      ],
+      "axis": "x"
+    },
+    {
+      "id": "D05",
+      "name": "洗面→脱衣",
+      "host": "wet_split",
+      "center": [
+        2150,
+        6350
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "wash",
+        "laundry"
+      ],
+      "operation": "hinged_in",
+      "hinge": "south",
+      "parking_bbox": null,
+      "axis": "y",
+      "hinge_point": [
+        2150,
+        5950.0
+      ],
+      "closed_vector": [
+        0,
+        1
+      ],
+      "open_vector": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "D06",
+      "name": "脱衣→浴室",
+      "host": "wet_split",
+      "center": [
+        2150,
+        7525
+      ],
+      "width": 850,
+      "height": 2000,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 750,
+      "connects": [
+        "laundry",
+        "bath"
+      ],
+      "operation": "sliding_outset",
+      "hinge": null,
+      "parking_bbox": [
+        2210,
+        7950,
+        2250,
+        8800
+      ],
+      "axis": "y"
+    },
+    {
+      "id": "D07",
+      "name": "ホール→トイレ",
+      "host": "wc_hall",
+      "center": [
+        5450,
+        5800
+      ],
+      "width": 850,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 750,
+      "connects": [
+        "entry_hall",
+        "wc"
+      ],
+      "operation": "sliding_outset",
+      "hinge": null,
+      "parking_bbox": [
+        5510,
+        6225,
+        5550,
+        7075
+      ],
+      "axis": "y"
+    },
+    {
+      "id": "D08",
+      "name": "LDK→個室ホール",
+      "host": "spine",
+      "center": [
+        6450,
+        4800
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "ldk",
+        "private_hall"
+      ],
+      "operation": "sliding_outset",
+      "hinge": null,
+      "parking_bbox": [
+        6350,
+        3450,
+        6390,
+        4350
+      ],
+      "axis": "y"
+    },
+    {
+      "id": "D09",
+      "name": "ホール→家族収納",
+      "host": "private_south",
+      "center": [
+        7575,
+        4250
+      ],
+      "width": 850,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 750,
+      "connects": [
+        "private_hall",
+        "fcl"
+      ],
+      "operation": "hinged_in",
+      "hinge": "east",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        7950.0,
+        4250
+      ],
+      "closed_vector": [
+        -1,
+        0
+      ],
+      "open_vector": [
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "D10",
+      "name": "ホール→主寝室",
+      "host": "private_south",
+      "center": [
+        8650,
+        4250
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "private_hall",
+        "master"
+      ],
+      "operation": "hinged_in",
+      "hinge": "west",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        8250.0,
+        4250
+      ],
+      "closed_vector": [
+        1,
+        0
+      ],
+      "open_vector": [
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "D11",
+      "name": "ホール→子ども室1",
+      "host": "private_north",
+      "center": [
+        8650,
+        5350
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "private_hall",
+        "child1"
+      ],
+      "operation": "hinged_in",
+      "hinge": "east",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        9050.0,
+        5350
+      ],
+      "closed_vector": [
+        -1,
+        0
+      ],
+      "open_vector": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "D12",
+      "name": "ホール→子ども室2",
+      "host": "private_north",
+      "center": [
+        11400,
+        5350
+      ],
+      "width": 900,
+      "height": 2100,
+      "sill": 0,
+      "kind": "door",
+      "frame_width": 50,
+      "clear_width_target": 800,
+      "connects": [
+        "private_hall",
+        "child2"
+      ],
+      "operation": "hinged_in",
+      "hinge": "east",
+      "parking_bbox": null,
+      "axis": "x",
+      "hinge_point": [
+        11800.0,
+        5350
+      ],
+      "closed_vector": [
+        -1,
+        0
+      ],
+      "open_vector": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "W01",
+      "name": "ダイニング南腰窓",
+      "host": "ext_south",
+      "center": [
+        1650,
+        100
+      ],
+      "width": 2000,
+      "height": 1200,
+      "sill": 900,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 1900,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W02",
+      "name": "リビング南掃出窓",
+      "host": "ext_south",
+      "center": [
+        4800,
+        100
+      ],
+      "width": 2400,
+      "height": 2100,
+      "sill": 0,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 2300,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W03",
+      "name": "LDK西窓",
+      "host": "ext_west",
+      "center": [
+        100,
+        3250
+      ],
+      "width": 900,
+      "height": 900,
+      "sill": 1200,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "ldk",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "y",
+      "frame_inner_span_target": 800,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W04",
+      "name": "子ども室1北窓",
+      "host": "ext_north",
+      "center": [
+        8300,
+        9000
+      ],
+      "width": 1400,
+      "height": 1300,
+      "sill": 900,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "child1",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 1300,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W05",
+      "name": "子ども室2北窓",
+      "host": "ext_north",
+      "center": [
+        11050,
+        9000
+      ],
+      "width": 1400,
+      "height": 1300,
+      "sill": 900,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "child2",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 1300,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W06",
+      "name": "主寝室南窓",
+      "host": "ext_south",
+      "center": [
+        10550,
+        100
+      ],
+      "width": 1800,
+      "height": 1200,
+      "sill": 900,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 1700,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W07",
+      "name": "主寝室東窓",
+      "host": "ext_east",
+      "center": [
+        12000,
+        2850
+      ],
+      "width": 1200,
+      "height": 1200,
+      "sill": 900,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "master",
+        "outside"
+      ],
+      "operation": "sliding",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "y",
+      "frame_inner_span_target": 1100,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W08",
+      "name": "浴室北高窓",
+      "host": "ext_north",
+      "center": [
+        1150,
+        9000
+      ],
+      "width": 600,
+      "height": 600,
+      "sill": 1500,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "bath",
+        "outside"
+      ],
+      "operation": "awning",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 500,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    },
+    {
+      "id": "W09",
+      "name": "ランドリー北高窓",
+      "host": "ext_north",
+      "center": [
+        3550,
+        9000
+      ],
+      "width": 900,
+      "height": 600,
+      "sill": 1600,
+      "kind": "window",
+      "frame_width": 50,
+      "connects": [
+        "laundry",
+        "outside"
+      ],
+      "operation": "awning",
+      "hinge": null,
+      "parking_bbox": null,
+      "axis": "x",
+      "frame_inner_span_target": 800,
+      "operable_clear_width_target": null,
+      "opening_note": "枠内幅は実開放幅ではない。引違い/開き窓の開放寸法と採光有効面積は製品・敷地条件未確定。"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "kitchen",
+      "name": "I型キッチン2550",
+      "room": "ldk",
+      "bbox": [
+        2900,
+        4550,
+        5450,
+        5200
+      ],
+      "height": 850,
+      "z": 0,
+      "kind": "kitchen",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "fridge",
+      "name": "冷蔵庫750×750",
+      "room": "ldk",
+      "bbox": [
+        2100,
+        4450,
+        2850,
+        5200
+      ],
+      "height": 1850,
+      "z": 0,
+      "kind": "fridge",
+      "rotation": 180,
+      "fixed": false
+    },
+    {
+      "id": "table",
+      "name": "4人ダイニング1600",
+      "room": "ldk",
+      "bbox": [
+        1000,
+        1650,
+        2600,
+        2450
+      ],
+      "height": 720,
+      "z": 0,
+      "kind": "dining_table",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining_chair1",
+      "name": "椅子1",
+      "room": "ldk",
+      "bbox": [
+        1150,
+        1150,
+        1650,
+        1650
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining_chair2",
+      "name": "椅子2",
+      "room": "ldk",
+      "bbox": [
+        1900,
+        1150,
+        2400,
+        1650
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining_chair3",
+      "name": "椅子3",
+      "room": "ldk",
+      "bbox": [
+        1150,
+        2450,
+        1650,
+        2950
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining_chair4",
+      "name": "椅子4",
+      "room": "ldk",
+      "bbox": [
+        1900,
+        2450,
+        2400,
+        2950
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "sofa",
+      "name": "ソファ2200・東向き",
+      "room": "ldk",
+      "bbox": [
+        3500,
+        600,
+        4400,
+        2800
+      ],
+      "height": 780,
+      "z": 0,
+      "kind": "sofa",
+      "rotation": 90,
+      "fixed": false
+    },
+    {
+      "id": "tv",
+      "name": "TVボード1800",
+      "room": "ldk",
+      "bbox": [
+        6000,
+        800,
+        6400,
+        2600
+      ],
+      "height": 500,
+      "z": 0,
+      "kind": "tv_unit",
+      "rotation": 90,
+      "fixed": false
+    },
+    {
+      "id": "queen",
+      "name": "クイーン1600×2000",
+      "room": "master",
+      "bbox": [
+        9000,
+        200,
+        10600,
+        2200
+      ],
+      "height": 450,
+      "z": 0,
+      "kind": "bed",
+      "rotation": 180,
+      "fixed": false
+    },
+    {
+      "id": "master_closet",
+      "name": "主寝室収納2500",
+      "room": "master",
+      "bbox": [
+        9400,
+        3600,
+        11900,
+        4200
+      ],
+      "height": 2200,
+      "z": 0,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "fcl_storage",
+      "name": "家族収納・片側600",
+      "room": "fcl",
+      "bbox": [
+        6500,
+        200,
+        7100,
+        4200
+      ],
+      "height": 2200,
+      "z": 0,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "child1_bed",
+      "name": "ベッド1000×2000",
+      "room": "child1",
+      "bbox": [
+        6500,
+        5400,
+        7500,
+        7400
+      ],
+      "height": 450,
+      "z": 0,
+      "kind": "bed",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child1_desk",
+      "name": "机1200×600",
+      "room": "child1",
+      "bbox": [
+        6500,
+        8300,
+        7700,
+        8900
+      ],
+      "height": 720,
+      "z": 0,
+      "kind": "desk",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child1_chair",
+      "name": "机椅子",
+      "room": "child1",
+      "bbox": [
+        6750,
+        7700,
+        7250,
+        8200
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child1_closet",
+      "name": "個室収納1200×600",
+      "room": "child1",
+      "bbox": [
+        8550,
+        6600,
+        9150,
+        7800
+      ],
+      "height": 2200,
+      "z": 0,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "child2_bed",
+      "name": "ベッド1000×2000",
+      "room": "child2",
+      "bbox": [
+        9250,
+        5400,
+        10250,
+        7400
+      ],
+      "height": 450,
+      "z": 0,
+      "kind": "bed",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child2_desk",
+      "name": "机1200×600",
+      "room": "child2",
+      "bbox": [
+        9250,
+        8300,
+        10450,
+        8900
+      ],
+      "height": 720,
+      "z": 0,
+      "kind": "desk",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child2_chair",
+      "name": "机椅子",
+      "room": "child2",
+      "bbox": [
+        9500,
+        7700,
+        10000,
+        8200
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "chair",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "child2_closet",
+      "name": "個室収納1200×600",
+      "room": "child2",
+      "bbox": [
+        11300,
+        6600,
+        11900,
+        7800
+      ],
+      "height": 2200,
+      "z": 0,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "bath_inner",
+      "name": "1616浴室内寸参考",
+      "room": "bath",
+      "bbox": [
+        350,
+        7150,
+        1950,
+        8750
+      ],
+      "height": 80,
+      "z": 0,
+      "kind": "wet_floor",
+      "rotation": 0,
+      "fixed": true,
+      "reference_only": true,
+      "note": "1616内寸の範囲を示す面マーカー。80mm段差を設計したものではない。"
+    },
+    {
+      "id": "tub",
+      "name": "浴槽参考750×1400",
+      "room": "bath",
+      "bbox": [
+        450,
+        7250,
+        1200,
+        8650
+      ],
+      "height": 580,
+      "z": 0,
+      "kind": "bathtub",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "vanity",
+      "name": "洗面台900×600",
+      "room": "wash",
+      "bbox": [
+        200,
+        5650,
+        800,
+        6550
+      ],
+      "height": 850,
+      "z": 0,
+      "kind": "vanity",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "washer",
+      "name": "ドラム洗濯機650×700",
+      "room": "laundry",
+      "bbox": [
+        2350,
+        8200,
+        3000,
+        8900
+      ],
+      "height": 900,
+      "z": 0,
+      "kind": "washer",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "dryer",
+      "name": "積層乾燥機参考",
+      "room": "laundry",
+      "bbox": [
+        2350,
+        8200,
+        3000,
+        8900
+      ],
+      "height": 850,
+      "z": 920,
+      "kind": "dryer",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "fold_counter",
+      "name": "畳み台1600×600",
+      "room": "laundry",
+      "bbox": [
+        3700,
+        6050,
+        4300,
+        7650
+      ],
+      "height": 850,
+      "z": 0,
+      "kind": "counter",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "linen",
+      "name": "リネン収納2100×500",
+      "room": "laundry",
+      "bbox": [
+        2200,
+        5300,
+        4300,
+        5800
+      ],
+      "height": 1800,
+      "z": 0,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "drying_rail",
+      "name": "補助物干し・可動式",
+      "room": "laundry",
+      "bbox": [
+        3750,
+        6250,
+        4250,
+        7550
+      ],
+      "height": 40,
+      "z": 2050,
+      "kind": "drying_rail",
+      "rotation": 0,
+      "fixed": false
+    },
+    {
+      "id": "toilet",
+      "name": "便器参考400×700",
+      "room": "wc",
+      "bbox": [
+        4700,
+        6350,
+        5100,
+        7050
+      ],
+      "height": 750,
+      "z": 0,
+      "kind": "toilet",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "wc_basin",
+      "name": "WC手洗い250×350",
+      "room": "wc",
+      "bbox": [
+        4400,
+        5350,
+        4650,
+        5700
+      ],
+      "height": 800,
+      "z": 0,
+      "kind": "small_basin",
+      "rotation": 0,
+      "fixed": true
+    },
+    {
+      "id": "shoe",
+      "name": "壁面靴収納・土間",
+      "room": "entry",
+      "bbox": [
+        4400,
+        7200,
+        4750,
+        8900
+      ],
+      "height": 2100,
+      "z": -150,
+      "kind": "wardrobe",
+      "rotation": 0,
+      "fixed": true,
+      "storage_operation": "オープン棚/ハンガー、または引違い戸を想定。開き扉は未検証。"
+    },
+    {
+      "id": "stroller",
+      "name": "ベビーカー置場600×900",
+      "room": "entry",
+      "bbox": [
+        4800,
+        8000,
+        5400,
+        8900
+      ],
+      "height": 1050,
+      "z": -150,
+      "kind": "stroller",
+      "rotation": 0,
+      "fixed": false
+    }
+  ],
+  "clearances": [
+    {
+      "id": "kitchen_work",
+      "label": "調理台前1200",
+      "room": "ldk",
+      "bbox": [
+        2900,
+        3350,
+        5450,
+        4550
+      ],
+      "target_mm": 1200,
+      "kind": "design_target"
+    },
+    {
+      "id": "fridge_use",
+      "label": "冷蔵庫前1200",
+      "room": "ldk",
+      "bbox": [
+        2100,
+        3250,
+        2850,
+        4450
+      ],
+      "target_mm": 1200,
+      "kind": "design_target"
+    },
+    {
+      "id": "dining_north",
+      "label": "椅子引き600・北",
+      "room": "ldk",
+      "bbox": [
+        1000,
+        2450,
+        2600,
+        3050
+      ],
+      "target_mm": 600,
+      "kind": "operational_zone"
+    },
+    {
+      "id": "dining_south",
+      "label": "椅子引き600・南",
+      "room": "ldk",
+      "bbox": [
+        1000,
+        1050,
+        2600,
+        1650
+      ],
+      "target_mm": 600,
+      "kind": "operational_zone"
+    },
+    {
+      "id": "ldk_route",
+      "label": "ダイニング横900",
+      "room": "ldk",
+      "bbox": [
+        2600,
+        600,
+        3500,
+        2800
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "ldk_entry",
+      "label": "玄関からLDKへの通路900",
+      "room": "ldk",
+      "bbox": [
+        5500,
+        3050,
+        6400,
+        5200
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "bed_left",
+      "label": "ベッド左900",
+      "room": "master",
+      "bbox": [
+        8100,
+        200,
+        9000,
+        2200
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "bed_right",
+      "label": "ベッド右1300",
+      "room": "master",
+      "bbox": [
+        10600,
+        200,
+        11900,
+        2200
+      ],
+      "target_mm": 1300,
+      "kind": "design_target"
+    },
+    {
+      "id": "bed_foot",
+      "label": "ベッド足元1400",
+      "room": "master",
+      "bbox": [
+        9000,
+        2200,
+        10600,
+        3600
+      ],
+      "target_mm": 1400,
+      "kind": "design_target"
+    },
+    {
+      "id": "fcl_aisle",
+      "label": "収納前900",
+      "room": "fcl",
+      "bbox": [
+        7100,
+        200,
+        8000,
+        4200
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "private_hall",
+      "label": "ホール1000",
+      "room": "private_hall",
+      "bbox": [
+        6500,
+        4300,
+        11900,
+        5300
+      ],
+      "target_mm": 1000,
+      "kind": "design_target"
+    },
+    {
+      "id": "entry_hall",
+      "label": "玄関ホール900",
+      "room": "entry_hall",
+      "bbox": [
+        5500,
+        5300,
+        6400,
+        7100
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "washer_use",
+      "label": "洗濯機前1200",
+      "room": "laundry",
+      "bbox": [
+        2350,
+        7000,
+        3000,
+        8200
+      ],
+      "target_mm": 1200,
+      "kind": "design_target"
+    },
+    {
+      "id": "vanity_use",
+      "label": "洗面台前900",
+      "room": "wash",
+      "bbox": [
+        800,
+        5650,
+        1700,
+        6550
+      ],
+      "target_mm": 900,
+      "kind": "design_target"
+    },
+    {
+      "id": "wc_front",
+      "label": "便器前1050",
+      "room": "wc",
+      "bbox": [
+        4700,
+        5300,
+        5100,
+        6350
+      ],
+      "target_mm": 1050,
+      "kind": "design_target"
+    },
+    {
+      "id": "child1_route",
+      "label": "中央通路1050",
+      "room": "child1",
+      "bbox": [
+        7500,
+        5400,
+        8550,
+        7800
+      ],
+      "target_mm": 1050,
+      "kind": "design_target"
+    },
+    {
+      "id": "child1_chair",
+      "label": "椅子引き800",
+      "room": "child1",
+      "bbox": [
+        6700,
+        7500,
+        7300,
+        8300
+      ],
+      "target_mm": 800,
+      "kind": "operational_zone"
+    },
+    {
+      "id": "child1_window",
+      "label": "窓の操作床",
+      "room": "child1",
+      "bbox": [
+        7750,
+        7900,
+        8950,
+        8900
+      ],
+      "target_mm": 1000,
+      "kind": "operational_zone"
+    },
+    {
+      "id": "child2_route",
+      "label": "中央通路1050",
+      "room": "child2",
+      "bbox": [
+        10250,
+        5400,
+        11300,
+        7800
+      ],
+      "target_mm": 1050,
+      "kind": "design_target"
+    },
+    {
+      "id": "child2_chair",
+      "label": "椅子引き800",
+      "room": "child2",
+      "bbox": [
+        9450,
+        7500,
+        10050,
+        8300
+      ],
+      "target_mm": 800,
+      "kind": "operational_zone"
+    },
+    {
+      "id": "child2_window",
+      "label": "窓の操作床",
+      "room": "child2",
+      "bbox": [
+        10500,
+        7900,
+        11700,
+        8900
+      ],
+      "target_mm": 1000,
+      "kind": "operational_zone"
+    }
+  ],
+  "external_reference": [
+    {
+      "id": "porch",
+      "name": "玄関ポーチ参考",
+      "bbox": [
+        5000,
+        9100,
+        6800,
+        10600
+      ],
+      "top_level": 300,
+      "thickness": 150
+    },
+    {
+      "id": "porch_step",
+      "name": "外部1段参考",
+      "bbox": [
+        5000,
+        10600,
+        6800,
+        11050
+      ],
+      "top_level": 150,
+      "thickness": 150
+    }
+  ],
+  "circulation": {
+    "outside_to_private": [
+      "outside",
+      "entry",
+      "entry_hall",
+      "ldk",
+      "private_hall",
+      "child1/child2/master/fcl"
+    ],
+    "laundry": [
+      "ldk",
+      "wash",
+      "laundry",
+      "bath"
+    ],
+    "guest_wc": [
+      "outside",
+      "entry",
+      "entry_hall",
+      "wc"
+    ],
+    "notes": [
+      "寝室は共用ホールから個別に入室、他室を通らない",
+      "洗面と脱衣は別室、洗面を使いながら浴室/脱衣の扉を閉じられる",
+      "洗濯と乾燥・畳みはランドリー内、家族収納への専用回遊動線はない",
+      "FCL6m²は通路を含む。棚の床面積と区別する",
+      "独立SICではなく壁面靴収納＋土間余白",
+      "ベビーカーは参考置場、玄関扉の最終製品動作域要確認"
+    ]
+  },
+  "design_checks": {
+    "room_clear_area_sum_m2": 97.18,
+    "inner_envelope_area_m2": 101.78999999999999,
+    "main_routes_target_mm": [
+      900,
+      1000
+    ],
+    "door_clear_widths": "主要室800、玄関900、WC/FCL/浴室750を目標。公称開口・枠・製品実有効幅は別",
+    "kitchen_design_basis": "2人使用を想定し通路1200を設計目標。メーカー資料による目安で法定最低値ではない"
+  },
+  "unverified": [
+    "敷地寸法と接道、建ぺい率・容積率・斜線・隣地・防火・地域条例",
+    "地盤・基礎・柱・梁・耐力壁・屋根架構・耐震計算",
+    "LDK6.2m無柱想定と南側大開口の構造成立",
+    "採光有効面積・自然換気有効面積・24時間換気・日照・CFD",
+    "断熱/気密/日射遮蔽・省エネ基準・結露・空調計算",
+    "雨仕舞・排水・給排水/電気/ガス/給湯・設備ダクト経路",
+    "建具/サッシ/浴室/設備の製品実寸・設置余白・戸当たり・取手突出",
+    "玄関土間と外部の段差・外部ポーチ/庭/駐車の敷地上の成立",
+    "予算・見積・施工者・確認申請・施工図"
+  ],
+  "references": [
+    {
+      "topic": "キッチンの2人用通路120cm前後の目安",
+      "url": "https://www.lixil.co.jp/lineup/s/navi/knowledge/kitchen/"
+    },
+    {
+      "topic": "1616は浴室内寸1600×1600の呼称で設置外寸ではない",
+      "url": "https://jp.toto.com/reform/library/neue/article26/"
+    },
+    {
+      "topic": "2025年4月以降の新築住宅の省エネ基準適合",
+      "url": "https://www.mlit.go.jp/shoene-jutaku/index.html"
+    },
+    {
+      "topic": "住宅の24時間換気の制度説明",
+      "url": "https://www.mlit.go.jp/jutakukentiku/build/jutakukentiku_house_fr_000108.html"
+    },
+    {
+      "topic": "住宅採光規定と有効面積の扱い",
+      "url": "https://www.mlit.go.jp/jutakukentiku/build/r4kaisei_kijunhou0006.html"
+    }
+  ]
+}

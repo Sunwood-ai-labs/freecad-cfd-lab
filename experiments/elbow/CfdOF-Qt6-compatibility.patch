@@ -1,0 +1,49 @@
+diff --git a/CfdOF/CfdTools.py b/CfdOF/CfdTools.py
+index c3fa496..5813a53 100644
+--- a/CfdOF/CfdTools.py
++++ b/CfdOF/CfdTools.py
+@@ -466,9 +466,8 @@ def startDocker():
+ 
+ def checkPodmanMachineRunning():
+     print("Checking podman machine running")
+-    cmd = "podman machine list"
+     proc = QtCore.QProcess()
+-    proc.start(cmd)
++    proc.start("podman", ["machine", "list"])
+     proc.waitForFinished()
+     line = ""
+     while proc.canReadLine():
+@@ -487,9 +486,8 @@ def checkPodmanMachineRunning():
+ 
+ def startPodmanMachine():
+     print("Attempting podman machine start")
+-    cmd = "podman machine start"
+     proc = QtCore.QProcess()
+-    proc.start(cmd)
++    proc.start("podman", ["machine", "start"])
+     proc.waitForFinished()
+     line = ""
+     while proc.canReadLine():
+@@ -1106,10 +1104,12 @@ def checkCfdDependencies(msgFn):
+                             "Parallel execution will not be possible.")
+ 
+                 # Check for cfMesh
++                # Container checks must use a path visible inside the mounted output directory.
++                check_dir = getDefaultOutputPath() if getFoamRuntime() == "PosixDocker" else os.path.expanduser('~')
+                 try:
+                     # Run in home directory to be safe to avoid a freak-out by OpenFOAM applications if run in a path
+                     # with invalid chars (specifically, a path with spaces, under WSL)
+-                    cfmesh_ver = runFoamCommand("cartesianMesh -version", os.path.expanduser('~'))[0]
++                    cfmesh_ver = runFoamCommand("cartesianMesh -version", check_dir)[0]
+                     cfmesh_ver = cfmesh_ver.rstrip().split()[-1]
+                     msgFn("cfMesh-CfdOF version: " + cfmesh_ver)
+                     cfmesh_ver = cfmesh_ver.split('.')
+@@ -1124,7 +1124,7 @@ def checkCfdDependencies(msgFn):
+ 
+                 # Check for HiSA
+                 try:
+-                    hisa_ver = runFoamCommand("hisa -version", os.path.expanduser('~'))[0]
++                    hisa_ver = runFoamCommand("hisa -version", check_dir)[0]
+                     hisa_ver = hisa_ver.rstrip().split()[-1]
+                     msgFn("HiSA version: " + hisa_ver)
+                     hisa_ver = hisa_ver.split('.')

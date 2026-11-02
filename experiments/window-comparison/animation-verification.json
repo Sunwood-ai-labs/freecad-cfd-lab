@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1600,
+        "height": 1000,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "nb_frames": "288"
+      }
+    ],
+    "format": {
+      "duration": "12.000000",
+      "size": "2102995"
+    }
+  },
+  "full_mp4_decode_exit_code": 0,
+  "webp_frames": 120,
+  "webp_size": [
+    960,
+    600
+  ],
+  "webp_loop": 0,
+  "webp_all_frames_decoded": true,
+  "source_first_middle_changed_pixels_above_12": 12902,
+  "decoded_first_middle_changed_pixels_above_12": 11747,
+  "qa_decoded_frames": [
+    "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\work\\house-airflow-animation\\qa\\first.png",
+    "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\work\\house-airflow-animation\\qa\\middle.png",
+    "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\work\\house-airflow-animation\\qa\\last.png"
+  ],
+  "particle_time_scale": "Common x3 physical IntegrationTime; not equalized path durations",
+  "caveat": "Steady 2D flow visualization, not a transient CFD simulation or physical-house validation"
+}

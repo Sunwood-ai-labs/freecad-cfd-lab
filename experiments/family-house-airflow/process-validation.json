@@ -1,0 +1,53 @@
+{
+  "status": "recovered_and_verified",
+  "final_iteration": "697",
+  "convergence_messages": [
+    "585",
+    "697"
+  ],
+  "mesh_exit_code": 0,
+  "mesh_check_exit_code": 0,
+  "simpleFoam_exit_code": 0,
+  "final_reconstructPar_exit_code": 0,
+  "exit_code_evidence": "The shell uses set -e; Allrun runCommand/runParallel aborts on a nonzero child exit. Solver and final reconstruction completed and returned to the outer wrapper. Final End in solver-run.log is from reconstructPar. These component exit codes are inferred from that successful checked control flow, not separately captured per process.",
+  "initial_outer_wrapper_exit_code": 1,
+  "outer_wrapper_error": "/scripts/run_cfd.sh: line 15: --: command not found",
+  "cause": "The running shell script was edited while it waited for Allrun; after Allrun returned, Bash resumed at an invalid byte offset. The mesh, solver and reconstructed U/phi were already complete; the final cell-centre post-processing was skipped.",
+  "recovery": "Executed fixed separate post_final.sh without editing it during execution. postProcess -func writeCellCentres -latestTime completed.",
+  "recovery_wrapper_exit_code": 0,
+  "continuation_wrapper_exit_code": 0,
+  "postProcess_exit_code": 0,
+  "diagnostic_400_wrapper_exit_code": 0,
+  "diagnostic_500_wrapper_exit_code": 0,
+  "full_final_Run_OpenFOAM_ps1_replay": "not executed; PowerShell parse/Python compile/Bash syntax checks passed. Its constituent actual mesh/solve/reconstruct/postProcess operations were executed and checked.",
+  "final_artifacts": {
+    "U": {
+      "bytes": 31770168,
+      "sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25"
+    },
+    "p": {
+      "bytes": 9625533,
+      "sha256": "ad7308eb387846a39adfccd2ff45b8938b7f829a2af10a7662ac9ffee0c67158"
+    },
+    "k": {
+      "bytes": 13294507,
+      "sha256": "f992ffaa9c743ed5589599123acd4dffa841f587f61594485fef7c00b16dead4"
+    },
+    "epsilon": {
+      "bytes": 13425253,
+      "sha256": "3fff2aa8c02a2453c1207118b4327f61b3f892e922571b4add9d1baad746d7e1"
+    },
+    "nut": {
+      "bytes": 13317576,
+      "sha256": "41cfe47a7ee08f2b76097f3610f00edd8daf13e7438fbf7cc57e842e9c564138"
+    },
+    "phi": {
+      "bytes": 32785421,
+      "sha256": "dadc957305b730f4030fe2606c028a52dff61afd01d2136070a7c92c3e5f4723"
+    },
+    "C": {
+      "bytes": 34789309,
+      "sha256": "11c019ad0faae39655142b5dd98b7d9c25e8de7583d260ac6a57c0db2b35d9c5"
+    }
+  }
+}

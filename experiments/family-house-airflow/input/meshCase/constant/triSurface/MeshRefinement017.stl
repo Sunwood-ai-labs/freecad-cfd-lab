@@ -1,0 +1,86 @@
+solid MeshRefinement017
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex 8.45 6.5 2.5300000000000002
+   vertex 8.45 6.5 2.92
+   vertex 8.45 7.9 2.5300000000000002
+  endloop
+ endfacet
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex 8.45 7.9 2.5300000000000002
+   vertex 8.45 6.5 2.92
+   vertex 8.45 7.9 2.92
+  endloop
+ endfacet
+ facet normal 1.0 0.0 0.0
+  outer loop
+   vertex 9.25 6.5 2.92
+   vertex 9.25 6.5 2.5300000000000002
+   vertex 9.25 7.9 2.5300000000000002
+  endloop
+ endfacet
+ facet normal 1.0 -0.0 0.0
+  outer loop
+   vertex 9.25 6.5 2.92
+   vertex 9.25 7.9 2.5300000000000002
+   vertex 9.25 7.9 2.92
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 9.25 6.5 2.5300000000000002
+   vertex 9.25 6.5 2.92
+   vertex 8.45 6.5 2.5300000000000002
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 8.45 6.5 2.5300000000000002
+   vertex 9.25 6.5 2.92
+   vertex 8.45 6.5 2.92
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 9.25 7.9 2.92
+   vertex 9.25 7.9 2.5300000000000002
+   vertex 8.45 7.9 2.5300000000000002
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 9.25 7.9 2.92
+   vertex 8.45 7.9 2.5300000000000002
+   vertex 8.45 7.9 2.92
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 8.45 6.5 2.5300000000000002
+   vertex 8.45 7.9 2.5300000000000002
+   vertex 9.25 6.5 2.5300000000000002
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex 8.45 7.9 2.5300000000000002
+   vertex 9.25 7.9 2.5300000000000002
+   vertex 9.25 6.5 2.5300000000000002
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 8.45 7.9 2.92
+   vertex 8.45 6.5 2.92
+   vertex 9.25 6.5 2.92
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 9.25 7.9 2.92
+   vertex 8.45 7.9 2.92
+   vertex 9.25 6.5 2.92
+  endloop
+ endfacet
+endsolid MeshRefinement017

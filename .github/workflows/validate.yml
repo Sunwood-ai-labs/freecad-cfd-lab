@@ -1,0 +1,33 @@
+name: Validate published experiments
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - name: Verify artifacts and publication documentation
+        shell: pwsh
+        run: |
+          uv run scripts/verify_artifacts.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          uv run scripts/verify_repository.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Parse PowerShell sources
+        shell: pwsh
+        run: |
+          $failures = @()
+          Get-ChildItem -Recurse -Filter *.ps1 | ForEach-Object {
+            $parseErrors = $null
+            $tokens = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$parseErrors)
+            $failures += $parseErrors
+          }
+          if ($failures.Count) { $failures | Format-List; exit 1 }

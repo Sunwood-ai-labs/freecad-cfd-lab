@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-02",
+  "scope": "Publication of existing experimental evidence; no new CFD solve",
+  "original_workspace_modified": false,
+  "artifact_checks": {
+    "status": "pass",
+    "json": 37,
+    "python_and_freecad_macro_syntax": 35,
+    "freecad_archive_crc_and_document_xml": 5,
+    "source_manifest_entries": 310
+  },
+  "release_archives": {
+    "status": "pass",
+    "archive_count": 3,
+    "file_count": 158,
+    "checks": ["ZIP CRC", "per-file SHA256", "required mesh and field files"],
+    "final_697_velocity_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25"
+  },
+  "runtime": {
+    "existing_image_version_and_help_checks": "pass",
+    "dependency_archives_hash_and_size": "pass",
+    "clean_rebuild": "not run"
+  },
+  "unverified": [
+    "Adapted public scripts end-to-end replay",
+    "New computer installation",
+    "CFD GUI case re-export and execution",
+    "Mesh independence and measured-data agreement"
+  ]
+}

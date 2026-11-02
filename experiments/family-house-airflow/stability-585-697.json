@@ -1,0 +1,234 @@
+{
+  "status": "pass",
+  "prior_iteration": 585.0,
+  "final_iteration": 697.0,
+  "iteration_gap": 112.0,
+  "prior_U_sha256": "4269b3daa5b6d108b8cc87e602f4a0b9966a4a1051b6ec3026db8ad94ccc8690",
+  "final_U_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25",
+  "predeclared_gate": "4 main-room volume mean-speed change <= max(2%*|final|,0.005m/s); 9 windows each inward/outward reference flux change <= max(2%*|final|,0.005m3/s). Thresholds fixed before viewing the final comparison.",
+  "room_speed_checks": [
+    {
+      "name": "ldk",
+      "prior": 0.3536184333051789,
+      "final": 0.35339623730343855,
+      "unit": "m/s",
+      "absolute_change": 0.00022219600174033793,
+      "relative_change": 0.000628744673219462,
+      "allowed_absolute_change": 0.007067924746068772,
+      "pass": true
+    },
+    {
+      "name": "master",
+      "prior": 0.38484367918645374,
+      "final": 0.38446252769935657,
+      "unit": "m/s",
+      "absolute_change": 0.0003811514870971644,
+      "relative_change": 0.0009913878717335454,
+      "allowed_absolute_change": 0.007689250553987131,
+      "pass": true
+    },
+    {
+      "name": "child1",
+      "prior": 0.2613332747264998,
+      "final": 0.2618151797988842,
+      "unit": "m/s",
+      "absolute_change": 0.00048190507238438096,
+      "relative_change": 0.00184063075622491,
+      "allowed_absolute_change": 0.005236303595977684,
+      "pass": true
+    },
+    {
+      "name": "child2",
+      "prior": 0.290381744940422,
+      "final": 0.2900965820402599,
+      "unit": "m/s",
+      "absolute_change": 0.000285162900162117,
+      "relative_change": 0.000982992967916257,
+      "allowed_absolute_change": 0.005801931640805198,
+      "pass": true
+    }
+  ],
+  "window_flux_checks": [
+    {
+      "name": "W01/inward_reference_flux_m3_s",
+      "prior": 0.5247037805324795,
+      "final": 0.5249763406738867,
+      "unit": "m3/s",
+      "absolute_change": 0.00027256014140719653,
+      "relative_change": 0.0005191855714056072,
+      "allowed_absolute_change": 0.010499526813477733,
+      "pass": true
+    },
+    {
+      "name": "W01/outward_reference_flux_m3_s",
+      "prior": 0.002891609376402438,
+      "final": 0.002886793634901432,
+      "unit": "m3/s",
+      "absolute_change": 4.815741501006023e-06,
+      "relative_change": 0.0016681973532099927,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W02/inward_reference_flux_m3_s",
+      "prior": 1.9471578525179523,
+      "final": 1.9470007698068654,
+      "unit": "m3/s",
+      "absolute_change": 0.00015708271108683114,
+      "relative_change": 8.067932664577894e-05,
+      "allowed_absolute_change": 0.03894001539613731,
+      "pass": true
+    },
+    {
+      "name": "W02/outward_reference_flux_m3_s",
+      "prior": 5.483451590025181e-05,
+      "final": 5.483645287054691e-05,
+      "unit": "m3/s",
+      "absolute_change": 1.93697029510204e-09,
+      "relative_change": 3.532267668141609e-05,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W03/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W03/outward_reference_flux_m3_s",
+      "prior": 0.4165957002902367,
+      "final": 0.4167819691706932,
+      "unit": "m3/s",
+      "absolute_change": 0.00018626888045653045,
+      "relative_change": 0.00044692163825408665,
+      "allowed_absolute_change": 0.008335639383413864,
+      "pass": true
+    },
+    {
+      "name": "W04/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W04/outward_reference_flux_m3_s",
+      "prior": 0.6653637094691072,
+      "final": 0.665631589762007,
+      "unit": "m3/s",
+      "absolute_change": 0.00026788029289981363,
+      "relative_change": 0.0004024452820750181,
+      "allowed_absolute_change": 0.01331263179524014,
+      "pass": true
+    },
+    {
+      "name": "W05/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W05/outward_reference_flux_m3_s",
+      "prior": 0.747474791511605,
+      "final": 0.7477833956530678,
+      "unit": "m3/s",
+      "absolute_change": 0.00030860414146283155,
+      "relative_change": 0.0004126918881279996,
+      "allowed_absolute_change": 0.014955667913061356,
+      "pass": true
+    },
+    {
+      "name": "W06/inward_reference_flux_m3_s",
+      "prior": 0.8695601388037477,
+      "final": 0.8695668650346456,
+      "unit": "m3/s",
+      "absolute_change": 6.726230897924346e-06,
+      "relative_change": 7.735150876127687e-06,
+      "allowed_absolute_change": 0.017391337300692915,
+      "pass": true
+    },
+    {
+      "name": "W06/outward_reference_flux_m3_s",
+      "prior": 6.67542822896715e-05,
+      "final": 6.574032597278154e-05,
+      "unit": "m3/s",
+      "absolute_change": 1.0139563168899609e-06,
+      "relative_change": 0.015423658186753881,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W07/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W07/outward_reference_flux_m3_s",
+      "prior": 0.7350125979398943,
+      "final": 0.7344647133673629,
+      "unit": "m3/s",
+      "absolute_change": 0.0005478845725314097,
+      "relative_change": 0.0007459644589587927,
+      "allowed_absolute_change": 0.014689294267347257,
+      "pass": true
+    },
+    {
+      "name": "W08/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W08/outward_reference_flux_m3_s",
+      "prior": 0.2454196934968139,
+      "final": 0.24536278119375646,
+      "unit": "m3/s",
+      "absolute_change": 5.6912303057432556e-05,
+      "relative_change": 0.00023195165452779258,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W09/inward_reference_flux_m3_s",
+      "prior": 0.0,
+      "final": 0.0,
+      "unit": "m3/s",
+      "absolute_change": 0.0,
+      "relative_change": null,
+      "allowed_absolute_change": 0.005,
+      "pass": true
+    },
+    {
+      "name": "W09/outward_reference_flux_m3_s",
+      "prior": 0.4094863763306796,
+      "final": 0.4094578288558796,
+      "unit": "m3/s",
+      "absolute_change": 2.8547474799967e-05,
+      "relative_change": 6.972018310099304e-05,
+      "allowed_absolute_change": 0.008189156577117593,
+      "pass": true
+    }
+  ],
+  "scope": "Iteration stability diagnostic on one mesh. Not a mesh independence study, experimental validation, uncertainty estimate or proof of real-house ventilation performance. Window-plane U interpolation is not the conservative mesh-face phi flux."
+}

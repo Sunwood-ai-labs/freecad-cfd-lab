@@ -1,0 +1,446 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureEdges -angle 60 constant/triSurface/AirDomain_Geometry.stl AirDomain_Geometry.fms
+Date   : Oct 30 2026
+Time   : 17:49:05
+Host   : 7ed0b8af2c63
+PID    : 7306
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Writing : "AirDomain_Geometry.fms"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : cartesianMesh
+Date   : Oct 30 2026
+Time   : 17:49:05
+Host   : 7ed0b8af2c63
+PID    : 7321
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Created 22 surface patches
+Setting root cube size and refinement parameters
+Root box (-68 -98 -126) (188 158 130)
+Requested cell size corresponds to octree level 8
+Requested boundary cell size corresponds to octree level 8
+Refining boundary
+Refining boundary boxes to the given size
+Finished refining boundary boxes
+Refining boxes intersecting surface meshes
+Finished refinement of boxes intersecting surface meshes
+Performing automatic refinement
+Performing automatic refinement
+Marking inside/outside.
+Number of internal boxes is 99440
+Number of outside boxes is 66456
+Number of data boxes is 42936
+Number of unknown boxes is 0
+Refining boxes inside objects
+Ref level for object MeshRefinement002 is 10 refinement thickness 0
+Finished refinement of boxes inside objects
+Marking inside/outside.
+Number of internal boxes is 127664
+Number of outside boxes is 70936
+Number of data boxes is 46296
+Number of unknown boxes is 0
+Refining boxes near DATA boxes
+Marking inside/outside.
+Number of internal boxes is 133208
+Number of outside boxes is 74104
+Number of data boxes is 48672
+Number of unknown boxes is 0
+Finished refining boxes near DATA boxes
+Extracting polyMesh
+Creating octree vertices
+Octree nodes 174287
+Resizing points!
+Finished creating octree vertices
+Creating polyMesh from octree
+Reordering boundary faces 
+Finished reordering boundary faces
+Finished creating polyMesh
+Mesh has :
+135397 vertices 
+351360 faces
+108256 cells
+Finished extracting polyMesh
+Checking for irregular surface connections
+Checking cells connected to surface vertices
+Found 39168 boundary faces 
+Found 0 problematic vertices
+Finished checking cells connected to surface vertices
+Checking for non-manifold surface edges
+Found 0 non-manifold edges
+Finished checking for non-manifold surface edges
+Checking faces connections to surface vertices
+Found 0 invalid connections
+Finished checking faces connections to surface vertices
+Finished checking for irregular surface connections
+Found 39168 boundary faces 
+Found 0 non-mappable cells
+Checking cell connections
+Finished checking cell connections
+Found 39168 boundary faces 
+Marked 0 faces for decomposition
+Found 39168 boundary faces 
+Smoothing mesh surface before mapping.
+Found 0 corners at the surface of the volume mesh
+Found 0 edge points at the surface of the volume mesh
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Found 0 corners at the surface of the volume mesh
+Found 0 edge points at the surface of the volume mesh
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Found 0 corners at the surface of the volume mesh
+Found 0 edge points at the surface of the volume mesh
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Finished smoothing mesh surface before mapping.
+Mapping vertices onto surface
+Finished mapping vertices onto surface
+Found 0 corners at the surface of the volume mesh
+Found 0 edge points at the surface of the volume mesh
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 3
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Found 39168 boundary faces 
+Extracting edges
+Starting topological adjustment of patches
+No topological adjustment was needed
+Starting geometrical adjustment of patches
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+60 edge groups found!
+No geometrical adjustment was needed
+Found 39168 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+Decomposing 48 internal faces
+Performing patch correction
+Found 39168 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+Finished with patch correction
+Found 39168 boundary faces 
+Removing selected cells from the mesh
+New cells size 108184
+Reordering boundary faces 
+Finished reordering boundary faces
+Removing faces
+Finished removing faces
+Finished removing selected cells from the mesh
+Adding new cells 
+Adding 720 cells to the mesh
+Finished adding cells to the mesh
+Reordering bnd faces
+Reordering boundary faces 
+Finished reordering boundary faces
+Finding bnd faces
+Found 39168 boundary faces 
+Mapping vertices with respect to surface patches
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+60 edge groups found!
+Finished mapping vertices with respect to surface patches
+Found 39168 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Found 39168 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+Found 40 corners at the surface of the volume mesh
+Found 1972 edge points at the surface of the volume mesh
+Starting creating layer cells
+Adding 40824 cells to the mesh
+Finished adding cells to the mesh
+Reordering boundary faces 
+Finished reordering boundary faces
+Finished creating layer cells
+Found 42494 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 2040 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Starting untangling the surface of the volume mesh
+Number of inverted boundary faces is 0
+Finished untangling the surface of the volume mesh
+Found 42494 boundary faces 
+Found 40 corners at the surface of the volume mesh
+Found 2040 edge points at the surface of the volume mesh
+Starting smoothing the mesh
+Starting untangling the mesh
+Iteration 0. Number of bad faces is 0
+Finished untangling the mesh
+Finished smoothing the mesh
+Iteration 0. Number of bad faces is 0
+Starting untangling the mesh
+Iteration 0. Number of bad faces is 0
+Finished untangling the mesh
+Renumbering the mesh
+Finished renumbering the mesh
+Renaming boundary patches
+Finished renaming boundary patches
+ExecutionTime = 32.77 s
+ClockTime = 6 s
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary
+Date   : Oct 30 2026
+Time   : 17:49:13
+Host   : 7ed0b8af2c63
+PID    : 11302
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 6(patch_0_0 patch_0_1 patch_1_0 patch_2_0 patch_3_0 patch_4_0)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 1(patch_0_1)
+fieldDict:
+{
+    patch_0_0
+    {
+        type            wall;
+        nFaces          13711;
+        startFace       434797;
+    }
+    patch_0_1
+    {
+        type            empty;
+        nFaces          13711;
+        startFace       448508;
+    }
+    patch_1_0
+    {
+        type            wall;
+        nFaces          240;
+        startFace       462219;
+    }
+    patch_2_0
+    {
+        type            wall;
+        nFaces          240;
+        startFace       462459;
+    }
+    patch_3_0
+    {
+        type            wall;
+        nFaces          960;
+        startFace       462699;
+    }
+    patch_4_0
+    {
+        type            wall;
+        nFaces          13632;
+        startFace       463659;
+    }
+}
+
+Writing modified boundary
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : flattenMesh
+Date   : Oct 30 2026
+Time   : 17:49:16
+Host   : 7ed0b8af2c63
+PID    : 11316
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+bounding box: min = (0 0 0) max = (120 60 4) metres.
+--> FOAM Warning : 
+    From void Foam::twoDPointCorrector::calcAddressing() const
+    in file twoDPointCorrector/twoDPointCorrector.C at line 154
+    the number of vertices in the geometry is odd - this should not be the case for a 2-D case. Please check the geometry.
+--> FOAM Warning : 
+    From void Foam::twoDPointCorrector::calcAddressing() const
+    in file twoDPointCorrector/twoDPointCorrector.C at line 163
+    The number of points in the mesh is not equal to twice the number of edges normal to the plane - this may be OK only for wedge geometries.
+    Please check the geometry or adjust the orthogonality tolerance.
+
+Number of normal edges: 112011 number of points: 178413
+Writing points into directory "/tmp/case-b/meshCase/constant/polyMesh"
+
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : extrudeMesh
+Date   : Oct 30 2026
+Time   : 17:49:18
+Host   : 7ed0b8af2c63
+PID    : 11331
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel plane
+Selected extrudeModel for linearNormal using coeffs 
+{
+    sourceCase      "./";
+    sourcePatches   ( patch_0_1 );
+    constructFrom   patch;
+    exposedPatchName patch_0_1;
+    flipNormals     false;
+    extrudeModel    plane;
+    thickness       1;
+    mergeTol        1e-06;
+    mergeFaces      false;
+}
+
+Extruding from patch using model plane
+Collapsing edges < 1e-06 of bounding box
+
+Extruding patches 1(patch_0_1) on mesh "/tmp/case-b/meshCase/"
+
+Create mesh for time = 0
+
+Adding overall 0 processor patches.
+Mesh bounding box : (0 0 4) (120 60 5)
+        with span : (120 60 1)
+Merge distance    : 1e-06
+
+Collapsing edges < 1e-06 ...
+
+            Uncollapsed edges = 0 / 70339
+    Number of points : 28610
+    Not visited      : 0
+    Not collapsed    : 28610
+    Collapsed        : 0
+
+Collapsing 0 cells
+Writing mesh to "/tmp/case-b/meshCase/constant/region0"
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : foamToSurface -scale 1000 -tri surfaceMesh.vtk
+Date   : Oct 30 2026
+Time   : 17:49:21
+Host   : 7ed0b8af2c63
+PID    : 11347
+I/O    : uncollated
+Case   : /tmp/case-b/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::instantList Foam::timeSelector::select0(Foam::Time&, const Foam::argList&)
+    in file db/Time/timeSelector.C at line 258
+    No time specified or available, selecting 'constant'
+Create polyMesh for time = constant
+
+
+Time [0] = constant
+writing "surfaceMesh.vtk" triangulated with scaling 1000
+
+
+End
+

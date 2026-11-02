@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "cells": 10823,
+  "converged_iteration": 242,
+  "mesh_quality": "Mesh OK",
+  "fields": {
+    "U": {
+      "cells": 10823,
+      "components": 3,
+      "all_values_finite": true
+    },
+    "p": {
+      "cells": 10823,
+      "components": 1,
+      "all_values_finite": true
+    }
+  },
+  "freecad_document_crc_and_xml": "pass",
+  "scope": "Integration smoke test; physical accuracy and mesh independence are not validated"
+}

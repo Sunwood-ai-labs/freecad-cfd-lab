@@ -1,0 +1,2181 @@
+{
+  "source_root": "Original experiment workspace (2026-10-29/fr-2)",
+  "notes": [
+    "Observation JSON and logs retain original paths as historical provenance.",
+    "Executable paths were adapted; full CFD/build wrappers were not rerun after relocation.",
+    "Case fields and meshes are distributed separately as release assets.",
+    "The exact 3D 0/U initialized field is omitted from Git and included in the result release ZIP."
+  ],
+  "files": [
+    {
+      "source": "outputs/CFD-Elbow/CfdOF-Qt6-compatibility.patch",
+      "destination": "experiments/elbow/CfdOF-Qt6-compatibility.patch",
+      "source_sha256": "9d6765330a2f025883658a5f16546609ecc8f18f140ca1ecb8865b8fcdb634f7",
+      "published_sha256": "9d6765330a2f025883658a5f16546609ecc8f18f140ca1ecb8865b8fcdb634f7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/Elbow-CFD.FCStd",
+      "destination": "experiments/elbow/Elbow-CFD.FCStd",
+      "source_sha256": "abe88ca39d9277042228542b4dcea73e2ed019a054f92bc2fc1eb4fae7e710d9",
+      "published_sha256": "abe88ca39d9277042228542b4dcea73e2ed019a054f92bc2fc1eb4fae7e710d9",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/freecad-mesh.png",
+      "destination": "experiments/elbow/freecad-mesh.png",
+      "source_sha256": "49ff94fd5c4d193840bf30ffd3dec4aa4f18317e52e80c719d5ad2faef62f301",
+      "published_sha256": "49ff94fd5c4d193840bf30ffd3dec4aa4f18317e52e80c719d5ad2faef62f301",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/mesh-check.log",
+      "destination": "experiments/elbow/mesh-check.log",
+      "source_sha256": "eb7ae12da561521227de40fc07007c84f4031cb6da8a3e155a71b8bc39bbb20c",
+      "published_sha256": "eb7ae12da561521227de40fc07007c84f4031cb6da8a3e155a71b8bc39bbb20c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/mesh-run.log",
+      "destination": "experiments/elbow/mesh-run.log",
+      "source_sha256": "5df0682f4c42acca713985e7f2b5988de53be5332fa6096058a8f3477c1d2242",
+      "published_sha256": "5df0682f4c42acca713985e7f2b5988de53be5332fa6096058a8f3477c1d2242",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/open-results.py",
+      "destination": "experiments/elbow/source/open-results.py",
+      "source_sha256": "18ac2a80792270fd08abd4a20a87765eb37d44d8e78630c9ac8d4a9f2cc2f741",
+      "published_sha256": "1903ba29f834058375b8a590247e670c5a0dca782900e30febd05bb67a587c09",
+      "adapted": true
+    },
+    {
+      "source": "outputs/CFD-Elbow/paraview-window.png",
+      "destination": "experiments/elbow/paraview-window.png",
+      "source_sha256": "b11f634e2b8a9024a4e94c1361fcec9d93d3c334a6086de64f373d7f8af5853d",
+      "published_sha256": "b11f634e2b8a9024a4e94c1361fcec9d93d3c334a6086de64f373d7f8af5853d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/pressure.png",
+      "destination": "experiments/elbow/pressure.png",
+      "source_sha256": "c9ece0ff12d4d37a899f8a4cb4772dafa67c50eb5e6cca94cf810955b15f0315",
+      "published_sha256": "c9ece0ff12d4d37a899f8a4cb4772dafa67c50eb5e6cca94cf810955b15f0315",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/render-results.py",
+      "destination": "experiments/elbow/source/render-results.py",
+      "source_sha256": "05bdb7f72af59e6a023e8061135ed87334b73cc55e86e71f2b2a413f653a18ca",
+      "published_sha256": "c1cfb7a6ef532071340d31eadd19d14ca028a52e2fb9f098b557f961dd50b3c8",
+      "adapted": true
+    },
+    {
+      "source": "outputs/CFD-Elbow/result-summary.json",
+      "destination": "experiments/elbow/result-summary.json",
+      "source_sha256": "30875a83b42ab18c2bbb0dce928b17d56f3dc7dc3c5f969eac005dfbf2709cd6",
+      "published_sha256": "30875a83b42ab18c2bbb0dce928b17d56f3dc7dc3c5f969eac005dfbf2709cd6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/Run-Elbow.FCMacro",
+      "destination": "experiments/elbow/source/Run-Elbow.FCMacro",
+      "source_sha256": "a927a5e63db17bc4740fca654ec44f93729445f0fd72379c77fe1db6ed526004",
+      "published_sha256": "830ff7e5a1aa91b32fc7d6910201688620e9ca7858556cfe5648e58f5b0c6ac9",
+      "adapted": true
+    },
+    {
+      "source": "outputs/CFD-Elbow/solver-run.log",
+      "destination": "experiments/elbow/solver-run.log",
+      "source_sha256": "75122e762428c2774b2284ac23cc3955fd98d4cc66daaf7c5f05d2fd6889b16a",
+      "published_sha256": "75122e762428c2774b2284ac23cc3955fd98d4cc66daaf7c5f05d2fd6889b16a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/velocity.png",
+      "destination": "experiments/elbow/velocity.png",
+      "source_sha256": "b2d0777f9493b4b856f61d5d6c2806abe776975ad33162a81c332d3b7d6e9fa7",
+      "published_sha256": "b2d0777f9493b4b856f61d5d6c2806abe776975ad33162a81c332d3b7d6e9fa7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/verification.json",
+      "destination": "experiments/elbow/verification.json",
+      "source_sha256": "587087ee3b7ba0a2121227a5b6c30c536e26f274ed6a95611f741b7e2b863aaa",
+      "published_sha256": "587087ee3b7ba0a2121227a5b6c30c536e26f274ed6a95611f741b7e2b863aaa",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/verify-results.py",
+      "destination": "experiments/elbow/source/verify-results.py",
+      "source_sha256": "24f586b83ef85483e38d1ea604032111e66aabc78283f1f751fc66b16004b826",
+      "published_sha256": "3ef4491c8b091f606e5b690fef2c0d46cba6ef1dda2c6558ac1c568e7424b7a8",
+      "adapted": true
+    },
+    {
+      "source": "outputs/CFD-Elbow/使い方.txt",
+      "destination": "experiments/elbow/使い方.txt",
+      "source_sha256": "b082010354cd5e68b5d1921931adc98b526e3a1eec106875965a8f1ea95d8114",
+      "published_sha256": "b082010354cd5e68b5d1921931adc98b526e3a1eec106875965a8f1ea95d8114",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/01-freecad.png",
+      "destination": "experiments/tools-guide/01-freecad.png",
+      "source_sha256": "696837d45fce6ad826ab84660834f7ee732291f03101e0840c878be9131db9da",
+      "published_sha256": "696837d45fce6ad826ab84660834f7ee732291f03101e0840c878be9131db9da",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/02-cfdof.png",
+      "destination": "experiments/tools-guide/02-cfdof.png",
+      "source_sha256": "4cdef7c5848f5a49bf0b0fc029c854623ff3dd6340f3293c1db6f1a1ecb1a9bc",
+      "published_sha256": "4cdef7c5848f5a49bf0b0fc029c854623ff3dd6340f3293c1db6f1a1ecb1a9bc",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/03-openfoam.png",
+      "destination": "experiments/tools-guide/03-openfoam.png",
+      "source_sha256": "4b46fdf7718b72f6e6735e936a4df34629ef10f6aaf9ffd0ec6ea596209b5ae5",
+      "published_sha256": "4b46fdf7718b72f6e6735e936a4df34629ef10f6aaf9ffd0ec6ea596209b5ae5",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/04-paraview.png",
+      "destination": "experiments/tools-guide/04-paraview.png",
+      "source_sha256": "f7fa740ccbf2a122c61773fc7c1b8d17722c6c322d0b88555bc00903e93e5452",
+      "published_sha256": "f7fa740ccbf2a122c61773fc7c1b8d17722c6c322d0b88555bc00903e93e5452",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/CFD-ツール別説明.pdf",
+      "destination": "experiments/tools-guide/CFD-ツール別説明.pdf",
+      "source_sha256": "f1b1f1e5d637a7dc61c20089d2831037ac84485ce1ceb8dbc328f8f368e3bb68",
+      "published_sha256": "f1b1f1e5d637a7dc61c20089d2831037ac84485ce1ceb8dbc328f8f368e3bb68",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/overview.png",
+      "destination": "experiments/tools-guide/overview.png",
+      "source_sha256": "77a5888360543627c6307decfe22caafc7d54277622731f3ec24ae0df90fd4c1",
+      "published_sha256": "77a5888360543627c6307decfe22caafc7d54277622731f3ec24ae0df90fd4c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/overview.svg",
+      "destination": "experiments/tools-guide/overview.svg",
+      "source_sha256": "e60d90df16ac545c747e2729683fb3bb1199a0477331e573a3c7064415b29c91",
+      "published_sha256": "e60d90df16ac545c747e2729683fb3bb1199a0477331e573a3c7064415b29c91",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/pressure.png",
+      "destination": "experiments/tools-guide/pressure.png",
+      "source_sha256": "c9ece0ff12d4d37a899f8a4cb4772dafa67c50eb5e6cca94cf810955b15f0315",
+      "published_sha256": "c9ece0ff12d4d37a899f8a4cb4772dafa67c50eb5e6cca94cf810955b15f0315",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/tools-overview.png",
+      "destination": "experiments/tools-guide/tools-overview.png",
+      "source_sha256": "00f0582addfc64d436af500bc8835d90add2a328b8f3db61c65f144f6b1b50aa",
+      "published_sha256": "00f0582addfc64d436af500bc8835d90add2a328b8f3db61c65f144f6b1b50aa",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Visual-Guide/tools-overview.svg",
+      "destination": "experiments/tools-guide/tools-overview.svg",
+      "source_sha256": "d8edc1e4cbc33ac7f7d2ab73dbe1a91577f12e1b08d2893c4f13b5515a9cdb57",
+      "published_sha256": "d8edc1e4cbc33ac7f7d2ab73dbe1a91577f12e1b08d2893c4f13b5515a9cdb57",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/animation-summary.json",
+      "destination": "experiments/window-comparison/animation-summary.json",
+      "source_sha256": "e2d667cafbabef0c7400bfdd3ee079b142f01b660e77075554cbeb1fb00913cc",
+      "published_sha256": "e2d667cafbabef0c7400bfdd3ee079b142f01b660e77075554cbeb1fb00913cc",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/animation-verification.json",
+      "destination": "experiments/window-comparison/animation-verification.json",
+      "source_sha256": "fab4dea956455738fcd5f66a756cc7c49cbe0e63a1f7f46e5738ea58f6ec1626",
+      "published_sha256": "fab4dea956455738fcd5f66a756cc7c49cbe0e63a1f7f46e5738ea58f6ec1626",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/comparison-poster.png",
+      "destination": "experiments/window-comparison/comparison-poster.png",
+      "source_sha256": "1e266285758150cda8a452b472abac7438ce0c345d6aa28f4de8c58e388be415",
+      "published_sha256": "1e266285758150cda8a452b472abac7438ce0c345d6aa28f4de8c58e388be415",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/preview.webp",
+      "destination": "experiments/window-comparison/preview.webp",
+      "source_sha256": "8104ba92f760eb62f5908bdade565e8d91b7b83961ec21ea3329bbd621fb832a",
+      "published_sha256": "8104ba92f760eb62f5908bdade565e8d91b7b83961ec21ea3329bbd621fb832a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/Render-House-Animation.py",
+      "destination": "experiments/window-comparison/source/Render-House-Animation.py",
+      "source_sha256": "de7cb3e0178f30b1043dc30d1ad1742acb47e3cf796770d4593e74c0e167c466",
+      "published_sha256": "de7cb3e0178f30b1043dc30d1ad1742acb47e3cf796770d4593e74c0e167c466",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/Run-House-Comparison.FCMacro",
+      "destination": "experiments/window-comparison/source/Run-House-Comparison.FCMacro",
+      "source_sha256": "216ade3028b51542739dc478f4b8b6aedb4ba758a3ed8d6d5894f5f73992a70a",
+      "published_sha256": "acfd94d84724cbe32e66a4ad5c7334e6dcc55777f968ca0304661a20181bd42c",
+      "adapted": true
+    },
+    {
+      "source": "outputs/House-Airflow/saved-model-validation.json",
+      "destination": "experiments/window-comparison/saved-model-validation.json",
+      "source_sha256": "5ec4115b93ac7a954d5d38200bc54ef22a17d2219891e7e63f3dcc112df44e32",
+      "published_sha256": "5ec4115b93ac7a954d5d38200bc54ef22a17d2219891e7e63f3dcc112df44e32",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/solver-validation.json",
+      "destination": "experiments/window-comparison/solver-validation.json",
+      "source_sha256": "cc030f05aaedc930d9be0f2f8ef01ef2228f7d5cfe42269ebc73ffe8cc44b911",
+      "published_sha256": "cc030f05aaedc930d9be0f2f8ef01ef2228f7d5cfe42269ebc73ffe8cc44b911",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/窓配置と風通し比較.mp4",
+      "destination": "experiments/window-comparison/窓配置と風通し比較.mp4",
+      "source_sha256": "b8ace0d05d5619d21acf4f82c44aa0ab4e3bebd7bec83b15f310fa1205ab4c60",
+      "published_sha256": "b8ace0d05d5619d21acf4f82c44aa0ab4e3bebd7bec83b15f310fa1205ab4c60",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/窓配置の比較条件.png",
+      "destination": "experiments/window-comparison/窓配置の比較条件.png",
+      "source_sha256": "647bb4e82a0f8bb1259b039f70417086d2e21eb6b95b3f82e00080e622a8223f",
+      "published_sha256": "647bb4e82a0f8bb1259b039f70417086d2e21eb6b95b3f82e00080e622a8223f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/窓配置の比較条件.svg",
+      "destination": "experiments/window-comparison/窓配置の比較条件.svg",
+      "source_sha256": "4f50c41a14cc4c1ad460ed9161fab162d734e533193712d1564f07b01539b562",
+      "published_sha256": "4f50c41a14cc4c1ad460ed9161fab162d734e533193712d1564f07b01539b562",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/説明と再生方法.txt",
+      "destination": "experiments/window-comparison/説明と再生方法.txt",
+      "source_sha256": "4b60ba9de3094763abcfbc34bab2e44e1d51b96746143ecaee88243ccd9eb3c0",
+      "published_sha256": "4b60ba9de3094763abcfbc34bab2e44e1d51b96746143ecaee88243ccd9eb3c0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/4人家族の平屋_BIM.FCStd",
+      "destination": "experiments/family-house/4人家族の平屋_BIM.FCStd",
+      "source_sha256": "e3684f153d9b4e368f4e999cf78f46bce93eee6412e5e97833cd467241039eb9",
+      "published_sha256": "e3684f153d9b4e368f4e999cf78f46bce93eee6412e5e97833cd467241039eb9",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/4人家族の平屋_基本設計案.pdf",
+      "destination": "experiments/family-house/4人家族の平屋_基本設計案.pdf",
+      "source_sha256": "d2797c5152385de7327964a1ea8a5f05e286d0d1c92a114b34a1476d351330d2",
+      "published_sha256": "d2797c5152385de7327964a1ea8a5f05e286d0d1c92a114b34a1476d351330d2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/cutaway.png",
+      "destination": "experiments/family-house/cutaway.png",
+      "source_sha256": "d237aa8854c86481ca6257a18f7119edf66673af43fab2f1f0e00d102f68b2f6",
+      "published_sha256": "d237aa8854c86481ca6257a18f7119edf66673af43fab2f1f0e00d102f68b2f6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/east-elevation.png",
+      "destination": "experiments/family-house/east-elevation.png",
+      "source_sha256": "2ec0a95381416f26d505ac858784691106ecb0dedacc42f9b01bd3e3d72e262e",
+      "published_sha256": "2ec0a95381416f26d505ac858784691106ecb0dedacc42f9b01bd3e3d72e262e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/exterior.png",
+      "destination": "experiments/family-house/exterior.png",
+      "source_sha256": "82eef1265e9b9aeeb69aef380e01324fe33ec33400ca3213324b053285eba484",
+      "published_sha256": "82eef1265e9b9aeeb69aef380e01324fe33ec33400ca3213324b053285eba484",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/house-design.json",
+      "destination": "experiments/family-house/house-design.json",
+      "source_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+      "published_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/native-file-validation.json",
+      "destination": "experiments/family-house/native-file-validation.json",
+      "source_sha256": "0d39a5768f13ffdeb6662e77192211929ce3490ce32d134d24395c9bdf6687dd",
+      "published_sha256": "0d39a5768f13ffdeb6662e77192211929ce3490ce32d134d24395c9bdf6687dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/native-floor-plan.svg",
+      "destination": "experiments/family-house/native-floor-plan.svg",
+      "source_sha256": "42709771f135d3b4c60fc80ea6ed10dd4415b711e373c550f186bfb9b8fe03e5",
+      "published_sha256": "42709771f135d3b4c60fc80ea6ed10dd4415b711e373c550f186bfb9b8fe03e5",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/native-model-verification.json",
+      "destination": "experiments/family-house/native-model-verification.json",
+      "source_sha256": "20ae47d9d2c61c49bb101c9563f5a7071c555583c5e715626a105954f77cb624",
+      "published_sha256": "20ae47d9d2c61c49bb101c9563f5a7071c555583c5e715626a105954f77cb624",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/north-elevation.png",
+      "destination": "experiments/family-house/north-elevation.png",
+      "source_sha256": "327f0a8cf38b8937a35d13e870047858f420190216935cc08f1996d94a52cc18",
+      "published_sha256": "327f0a8cf38b8937a35d13e870047858f420190216935cc08f1996d94a52cc18",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/pdf-qa.json",
+      "destination": "experiments/family-house/pdf-qa.json",
+      "source_sha256": "d258949fd2b6652ee5077a3b7a6b7e91144177ae5b67188b2dbcb9d9d8e3f756",
+      "published_sha256": "d258949fd2b6652ee5077a3b7a6b7e91144177ae5b67188b2dbcb9d9d8e3f756",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/plan-model.png",
+      "destination": "experiments/family-house/plan-model.png",
+      "source_sha256": "64446954af891d686cff0d51c94f3dfc351249238229a921fbb7941c2cafc17d",
+      "published_sha256": "64446954af891d686cff0d51c94f3dfc351249238229a921fbb7941c2cafc17d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/plan-qa.json",
+      "destination": "experiments/family-house/plan-qa.json",
+      "source_sha256": "0f70a71b69e7aa1a82d7b3a19408b3a0476b218d4e5fd1a2289e91a4aa34a59b",
+      "published_sha256": "0f70a71b69e7aa1a82d7b3a19408b3a0476b218d4e5fd1a2289e91a4aa34a59b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/south-elevation.png",
+      "destination": "experiments/family-house/south-elevation.png",
+      "source_sha256": "32ea6c225732ed4663051571a0c9975d4e7f8a111f988c04c6ebff8ee9b21f35",
+      "published_sha256": "32ea6c225732ed4663051571a0c9975d4e7f8a111f988c04c6ebff8ee9b21f35",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/west-elevation.png",
+      "destination": "experiments/family-house/west-elevation.png",
+      "source_sha256": "eb403d7401f3b8535c550f386dc11b5e1cf1ab32f5043b351f6d5be974540067",
+      "published_sha256": "eb403d7401f3b8535c550f386dc11b5e1cf1ab32f5043b351f6d5be974540067",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/はじめに.txt",
+      "destination": "experiments/family-house/はじめに.txt",
+      "source_sha256": "cb76427e82fa4e6a05671b89ce5b62685906e1fca3566381d6d5be99ded5c768",
+      "published_sha256": "cb76427e82fa4e6a05671b89ce5b62685906e1fca3566381d6d5be99ded5c768",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/家具入り平面図.png",
+      "destination": "experiments/family-house/家具入り平面図.png",
+      "source_sha256": "b0ba29bb7af0388fb72fe552f88ee542c97b6b48f183e55d41b33ed8e5768137",
+      "published_sha256": "b0ba29bb7af0388fb72fe552f88ee542c97b6b48f183e55d41b33ed8e5768137",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/家具入り平面図.svg",
+      "destination": "experiments/family-house/家具入り平面図.svg",
+      "source_sha256": "19d95fed16677a41241a812118abcb687f24d8da9028690386ed7c2fa7ba61b1",
+      "published_sha256": "19d95fed16677a41241a812118abcb687f24d8da9028690386ed7c2fa7ba61b1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/生活動線図.png",
+      "destination": "experiments/family-house/生活動線図.png",
+      "source_sha256": "0036b74d55951d0c0931bec44f81b7dee671b9d36b2e9c476de941334774c443",
+      "published_sha256": "0036b74d55951d0c0931bec44f81b7dee671b9d36b2e9c476de941334774c443",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/生活動線図.svg",
+      "destination": "experiments/family-house/生活動線図.svg",
+      "source_sha256": "9ffd3b1e6dbd25f05edeb59e0b7c4112a5a6939762cef1256bcb34d0555644ed",
+      "published_sha256": "9ffd3b1e6dbd25f05edeb59e0b7c4112a5a6939762cef1256bcb34d0555644ed",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/source/bim_builder_lib.py",
+      "destination": "experiments/family-house/source/bim_builder_lib.py",
+      "source_sha256": "e7b61dc63ddb89e3b670b92445ad1bc88ae1b30a0337b12b896b8dfbde7eda85",
+      "published_sha256": "e7b61dc63ddb89e3b670b92445ad1bc88ae1b30a0337b12b896b8dfbde7eda85",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House/source/build_family_house.FCMacro",
+      "destination": "experiments/family-house/source/build_family_house.FCMacro",
+      "source_sha256": "32fed9970850424a9c9e09fffcd097cbe5894fb0c6c4472beb1df5133f2d61ba",
+      "published_sha256": "e9433e4f4d9b58d253606191fbe1507dd125c8ce219f1a30e045dff67ac897f2",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House/source/finalize_family_house.FCMacro",
+      "destination": "experiments/family-house/source/finalize_family_house.FCMacro",
+      "source_sha256": "9ac30066ffe79acf60d6e51eb2d714f33de3897b12be1e7319846a710a9ad28e",
+      "published_sha256": "be5fbc79693ed31ef5e2a0b5b63aa4e199f0d4f4903a8c20fcff62d34b1563e9",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/3D-flow.png",
+      "destination": "experiments/family-house-airflow/3D-flow.png",
+      "source_sha256": "d360d93d7f935897dc5a382659d0290b1de96057d3445708b5ab67a34e88df60",
+      "published_sha256": "d360d93d7f935897dc5a382659d0290b1de96057d3445708b5ab67a34e88df60",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/air-domain.brep",
+      "destination": "experiments/family-house-airflow/air-domain.brep",
+      "source_sha256": "e47e58b8e675cd6cbf05804c531c0bb12aa641c79c766b556deb49074433e6e8",
+      "published_sha256": "e47e58b8e675cd6cbf05804c531c0bb12aa641c79c766b556deb49074433e6e8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/animation-summary.json",
+      "destination": "experiments/family-house-airflow/animation-summary.json",
+      "source_sha256": "9f26763ce43d571d5329bf0493e6c4e5699659f18d77ed76d0a7817317d5fbfe",
+      "published_sha256": "9f26763ce43d571d5329bf0493e6c4e5699659f18d77ed76d0a7817317d5fbfe",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/animation-verification.json",
+      "destination": "experiments/family-house-airflow/animation-verification.json",
+      "source_sha256": "612e11ca2bca89d343511b25c285447e8b960c190ba4e231235e142e25a11291",
+      "published_sha256": "612e11ca2bca89d343511b25c285447e8b960c190ba4e231235e142e25a11291",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/building-shell.brep",
+      "destination": "experiments/family-house-airflow/building-shell.brep",
+      "source_sha256": "9ffd874cee861d09e86ab82daadbf6ce0a28d8a5ed1c14a5f32c42364633d80c",
+      "published_sha256": "9ffd874cee861d09e86ab82daadbf6ce0a28d8a5ed1c14a5f32c42364633d80c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/building-shell.stl",
+      "destination": "experiments/family-house-airflow/building-shell.stl",
+      "source_sha256": "2829662955fd20dcb5857f2184fd7066edd4747d0d954d80f068fe5a935b9201",
+      "published_sha256": "2829662955fd20dcb5857f2184fd7066edd4747d0d954d80f068fe5a935b9201",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/cell-centres-400.log",
+      "destination": "experiments/family-house-airflow/cell-centres-400.log",
+      "source_sha256": "0c92159712fba8d322114ce7de0f30d764347f027f35fe9a874141a5527a6ce7",
+      "published_sha256": "0c92159712fba8d322114ce7de0f30d764347f027f35fe9a874141a5527a6ce7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/cell-centres-500.log",
+      "destination": "experiments/family-house-airflow/cell-centres-500.log",
+      "source_sha256": "58ab4907a561049b28cdf0779adeae9f79947d2360784f90616303ab3b14f35f",
+      "published_sha256": "58ab4907a561049b28cdf0779adeae9f79947d2360784f90616303ab3b14f35f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/cell-centres.log",
+      "destination": "experiments/family-house-airflow/cell-centres.log",
+      "source_sha256": "69b14a632ab3d8dad19f09a18dfcccfc084a7e811e6014061e65ace9020afc97",
+      "published_sha256": "69b14a632ab3d8dad19f09a18dfcccfc084a7e811e6014061e65ace9020afc97",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/delivery-verification.json",
+      "destination": "experiments/family-house-airflow/delivery-verification.json",
+      "source_sha256": "9e41e83ab396cf78266fb834b3813af793628e113eb03af455f87fd2cbbade8e",
+      "published_sha256": "9e41e83ab396cf78266fb834b3813af793628e113eb03af455f87fd2cbbade8e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/Family-House-CFD.FCStd",
+      "destination": "experiments/family-house-airflow/Family-House-CFD.FCStd",
+      "source_sha256": "1fe8b6a0f0977c615b109fb6847cb8cf6833ea45bac2e7ab078fa3d8d9647416",
+      "published_sha256": "1fe8b6a0f0977c615b109fb6847cb8cf6833ea45bac2e7ab078fa3d8d9647416",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/freecad-cfd-model.png",
+      "destination": "experiments/family-house-airflow/freecad-cfd-model.png",
+      "source_sha256": "d25e654984a7d6590c2904086b4602777aba9fb890dcad6bbc1b02f68bbc42bc",
+      "published_sha256": "d25e654984a7d6590c2904086b4602777aba9fb890dcad6bbc1b02f68bbc42bc",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/independent-field-audit.json",
+      "destination": "experiments/family-house-airflow/independent-field-audit.json",
+      "source_sha256": "f98e0fea09e6e9f1d34db7af545853b57fafcf782a879d314543c710f41cdfb9",
+      "published_sha256": "f98e0fea09e6e9f1d34db7af545853b57fafcf782a879d314543c710f41cdfb9",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/independent-flux-audit.json",
+      "destination": "experiments/family-house-airflow/independent-flux-audit.json",
+      "source_sha256": "faf2e63238177faceb51429501132c11755a8753d28ed3e8e79da0436d078e37",
+      "published_sha256": "faf2e63238177faceb51429501132c11755a8753d28ed3e8e79da0436d078e37",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/mesh-check.log",
+      "destination": "experiments/family-house-airflow/mesh-check.log",
+      "source_sha256": "f3accb4f93cf269a7e2bfac14a05fe7edb011b7b03c411707a3b988be270f389",
+      "published_sha256": "f3accb4f93cf269a7e2bfac14a05fe7edb011b7b03c411707a3b988be270f389",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/mesh-geometry-audit.json",
+      "destination": "experiments/family-house-airflow/mesh-geometry-audit.json",
+      "source_sha256": "91c7b9ddd77f16b768a7e050c9968d8499f558f44748679ff31592c7511eb020",
+      "published_sha256": "91c7b9ddd77f16b768a7e050c9968d8499f558f44748679ff31592c7511eb020",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/mesh-run.log",
+      "destination": "experiments/family-house-airflow/mesh-run.log",
+      "source_sha256": "dd5d13a244c6e24c5e10a58e8e1d4c252495edd4f10b15385e314b88f416b812",
+      "published_sha256": "dd5d13a244c6e24c5e10a58e8e1d4c252495edd4f10b15385e314b88f416b812",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/native-cfd-validation.json",
+      "destination": "experiments/family-house-airflow/native-cfd-validation.json",
+      "source_sha256": "fb822af5f921e0a8bf065c980876e0b2780e739fd001b932eff49ee7229c84a2",
+      "published_sha256": "fb822af5f921e0a8bf065c980876e0b2780e739fd001b932eff49ee7229c84a2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/obstacles.brep",
+      "destination": "experiments/family-house-airflow/obstacles.brep",
+      "source_sha256": "d812b8973c9a692c2ca91b204c933f615114a9db7212a6c7b15711093a952108",
+      "published_sha256": "d812b8973c9a692c2ca91b204c933f615114a9db7212a6c7b15711093a952108",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/obstacles.stl",
+      "destination": "experiments/family-house-airflow/obstacles.stl",
+      "source_sha256": "0a7b4e2b39cf8159dab62eee61a39873396745caf8c2c0876ac09ba72207af62",
+      "published_sha256": "0a7b4e2b39cf8159dab62eee61a39873396745caf8c2c0876ac09ba72207af62",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/poster.png",
+      "destination": "experiments/family-house-airflow/poster.png",
+      "source_sha256": "3b9d6fbed9a9f2f471463d5f98e6d024dacff863ddb103d76d24f958faa09c9b",
+      "published_sha256": "3b9d6fbed9a9f2f471463d5f98e6d024dacff863ddb103d76d24f958faa09c9b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/preview.webp",
+      "destination": "experiments/family-house-airflow/preview.webp",
+      "source_sha256": "0ba254290de99f0019ab426db9d0d74c032ce9f692aa89dfdfbea43812622960",
+      "published_sha256": "0ba254290de99f0019ab426db9d0d74c032ce9f692aa89dfdfbea43812622960",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/process-validation.json",
+      "destination": "experiments/family-house-airflow/process-validation.json",
+      "source_sha256": "91ccd911080922da4b9f323649df8d90cd9fec8f75e803d184f283805628c675",
+      "published_sha256": "91ccd911080922da4b9f323649df8d90cd9fec8f75e803d184f283805628c675",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/reconstruct-400.log",
+      "destination": "experiments/family-house-airflow/reconstruct-400.log",
+      "source_sha256": "7fec49adea4efba412e97dd7a5df52ece7e76524b6f32eb19e15074ab748a045",
+      "published_sha256": "7fec49adea4efba412e97dd7a5df52ece7e76524b6f32eb19e15074ab748a045",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/reconstruct-500.log",
+      "destination": "experiments/family-house-airflow/reconstruct-500.log",
+      "source_sha256": "9059b48b68707c38bae3758995b11ffe48983fded72820bf584e7c45a0e12cf8",
+      "published_sha256": "9059b48b68707c38bae3758995b11ffe48983fded72820bf584e7c45a0e12cf8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/residual-history.json",
+      "destination": "experiments/family-house-airflow/residual-history.json",
+      "source_sha256": "9467765714280c5418b299ab19e9dfabff15b3ac6ed94523201551eb6cc43305",
+      "published_sha256": "9467765714280c5418b299ab19e9dfabff15b3ac6ed94523201551eb6cc43305",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/room-metrics.json",
+      "destination": "experiments/family-house-airflow/room-metrics.json",
+      "source_sha256": "1145b4e8fa27a21862db0ccabc30663642aa66c7df45379ca466eba1b37a8f2b",
+      "published_sha256": "1145b4e8fa27a21862db0ccabc30663642aa66c7df45379ca466eba1b37a8f2b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/setup-audit.json",
+      "destination": "experiments/family-house-airflow/setup-audit.json",
+      "source_sha256": "aec0e2717acc22125d300963ff5f03daf41defa25e8b9632976366c8f3d1d221",
+      "published_sha256": "aec0e2717acc22125d300963ff5f03daf41defa25e8b9632976366c8f3d1d221",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/setup.json",
+      "destination": "experiments/family-house-airflow/setup.json",
+      "source_sha256": "e3b95e8f59e8ce1232a298bd870977a166200dc87cdafbabfb1e78b6abe95817",
+      "published_sha256": "e3b95e8f59e8ce1232a298bd870977a166200dc87cdafbabfb1e78b6abe95817",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/small-gap-probes.json",
+      "destination": "experiments/family-house-airflow/small-gap-probes.json",
+      "source_sha256": "8a2ec7a13867d803b55524d452c088f23f40a7bee471e6aafaf5a3600f1edfee",
+      "published_sha256": "8a2ec7a13867d803b55524d452c088f23f40a7bee471e6aafaf5a3600f1edfee",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/solver-run.log",
+      "destination": "experiments/family-house-airflow/solver-run.log",
+      "source_sha256": "3b38f587b06d3f04c4f2b5a7305abbafc465573163f72d320081746ac0100430",
+      "published_sha256": "3b38f587b06d3f04c4f2b5a7305abbafc465573163f72d320081746ac0100430",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/solver-validation.json",
+      "destination": "experiments/family-house-airflow/solver-validation.json",
+      "source_sha256": "a1fe8e50098a6781b86ef246d4f6d35f65afa0028c40622beff07a3b3a4da1db",
+      "published_sha256": "a1fe8e50098a6781b86ef246d4f6d35f65afa0028c40622beff07a3b3a4da1db",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source-design.json",
+      "destination": "experiments/family-house-airflow/source-design.json",
+      "source_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+      "published_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/stability-500-697.json",
+      "destination": "experiments/family-house-airflow/stability-500-697.json",
+      "source_sha256": "d2623c0c0fd69c8a3411daaa29cf17789ebb0348f9fb8523e1c593378c338860",
+      "published_sha256": "d2623c0c0fd69c8a3411daaa29cf17789ebb0348f9fb8523e1c593378c338860",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/stability-585-697.json",
+      "destination": "experiments/family-house-airflow/stability-585-697.json",
+      "source_sha256": "b5f91dc0fbaf04083564a38b41d7cb7a57224e62c1ae6c87dcbd39701b88016c",
+      "published_sha256": "b5f91dc0fbaf04083564a38b41d7cb7a57224e62c1ae6c87dcbd39701b88016c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/streamline-evidence.json",
+      "destination": "experiments/family-house-airflow/streamline-evidence.json",
+      "source_sha256": "13642af7120b02c7f02f62ad046f075785875271ac414167c5ad8fdc8de1e7b7",
+      "published_sha256": "13642af7120b02c7f02f62ad046f075785875271ac414167c5ad8fdc8de1e7b7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/この家の風の流れ_3D-CFD.mp4",
+      "destination": "experiments/family-house-airflow/この家の風の流れ_3D-CFD.mp4",
+      "source_sha256": "57f44e26264081977efde590af91514402fd28739bc93fa1f2a0d9d08b813d79",
+      "published_sha256": "57f44e26264081977efde590af91514402fd28739bc93fa1f2a0d9d08b813d79",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/結果と再生方法.txt",
+      "destination": "experiments/family-house-airflow/結果と再生方法.txt",
+      "source_sha256": "cb50174ca875ebf6b8ba49c85fb061ec0acd346496c882846c42ab9e7bd5d12c",
+      "published_sha256": "cb50174ca875ebf6b8ba49c85fb061ec0acd346496c882846c42ab9e7bd5d12c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/解析の前提.txt",
+      "destination": "experiments/family-house-airflow/解析の前提.txt",
+      "source_sha256": "0c4e64ba3ff9a2f67bb6660b6ea3c475c3ac3c6800c10fb8872babc0d2e31191",
+      "published_sha256": "0c4e64ba3ff9a2f67bb6660b6ea3c475c3ac3c6800c10fb8872babc0d2e31191",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/解析条件.png",
+      "destination": "experiments/family-house-airflow/解析条件.png",
+      "source_sha256": "15f67a54845cc5c0b85c945943f223feb501545145734c8f20342645789e2cdb",
+      "published_sha256": "15f67a54845cc5c0b85c945943f223feb501545145734c8f20342645789e2cdb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/解析条件.svg",
+      "destination": "experiments/family-house-airflow/解析条件.svg",
+      "source_sha256": "8458378d5f7668b580945390887e273c9c056f0527ab2291df3c9e0093c3f467",
+      "published_sha256": "8458378d5f7668b580945390887e273c9c056f0527ab2291df3c9e0093c3f467",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/adapter-final.json",
+      "destination": "experiments/family-house-airflow/source/adapter-final.json",
+      "source_sha256": "fb3993bb16418d1001121b7e53339fb4b63307d938cb883d12b3cd13860cc6b8",
+      "published_sha256": "5d3f777a712b78e3984da558b159dfde5f556745022595b168414c38efad380a",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/audit_fields.py",
+      "destination": "experiments/family-house-airflow/source/audit_fields.py",
+      "source_sha256": "084076b3313961f79333c0e063c89f15d1047e2a58ad51490799d2ad220ea09a",
+      "published_sha256": "084076b3313961f79333c0e063c89f15d1047e2a58ad51490799d2ad220ea09a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/audit_flux.py",
+      "destination": "experiments/family-house-airflow/source/audit_flux.py",
+      "source_sha256": "686a3a2a66ba76f65c1a0bab6aa02fe36c2978d593dadc54917a6f85e0f7d10f",
+      "published_sha256": "686a3a2a66ba76f65c1a0bab6aa02fe36c2978d593dadc54917a6f85e0f7d10f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/build-conditions.cjs",
+      "destination": "experiments/family-house-airflow/source/build-conditions.cjs",
+      "source_sha256": "527c0474854d5ecea607eb2c380411238f884ea13dd6f561141cd9e220a5ab1c",
+      "published_sha256": "527c0474854d5ecea607eb2c380411238f884ea13dd6f561141cd9e220a5ab1c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/build_family_airflow.py",
+      "destination": "experiments/family-house-airflow/source/build_family_airflow.py",
+      "source_sha256": "520f68d35caeb1c8ac4608f82460ac93c6b0a2f4838ea84d961dc6b9b7cbaf92",
+      "published_sha256": "dc0e5555a089de454ba1f11873e27ce8adbc3b07295755efcbd6f908650a1810",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/check_iteration_stability.py",
+      "destination": "experiments/family-house-airflow/source/check_iteration_stability.py",
+      "source_sha256": "dbce5efdd48374b25bc38e976b9e4595af4bbbec2cf339ec5c140fed1b49e166",
+      "published_sha256": "dbce5efdd48374b25bc38e976b9e4595af4bbbec2cf339ec5c140fed1b49e166",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/compute_room_metrics.py",
+      "destination": "experiments/family-house-airflow/source/compute_room_metrics.py",
+      "source_sha256": "d6ca3514c38fdc1b2ec7b2a504646e3aada236b353f77b32ad32a21032632da7",
+      "published_sha256": "d6ca3514c38fdc1b2ec7b2a504646e3aada236b353f77b32ad32a21032632da7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/finalize_native.py",
+      "destination": "experiments/family-house-airflow/source/finalize_native.py",
+      "source_sha256": "a79959a2ff3f6ef3b327cf30377ae83c9d7572cb51dceeba687540976a959374",
+      "published_sha256": "2cebdbfd2462c557cbac38f3d201a169eb34950fdcf192bc965441e9bf6a7e6a",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/monitor_writes.py",
+      "destination": "experiments/family-house-airflow/source/monitor_writes.py",
+      "source_sha256": "b9253b416d36f7f913ef15747d1e183aefcece8ecc679493b7a1e13bea34583f",
+      "published_sha256": "5222bbd487ca11dd11c37d1b208e8384a3548ea9d981c875ed7287bfa8b7b475",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/post_final.sh",
+      "destination": "experiments/family-house-airflow/source/post_final.sh",
+      "source_sha256": "cb0c5ef33e1a14b9d677fc149c5999833b28d4d17faa859ba4b690f3f16f8082",
+      "published_sha256": "cb0c5ef33e1a14b9d677fc149c5999833b28d4d17faa859ba4b690f3f16f8082",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/prepare_parallel.py",
+      "destination": "experiments/family-house-airflow/source/prepare_parallel.py",
+      "source_sha256": "57bd11d492e9229b1a1f5f237b9a3c81cde8662d2b5fb24a7890846d89b92f96",
+      "published_sha256": "8190ec4d676b1520166c350238071b02ab2ec80575822726bca0ee34dc59c14d",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/reconstruct_diagnostic.sh",
+      "destination": "experiments/family-house-airflow/source/reconstruct_diagnostic.sh",
+      "source_sha256": "d841771634c0e66593009b9f943d6576014b3bf69e027c8ff068b2176d53ab6d",
+      "published_sha256": "d841771634c0e66593009b9f943d6576014b3bf69e027c8ff068b2176d53ab6d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/render_family_airflow.py",
+      "destination": "experiments/family-house-airflow/source/render_family_airflow.py",
+      "source_sha256": "d441d638e7ef19d673ea8267aca180cfcf37872dd74ad459dec11a373f2031bd",
+      "published_sha256": "dc2cf0ac9c1991b7141b6e16288012162a7836709a3fc3a666fdf04e4dce1c7a",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/reset_initial_relaxation.py",
+      "destination": "experiments/family-house-airflow/source/reset_initial_relaxation.py",
+      "source_sha256": "376755e573fee03392d9261228dcbf12f47090c6e76e39025fdf724d303182dc",
+      "published_sha256": "5c293dfeeed5311da68ec6913872e412424e342606d4198044a1bb39d287956d",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/residual_history.py",
+      "destination": "experiments/family-house-airflow/source/residual_history.py",
+      "source_sha256": "d345f6441576cdc6e0838f8e7baa42a3cf86ad0bccefda1fc11db983f3898276",
+      "published_sha256": "0d3123194a2e6be75954ac5387a77678120b7ea090bb7976c528ff696deea3f2",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/Run-OpenFOAM.ps1",
+      "destination": "experiments/family-house-airflow/source/Run-OpenFOAM.ps1",
+      "source_sha256": "0180985607a7d57a6ff9e80bbee803587464970d18b9d31464342a6d04d06619",
+      "published_sha256": "bfdd85ee65aa29a4c281d6740d60f15018cac30ed63764fe9a3d7316bfc9de24",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/run_cfd.sh",
+      "destination": "experiments/family-house-airflow/source/run_cfd.sh",
+      "source_sha256": "9ccb1d23fa5b466396ca8aec52d41c992d3962a89572c76153917284889d8c7b",
+      "published_sha256": "9ccb1d23fa5b466396ca8aec52d41c992d3962a89572c76153917284889d8c7b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/tune_numerics.py",
+      "destination": "experiments/family-house-airflow/source/tune_numerics.py",
+      "source_sha256": "1417c6df209c68301eca7357211bdd49b5ad6adc5b70e34ee2cb2fab3adcdf1c",
+      "published_sha256": "2fd443c2eeb82b63b52b0d296d980ed451403b2a7601c9816c4f7a5560f2bcb3",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/tune_relaxation.py",
+      "destination": "experiments/family-house-airflow/source/tune_relaxation.py",
+      "source_sha256": "3c3dc6309ba448224d7f21b6aaf1c0cdcfe573afe28595a5aac2fde5e90b713e",
+      "published_sha256": "91e4cde5109e9484a9a1807d1ea0d419318bf173a063f43a9a53e25938009bd5",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/validate_solution.py",
+      "destination": "experiments/family-house-airflow/source/validate_solution.py",
+      "source_sha256": "979a032231b7d012b95cc4ab5b480a3266c7b6bee710d67ae40d769812fe8d8c",
+      "published_sha256": "5f7ae18d536246aed40bbf04c956932e50473b83ae002b2fc5d81db1470429c5",
+      "adapted": true
+    },
+    {
+      "source": "outputs/Family-House-Airflow/source/verify_animation.py",
+      "destination": "experiments/family-house-airflow/source/verify_animation.py",
+      "source_sha256": "a9b516a6a193c23af881945cb040a9de4dd7ece46c8d223b0bcf24b21bc36eae",
+      "published_sha256": "a9b516a6a193c23af881945cb040a9de4dd7ece46c8d223b0bcf24b21bc36eae",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/runtime/archive-manifest.json",
+      "destination": "experiments/elbow/runtime/archive-manifest.json",
+      "source_sha256": "f225cf389dec41deee6780dc708edce30a69dbbe79a72aea816009ab548972f6",
+      "published_sha256": "f225cf389dec41deee6780dc708edce30a69dbbe79a72aea816009ab548972f6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/runtime/Containerfile",
+      "destination": "experiments/elbow/runtime/Containerfile",
+      "source_sha256": "12016e86a361aa500b2ebb5ecc072216b78eca27bbf0b3d9a4b1f3f7b0ff6a7b",
+      "published_sha256": "12016e86a361aa500b2ebb5ecc072216b78eca27bbf0b3d9a4b1f3f7b0ff6a7b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/runtime/runtime-help-smoke.log",
+      "destination": "experiments/elbow/runtime/runtime-help-smoke.log",
+      "source_sha256": "d1d068c36c321ab8df22637d797dd6cdaac3759e3958b5275c6dbdd734b6d893",
+      "published_sha256": "d1d068c36c321ab8df22637d797dd6cdaac3759e3958b5275c6dbdd734b6d893",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/runtime/runtime-verified.json",
+      "destination": "experiments/elbow/runtime/runtime-verified.json",
+      "source_sha256": "fee53c4a39b7b868960037744b1671f2939552f11bd549c68f38e20e4c68e64c",
+      "published_sha256": "fee53c4a39b7b868960037744b1671f2939552f11bd549c68f38e20e4c68e64c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/runtime/runtime-versions.log",
+      "destination": "experiments/elbow/runtime/runtime-versions.log",
+      "source_sha256": "d7ff489e22e996813f173cf9045a876a2b851a25d98a0c25448193f0da927052",
+      "published_sha256": "d7ff489e22e996813f173cf9045a876a2b851a25d98a0c25448193f0da927052",
+      "adapted": false
+    },
+    {
+      "source": "work/family-house/create_design.py",
+      "destination": "experiments/family-house/source/create_design.py",
+      "source_sha256": "324e948ad8854416ece69d1f0eb25c2d4c9ed2d69e03d5eecab95776ec0e4f87",
+      "published_sha256": "1c38eec12caabca487b0190f119d244a723f4efee79c34d883afb6d5c5ba0182",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-review/audit-plan.py",
+      "destination": "experiments/family-house/source/audit-plan.py",
+      "source_sha256": "59a5f0774a97a2c66347fe1cde0315fffbef36a7ecdf2ffba81ef1897a5a58f2",
+      "published_sha256": "cb3b82e4090a902231ecaa1339073a420635457d3c1416431b20de985562d0af",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-sheets/build-design-pdf.py",
+      "destination": "experiments/family-house/source/build-design-pdf.py",
+      "source_sha256": "29a2c9819b06154265c22582829aa90daf98f2b9e241b345e6c1671af2e89aab",
+      "published_sha256": "68aa6c646f06836890f3dbda73bb90b5c1b5290f54bb67a992aec0cfd839cd2d",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-airflow-review/mesh_geometry_audit.py",
+      "destination": "experiments/family-house-airflow/source/mesh_geometry_audit.py",
+      "source_sha256": "adead42315105c98a81740de51638821a3309310f703f441ff43b1eb7ecd3a7b",
+      "published_sha256": "cbf4761e3083cb0514c5ff8940a561c1fcbb3fa16ac08b09019ab36bb798a37b",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-airflow-review/probe_small_gaps.py",
+      "destination": "experiments/family-house-airflow/source/probe_small_gaps.py",
+      "source_sha256": "821303783061aa9fd7bf3f1a79d779bf8545b016b0214baf00c36a53d56f8900",
+      "published_sha256": "17a11ced6ab23c112cdc050b06139f747592f4fa84150adf039ce5b4377c4f98",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-airflow-review/check_design.py",
+      "destination": "experiments/family-house-airflow/source/check_design.py",
+      "source_sha256": "3b9051cba00181f80c810a04229f8e9be18544a42ec96cb659b7e7df301bf3cc",
+      "published_sha256": "ab864df7be80ac5c8e07ce73fbe9fe3108f37b7c3bd7adf009aecae8cb698d28",
+      "adapted": true
+    },
+    {
+      "source": "work/family-house-airflow-review/audit_setup.py",
+      "destination": "experiments/family-house-airflow/source/audit_setup.py",
+      "source_sha256": "fa3dc3c44fba8a3ac13beddf0c86fc20b32871f8d735d2d67a2c40e42f7a35a9",
+      "published_sha256": "1586ea695a4f1d2e1d02ff223555dfa9c18a88922c3465033fdb79af4a3db7f5",
+      "adapted": true
+    },
+    {
+      "source": "work/house-airflow/build-houses.FCMacro",
+      "destination": "experiments/window-comparison/source/build-houses.FCMacro",
+      "source_sha256": "44cdfccc52245fc24af0f9ccd21171498b5a0a413655a97a4ea213cb74bfe561",
+      "published_sha256": "3ec13d6e8284b90e403ccc8a9295e5e2526993cf7ca5ded5bc2ba14207f77b91",
+      "adapted": true
+    },
+    {
+      "source": "work/house-airflow/verify_houses.py",
+      "destination": "experiments/window-comparison/source/verify_houses.py",
+      "source_sha256": "8d14072ef9ff1c08fc7cf0a314acd753453a437c9616ae7fd77c1ccf84815d7f",
+      "published_sha256": "8f691d924b32d78d19b9c0239205a7107f3b6802646b64738cb4536a538dabd9",
+      "adapted": true
+    },
+    {
+      "source": "work/house-airflow/check_saved_models.py",
+      "destination": "experiments/window-comparison/source/check_saved_models.py",
+      "source_sha256": "df5ab3799700e23b78ac7981a182d34cd273741190f93b2627791d16a3176323",
+      "published_sha256": "c97427f2f315ca436a4925430f9146734a1367407f39396a47e0be44bc82ce6c",
+      "adapted": true
+    },
+    {
+      "source": "work/house-airflow-animation/verify-animation.py",
+      "destination": "experiments/window-comparison/source/verify-animation.py",
+      "source_sha256": "60cb6a991bc95a656066f78297bc922fbfefd6759b5c1edb1521041bcf3b5462",
+      "published_sha256": "11a544928a006730055efd0ecc227c15f057c865d114abb515c9df1a84322cd7",
+      "adapted": true
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/Allrun",
+      "destination": "experiments/elbow/input/case/Allrun",
+      "source_sha256": "515d742adfa8e5b563f59d31af797615ab210891090391403268f4126a678a88",
+      "published_sha256": "515d742adfa8e5b563f59d31af797615ab210891090391403268f4126a678a88",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/0/p",
+      "destination": "experiments/elbow/input/case/0/p",
+      "source_sha256": "f58da3dd672f056261282542a8949733d36f91c770b50fd147a02929248ed0bf",
+      "published_sha256": "f58da3dd672f056261282542a8949733d36f91c770b50fd147a02929248ed0bf",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/0/U",
+      "destination": "experiments/elbow/input/case/0/U",
+      "source_sha256": "8bcff77e8a544e0e6a29cdb7873281f9ef5af2c814e45b5f31dd6ec5ab95ec93",
+      "published_sha256": "8bcff77e8a544e0e6a29cdb7873281f9ef5af2c814e45b5f31dd6ec5ab95ec93",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/constant/momentumTransport",
+      "destination": "experiments/elbow/input/case/constant/momentumTransport",
+      "source_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "published_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/constant/transportProperties",
+      "destination": "experiments/elbow/input/case/constant/transportProperties",
+      "source_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "published_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/constant/turbulenceProperties",
+      "destination": "experiments/elbow/input/case/constant/turbulenceProperties",
+      "source_sha256": "6d9ca3a2609a6aa48c39ea909010697f5c0d95b42dedaab428f2bd5516fe3e3b",
+      "published_sha256": "6d9ca3a2609a6aa48c39ea909010697f5c0d95b42dedaab428f2bd5516fe3e3b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/alphaDivScheme",
+      "destination": "experiments/elbow/input/case/system/alphaDivScheme",
+      "source_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "published_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/cAlpha",
+      "destination": "experiments/elbow/input/case/system/cAlpha",
+      "source_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "published_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/controlDict",
+      "destination": "experiments/elbow/input/case/system/controlDict",
+      "source_sha256": "5b94a47bb5563a3a03b8af32136df474fe7b9c1d70f3577c3a3c3eb2d1c3400c",
+      "published_sha256": "5b94a47bb5563a3a03b8af32136df474fe7b9c1d70f3577c3a3c3eb2d1c3400c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/createPatchDict",
+      "destination": "experiments/elbow/input/case/system/createPatchDict",
+      "source_sha256": "c1255f67eb813f7db6fc68439ef792fb8411c2e8143fb3f1ca4e689447b224dd",
+      "published_sha256": "c1255f67eb813f7db6fc68439ef792fb8411c2e8143fb3f1ca4e689447b224dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/decomposeParDict",
+      "destination": "experiments/elbow/input/case/system/decomposeParDict",
+      "source_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "published_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/fvSchemes",
+      "destination": "experiments/elbow/input/case/system/fvSchemes",
+      "source_sha256": "7d0596fe964290f2b8549aa2332723817b0d0897d25b0ca54f3ba2f9fe640f66",
+      "published_sha256": "7d0596fe964290f2b8549aa2332723817b0d0897d25b0ca54f3ba2f9fe640f66",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/fvSolution",
+      "destination": "experiments/elbow/input/case/system/fvSolution",
+      "source_sha256": "86fb8f42e9082e632df99692c196c676ae325b61813af38ff794c334fe343c08",
+      "published_sha256": "86fb8f42e9082e632df99692c196c676ae325b61813af38ff794c334fe343c08",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/case/system/turbulenceLib",
+      "destination": "experiments/elbow/input/case/system/turbulenceLib",
+      "source_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "published_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/Allmesh",
+      "destination": "experiments/elbow/input/meshCase/Allmesh",
+      "source_sha256": "64bd6c4a8596bdcf5888f320abd138e50cd63bcb3a15328d1dcc9bf51092643e",
+      "published_sha256": "64bd6c4a8596bdcf5888f320abd138e50cd63bcb3a15328d1dcc9bf51092643e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/changeDictionaryDict.0",
+      "destination": "experiments/elbow/input/meshCase/system/changeDictionaryDict.0",
+      "source_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "published_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/controlDict",
+      "destination": "experiments/elbow/input/meshCase/system/controlDict",
+      "source_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "published_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/createPatchDict",
+      "destination": "experiments/elbow/input/meshCase/system/createPatchDict",
+      "source_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "published_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/extrudeMeshDict.0",
+      "destination": "experiments/elbow/input/meshCase/system/extrudeMeshDict.0",
+      "source_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "published_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/fvSchemes",
+      "destination": "experiments/elbow/input/meshCase/system/fvSchemes",
+      "source_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "published_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/fvSolution",
+      "destination": "experiments/elbow/input/meshCase/system/fvSolution",
+      "source_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "published_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/meshDict",
+      "destination": "experiments/elbow/input/meshCase/system/meshDict",
+      "source_sha256": "1269d3d9b72ba46dba2166dfc7dcdef922a31d66d08c008be3e52e8a552ad4a4",
+      "published_sha256": "1269d3d9b72ba46dba2166dfc7dcdef922a31d66d08c008be3e52e8a552ad4a4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/system/meshQualityDict",
+      "destination": "experiments/elbow/input/meshCase/system/meshQualityDict",
+      "source_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "published_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/Pad_Geometry.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/Pad_Geometry.stl",
+      "source_sha256": "10e5804fb80da6212b73da28225aa705a0e3adcb36939a5e2fcab5b1b073ad7e",
+      "published_sha256": "10e5804fb80da6212b73da28225aa705a0e3adcb36939a5e2fcab5b1b073ad7e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_0_0.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_0_0.stl",
+      "source_sha256": "726255a7364a3644427a10fc12350950158c6fc0d3b62c9ec7dbcf369ad7302c",
+      "published_sha256": "726255a7364a3644427a10fc12350950158c6fc0d3b62c9ec7dbcf369ad7302c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_0_1.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_0_1.stl",
+      "source_sha256": "b57a8cd55ead1396164f411cca688a49daa310b8ab1d9b0856245c1aa850cdcf",
+      "published_sha256": "b57a8cd55ead1396164f411cca688a49daa310b8ab1d9b0856245c1aa850cdcf",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_1_0.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_1_0.stl",
+      "source_sha256": "ca5eb6b28dfccce97979ae3b97eac72acfacd706edca1b25823b26b48a89d1f8",
+      "published_sha256": "ca5eb6b28dfccce97979ae3b97eac72acfacd706edca1b25823b26b48a89d1f8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_2_0.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_2_0.stl",
+      "source_sha256": "4474cc2fae8403b68887db57ba9714d7a4ae2c9103983a1083e918bdf52f9133",
+      "published_sha256": "4474cc2fae8403b68887db57ba9714d7a4ae2c9103983a1083e918bdf52f9133",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_3_0.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_3_0.stl",
+      "source_sha256": "792ccdd0d3ea74bc98f3de790a8f2f83f186dc7b9e24e4ba48a73d6c9bf016c4",
+      "published_sha256": "792ccdd0d3ea74bc98f3de790a8f2f83f186dc7b9e24e4ba48a73d6c9bf016c4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/CFD-Elbow/meshCase/constant/triSurface/patch_4_0.stl",
+      "destination": "experiments/elbow/input/meshCase/constant/triSurface/patch_4_0.stl",
+      "source_sha256": "92f812a61901b5dddc73b2d447c114447d55367ce9d94f6e0281f3efa1492192",
+      "published_sha256": "92f812a61901b5dddc73b2d447c114447d55367ce9d94f6e0281f3efa1492192",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/air-domain.brep",
+      "destination": "experiments/window-comparison/case-a/air-domain.brep",
+      "source_sha256": "93e8d5fb2d9bed887dd2fa24df8b29632bc7452d04b0398c3395644eb822f648",
+      "published_sha256": "93e8d5fb2d9bed887dd2fa24df8b29632bc7452d04b0398c3395644eb822f648",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/freecad-house.png",
+      "destination": "experiments/window-comparison/case-a/freecad-house.png",
+      "source_sha256": "b9d92be3ab5bfde1aa97a6e112e837b4bc1a9a70c1d433ca81dabff8312af41f",
+      "published_sha256": "b9d92be3ab5bfde1aa97a6e112e837b4bc1a9a70c1d433ca81dabff8312af41f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/House-A.FCStd",
+      "destination": "experiments/window-comparison/case-a/House-A.FCStd",
+      "source_sha256": "f9f390cbaf162b04455f8a9436312df22d629832e58e288e0fee6c5ff39c21e8",
+      "published_sha256": "f9f390cbaf162b04455f8a9436312df22d629832e58e288e0fee6c5ff39c21e8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/house-walls.brep",
+      "destination": "experiments/window-comparison/case-a/house-walls.brep",
+      "source_sha256": "2663490043948d0af8d332659ea5879e4e851fef421778480389078fd78b2936",
+      "published_sha256": "2663490043948d0af8d332659ea5879e4e851fef421778480389078fd78b2936",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/mesh-check.log",
+      "destination": "experiments/window-comparison/case-a/mesh-check.log",
+      "source_sha256": "f93d9484debf77cbd37ca7ccd983ab604bb8c2e2307ca86dd0335cce1679fc5e",
+      "published_sha256": "f93d9484debf77cbd37ca7ccd983ab604bb8c2e2307ca86dd0335cce1679fc5e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/mesh-run.log",
+      "destination": "experiments/window-comparison/case-a/mesh-run.log",
+      "source_sha256": "7f9e0c659819c23a26f5d5d468dbf2258a2e9d5d6ea6296312133816fd54ace7",
+      "published_sha256": "7f9e0c659819c23a26f5d5d468dbf2258a2e9d5d6ea6296312133816fd54ace7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/setup.json",
+      "destination": "experiments/window-comparison/case-a/setup.json",
+      "source_sha256": "598c8cfb104a68e77e4fa47d67c347d9cf0ddcb82d7e6dd786d7a0d8d329b39e",
+      "published_sha256": "598c8cfb104a68e77e4fa47d67c347d9cf0ddcb82d7e6dd786d7a0d8d329b39e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/solver-run.log",
+      "destination": "experiments/window-comparison/case-a/solver-run.log",
+      "source_sha256": "7956b6b4f1db5ac41796473aca37d88bf4e948426361aeb81260de0cd40cba18",
+      "published_sha256": "7956b6b4f1db5ac41796473aca37d88bf4e948426361aeb81260de0cd40cba18",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/validation.json",
+      "destination": "experiments/window-comparison/case-a/validation.json",
+      "source_sha256": "d94a2b0c9d3defecfd304984dd78cc3517f94d94204f49dae99356ec513752e2",
+      "published_sha256": "d94a2b0c9d3defecfd304984dd78cc3517f94d94204f49dae99356ec513752e2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/Allrun",
+      "destination": "experiments/window-comparison/case-a/input/case/Allrun",
+      "source_sha256": "88ba7ce16a38cb706bdbb097019f7c51f41a62ef6a9eb09352fb9ecda482c0af",
+      "published_sha256": "88ba7ce16a38cb706bdbb097019f7c51f41a62ef6a9eb09352fb9ecda482c0af",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/0/epsilon",
+      "destination": "experiments/window-comparison/case-a/input/case/0/epsilon",
+      "source_sha256": "4ea6a210d2ef311f23a3d7fb2fab529b915ec3c23b62362be8d150e90585f9ca",
+      "published_sha256": "4ea6a210d2ef311f23a3d7fb2fab529b915ec3c23b62362be8d150e90585f9ca",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/0/k",
+      "destination": "experiments/window-comparison/case-a/input/case/0/k",
+      "source_sha256": "828217444afa7f4fef045a65be33d3aa11dc287a208e44af87da80a8869441d0",
+      "published_sha256": "828217444afa7f4fef045a65be33d3aa11dc287a208e44af87da80a8869441d0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/0/nut",
+      "destination": "experiments/window-comparison/case-a/input/case/0/nut",
+      "source_sha256": "ac04bdb816a2c1aebba97359eb3d27ac958bb9f26dbe19807c55c73659da8867",
+      "published_sha256": "ac04bdb816a2c1aebba97359eb3d27ac958bb9f26dbe19807c55c73659da8867",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/0/p",
+      "destination": "experiments/window-comparison/case-a/input/case/0/p",
+      "source_sha256": "7d41da06349d17a6144887b4db1f75505e890cac76a48da29fc732ffe6931b3e",
+      "published_sha256": "7d41da06349d17a6144887b4db1f75505e890cac76a48da29fc732ffe6931b3e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/0/U",
+      "destination": "experiments/window-comparison/case-a/input/case/0/U",
+      "source_sha256": "e452a04362044f41df8b57e0096a863b81fb0c6642f24661ae72b2d24054edd7",
+      "published_sha256": "e452a04362044f41df8b57e0096a863b81fb0c6642f24661ae72b2d24054edd7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/constant/momentumTransport",
+      "destination": "experiments/window-comparison/case-a/input/case/constant/momentumTransport",
+      "source_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "published_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/constant/transportProperties",
+      "destination": "experiments/window-comparison/case-a/input/case/constant/transportProperties",
+      "source_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "published_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/constant/turbulenceProperties",
+      "destination": "experiments/window-comparison/case-a/input/case/constant/turbulenceProperties",
+      "source_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "published_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/alphaDivScheme",
+      "destination": "experiments/window-comparison/case-a/input/case/system/alphaDivScheme",
+      "source_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "published_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/cAlpha",
+      "destination": "experiments/window-comparison/case-a/input/case/system/cAlpha",
+      "source_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "published_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/controlDict",
+      "destination": "experiments/window-comparison/case-a/input/case/system/controlDict",
+      "source_sha256": "82897c9ed309f74353fa78a003683339afcd0a6e608d495a1bd0a650516b56b3",
+      "published_sha256": "82897c9ed309f74353fa78a003683339afcd0a6e608d495a1bd0a650516b56b3",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/createPatchDict",
+      "destination": "experiments/window-comparison/case-a/input/case/system/createPatchDict",
+      "source_sha256": "4dc750dee27285511ac40b7fbb6e274af46545c43969a038e214f5ebfff238f4",
+      "published_sha256": "4dc750dee27285511ac40b7fbb6e274af46545c43969a038e214f5ebfff238f4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/decomposeParDict",
+      "destination": "experiments/window-comparison/case-a/input/case/system/decomposeParDict",
+      "source_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "published_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/fvSchemes",
+      "destination": "experiments/window-comparison/case-a/input/case/system/fvSchemes",
+      "source_sha256": "37d42f02a124063f93ed8d2c7c6208fbecd1e1093fa41f47a46aed66b25f0a3d",
+      "published_sha256": "37d42f02a124063f93ed8d2c7c6208fbecd1e1093fa41f47a46aed66b25f0a3d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/fvSolution",
+      "destination": "experiments/window-comparison/case-a/input/case/system/fvSolution",
+      "source_sha256": "c2d216648fc7ef5d5fbfadb17772f0d1b515e9769653d7c80c4ddacb8a56e8e4",
+      "published_sha256": "c2d216648fc7ef5d5fbfadb17772f0d1b515e9769653d7c80c4ddacb8a56e8e4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/case/system/turbulenceLib",
+      "destination": "experiments/window-comparison/case-a/input/case/system/turbulenceLib",
+      "source_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "published_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/Allmesh",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/Allmesh",
+      "source_sha256": "3928db327d670149d214bd02f75b24c23f0dbba03bc494ce6fc5f261463acca8",
+      "published_sha256": "3928db327d670149d214bd02f75b24c23f0dbba03bc494ce6fc5f261463acca8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/changeDictionaryDict.0",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/changeDictionaryDict.0",
+      "source_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "published_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/controlDict",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/controlDict",
+      "source_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "published_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/createPatchDict",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/createPatchDict",
+      "source_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "published_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/extrudeMeshDict.0",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/extrudeMeshDict.0",
+      "source_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "published_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/fvSchemes",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/fvSchemes",
+      "source_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "published_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/fvSolution",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/fvSolution",
+      "source_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "published_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/meshDict",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/meshDict",
+      "source_sha256": "f0161925f6d1ed257395c8388ebb7628705d0e29d2bfca440ccb59ce3501d465",
+      "published_sha256": "f0161925f6d1ed257395c8388ebb7628705d0e29d2bfca440ccb59ce3501d465",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/system/meshQualityDict",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/system/meshQualityDict",
+      "source_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "published_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "source_sha256": "1ab10f76cd815ddd26df03a6e6619635fb236e86a8a4d146f2d393f3a1a39769",
+      "published_sha256": "1ab10f76cd815ddd26df03a6e6619635fb236e86a8a4d146f2d393f3a1a39769",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "source_sha256": "c5d512e385d727235db5bada74c8fc1a662f108a1f08442c7332c480683e245b",
+      "published_sha256": "c5d512e385d727235db5bada74c8fc1a662f108a1f08442c7332c480683e245b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "source_sha256": "fe74c6d3ccc47ed18b86fe2b0467319a542b9327520f9f5c85d6794801c21072",
+      "published_sha256": "fe74c6d3ccc47ed18b86fe2b0467319a542b9327520f9f5c85d6794801c21072",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_0_0.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_0_0.stl",
+      "source_sha256": "d69ca5cf3cac2ae96553328815d0dc851a2d723f85652196d176b7b66b452018",
+      "published_sha256": "d69ca5cf3cac2ae96553328815d0dc851a2d723f85652196d176b7b66b452018",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_0_1.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_0_1.stl",
+      "source_sha256": "ebd4437c0178a93235e70951a958c15c70976d7e65b9f8ec047092a565df95de",
+      "published_sha256": "ebd4437c0178a93235e70951a958c15c70976d7e65b9f8ec047092a565df95de",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_1_0.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_1_0.stl",
+      "source_sha256": "45d704cad3f5b6bfb473bcacbaf96565d3959ce6965c504a511c97f48fa76f74",
+      "published_sha256": "45d704cad3f5b6bfb473bcacbaf96565d3959ce6965c504a511c97f48fa76f74",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_2_0.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_2_0.stl",
+      "source_sha256": "f491a8203c0312127c3d01129f32bc80f9a3eef7721b282b52320e26be9b0a60",
+      "published_sha256": "f491a8203c0312127c3d01129f32bc80f9a3eef7721b282b52320e26be9b0a60",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_3_0.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_3_0.stl",
+      "source_sha256": "f6fe051ebf450bc9eb15c7a4f4506da89bee9b3b2b458cfe271f5f72b7bb4b79",
+      "published_sha256": "f6fe051ebf450bc9eb15c7a4f4506da89bee9b3b2b458cfe271f5f72b7bb4b79",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-a/meshCase/constant/triSurface/patch_4_0.stl",
+      "destination": "experiments/window-comparison/case-a/input/meshCase/constant/triSurface/patch_4_0.stl",
+      "source_sha256": "988d65d48f9d9de5987c1fffee56d84683b1e87b5fa469f3f8a3ef503713465c",
+      "published_sha256": "988d65d48f9d9de5987c1fffee56d84683b1e87b5fa469f3f8a3ef503713465c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/air-domain.brep",
+      "destination": "experiments/window-comparison/case-b/air-domain.brep",
+      "source_sha256": "25f8d97bff328c69459282b25bbf5c735fa4f603d2e8793dc3e5d31fef30245c",
+      "published_sha256": "25f8d97bff328c69459282b25bbf5c735fa4f603d2e8793dc3e5d31fef30245c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/freecad-house.png",
+      "destination": "experiments/window-comparison/case-b/freecad-house.png",
+      "source_sha256": "ca014fc1a2750e7a72ebe7e16ec420ed317b6421dceba0c12e0559822e10b64e",
+      "published_sha256": "ca014fc1a2750e7a72ebe7e16ec420ed317b6421dceba0c12e0559822e10b64e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/House-B.FCStd",
+      "destination": "experiments/window-comparison/case-b/House-B.FCStd",
+      "source_sha256": "c3f49e9b676a462bcc243923213e7c7a0c10cb0210c88c7308cc7f64856112a6",
+      "published_sha256": "c3f49e9b676a462bcc243923213e7c7a0c10cb0210c88c7308cc7f64856112a6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/house-walls.brep",
+      "destination": "experiments/window-comparison/case-b/house-walls.brep",
+      "source_sha256": "2e84217635984588a77e76d973d3788b01285c8d5a17aa3e1a88b8b033f839dd",
+      "published_sha256": "2e84217635984588a77e76d973d3788b01285c8d5a17aa3e1a88b8b033f839dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/mesh-check.log",
+      "destination": "experiments/window-comparison/case-b/mesh-check.log",
+      "source_sha256": "c2050084a4e60f43f0e0d23b66f132f4985844127e98dab4190d0d7baf6eceae",
+      "published_sha256": "c2050084a4e60f43f0e0d23b66f132f4985844127e98dab4190d0d7baf6eceae",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/mesh-run.log",
+      "destination": "experiments/window-comparison/case-b/mesh-run.log",
+      "source_sha256": "b6d57118b4b01aca869dd3d6f4c96059832893642a8e1a9d63c974e8ef66b118",
+      "published_sha256": "b6d57118b4b01aca869dd3d6f4c96059832893642a8e1a9d63c974e8ef66b118",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/setup.json",
+      "destination": "experiments/window-comparison/case-b/setup.json",
+      "source_sha256": "618aa1ed1bc4bcacba7b4ca608ced51ed0e3d60dfc11528969646302e029dc51",
+      "published_sha256": "618aa1ed1bc4bcacba7b4ca608ced51ed0e3d60dfc11528969646302e029dc51",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/solver-run.log",
+      "destination": "experiments/window-comparison/case-b/solver-run.log",
+      "source_sha256": "8b4ed12a39e3198233e4c133f53f92e73c341f69bf944697e789f4d0e4077532",
+      "published_sha256": "8b4ed12a39e3198233e4c133f53f92e73c341f69bf944697e789f4d0e4077532",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/validation.json",
+      "destination": "experiments/window-comparison/case-b/validation.json",
+      "source_sha256": "4403f9788bf55e971074205af0a2f4efcb59def3d7f5acc4a859e0ceb7468dee",
+      "published_sha256": "4403f9788bf55e971074205af0a2f4efcb59def3d7f5acc4a859e0ceb7468dee",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/Allrun",
+      "destination": "experiments/window-comparison/case-b/input/case/Allrun",
+      "source_sha256": "bfdccf57f44bda4c327b178df141569e7b5bcd9acb91752aa1b265eb6f0e61c9",
+      "published_sha256": "bfdccf57f44bda4c327b178df141569e7b5bcd9acb91752aa1b265eb6f0e61c9",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/0/epsilon",
+      "destination": "experiments/window-comparison/case-b/input/case/0/epsilon",
+      "source_sha256": "4ea6a210d2ef311f23a3d7fb2fab529b915ec3c23b62362be8d150e90585f9ca",
+      "published_sha256": "4ea6a210d2ef311f23a3d7fb2fab529b915ec3c23b62362be8d150e90585f9ca",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/0/k",
+      "destination": "experiments/window-comparison/case-b/input/case/0/k",
+      "source_sha256": "828217444afa7f4fef045a65be33d3aa11dc287a208e44af87da80a8869441d0",
+      "published_sha256": "828217444afa7f4fef045a65be33d3aa11dc287a208e44af87da80a8869441d0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/0/nut",
+      "destination": "experiments/window-comparison/case-b/input/case/0/nut",
+      "source_sha256": "ac04bdb816a2c1aebba97359eb3d27ac958bb9f26dbe19807c55c73659da8867",
+      "published_sha256": "ac04bdb816a2c1aebba97359eb3d27ac958bb9f26dbe19807c55c73659da8867",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/0/p",
+      "destination": "experiments/window-comparison/case-b/input/case/0/p",
+      "source_sha256": "7d41da06349d17a6144887b4db1f75505e890cac76a48da29fc732ffe6931b3e",
+      "published_sha256": "7d41da06349d17a6144887b4db1f75505e890cac76a48da29fc732ffe6931b3e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/0/U",
+      "destination": "experiments/window-comparison/case-b/input/case/0/U",
+      "source_sha256": "25742969c16b08d2a22022c3df944749ad421fd2ede14f91e0115742bcde0a35",
+      "published_sha256": "25742969c16b08d2a22022c3df944749ad421fd2ede14f91e0115742bcde0a35",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/constant/momentumTransport",
+      "destination": "experiments/window-comparison/case-b/input/case/constant/momentumTransport",
+      "source_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "published_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/constant/transportProperties",
+      "destination": "experiments/window-comparison/case-b/input/case/constant/transportProperties",
+      "source_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "published_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/constant/turbulenceProperties",
+      "destination": "experiments/window-comparison/case-b/input/case/constant/turbulenceProperties",
+      "source_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "published_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/alphaDivScheme",
+      "destination": "experiments/window-comparison/case-b/input/case/system/alphaDivScheme",
+      "source_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "published_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/cAlpha",
+      "destination": "experiments/window-comparison/case-b/input/case/system/cAlpha",
+      "source_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "published_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/controlDict",
+      "destination": "experiments/window-comparison/case-b/input/case/system/controlDict",
+      "source_sha256": "82897c9ed309f74353fa78a003683339afcd0a6e608d495a1bd0a650516b56b3",
+      "published_sha256": "82897c9ed309f74353fa78a003683339afcd0a6e608d495a1bd0a650516b56b3",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/createPatchDict",
+      "destination": "experiments/window-comparison/case-b/input/case/system/createPatchDict",
+      "source_sha256": "4dc750dee27285511ac40b7fbb6e274af46545c43969a038e214f5ebfff238f4",
+      "published_sha256": "4dc750dee27285511ac40b7fbb6e274af46545c43969a038e214f5ebfff238f4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/decomposeParDict",
+      "destination": "experiments/window-comparison/case-b/input/case/system/decomposeParDict",
+      "source_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "published_sha256": "5110224149601166122f189410415d0d4b85accc5227d1a804cb31b12f66cdfd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/fvSchemes",
+      "destination": "experiments/window-comparison/case-b/input/case/system/fvSchemes",
+      "source_sha256": "37d42f02a124063f93ed8d2c7c6208fbecd1e1093fa41f47a46aed66b25f0a3d",
+      "published_sha256": "37d42f02a124063f93ed8d2c7c6208fbecd1e1093fa41f47a46aed66b25f0a3d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/fvSolution",
+      "destination": "experiments/window-comparison/case-b/input/case/system/fvSolution",
+      "source_sha256": "c2d216648fc7ef5d5fbfadb17772f0d1b515e9769653d7c80c4ddacb8a56e8e4",
+      "published_sha256": "c2d216648fc7ef5d5fbfadb17772f0d1b515e9769653d7c80c4ddacb8a56e8e4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/case/system/turbulenceLib",
+      "destination": "experiments/window-comparison/case-b/input/case/system/turbulenceLib",
+      "source_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "published_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/Allmesh",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/Allmesh",
+      "source_sha256": "3928db327d670149d214bd02f75b24c23f0dbba03bc494ce6fc5f261463acca8",
+      "published_sha256": "3928db327d670149d214bd02f75b24c23f0dbba03bc494ce6fc5f261463acca8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/changeDictionaryDict.0",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/changeDictionaryDict.0",
+      "source_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "published_sha256": "ac7e1f36a62080f8b0b062121b557cffea14e4b68c044e2bd9c66eb72040b177",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/controlDict",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/controlDict",
+      "source_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "published_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/createPatchDict",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/createPatchDict",
+      "source_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "published_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/extrudeMeshDict.0",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/extrudeMeshDict.0",
+      "source_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "published_sha256": "28d206e850f8425c8d9ee230c56256f5f7a29b44b13078e7a17e34cb4ca9abb2",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/fvSchemes",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/fvSchemes",
+      "source_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "published_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/fvSolution",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/fvSolution",
+      "source_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "published_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/meshDict",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/meshDict",
+      "source_sha256": "f0161925f6d1ed257395c8388ebb7628705d0e29d2bfca440ccb59ce3501d465",
+      "published_sha256": "f0161925f6d1ed257395c8388ebb7628705d0e29d2bfca440ccb59ce3501d465",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/system/meshQualityDict",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/system/meshQualityDict",
+      "source_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "published_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "source_sha256": "5b851ab7dab896e59644905ff1ad6b1b77e59f09fc0531c5b63717395ba9e5da",
+      "published_sha256": "5b851ab7dab896e59644905ff1ad6b1b77e59f09fc0531c5b63717395ba9e5da",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "source_sha256": "dc66173b887e037fce86e35c2aadc97af435a0e4acf973de2981b2933cb54b4a",
+      "published_sha256": "dc66173b887e037fce86e35c2aadc97af435a0e4acf973de2981b2933cb54b4a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "source_sha256": "fe74c6d3ccc47ed18b86fe2b0467319a542b9327520f9f5c85d6794801c21072",
+      "published_sha256": "fe74c6d3ccc47ed18b86fe2b0467319a542b9327520f9f5c85d6794801c21072",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_0_0.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_0_0.stl",
+      "source_sha256": "10d99bdeb5a187698cf3f2434e7d642b23d42592c2f40c7189329823ffee49e9",
+      "published_sha256": "10d99bdeb5a187698cf3f2434e7d642b23d42592c2f40c7189329823ffee49e9",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_0_1.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_0_1.stl",
+      "source_sha256": "be72f82fb91d433a2722bbe2e5bb451e7a4f9fd8c035b281c97254b94702f89f",
+      "published_sha256": "be72f82fb91d433a2722bbe2e5bb451e7a4f9fd8c035b281c97254b94702f89f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_1_0.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_1_0.stl",
+      "source_sha256": "45d704cad3f5b6bfb473bcacbaf96565d3959ce6965c504a511c97f48fa76f74",
+      "published_sha256": "45d704cad3f5b6bfb473bcacbaf96565d3959ce6965c504a511c97f48fa76f74",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_2_0.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_2_0.stl",
+      "source_sha256": "f491a8203c0312127c3d01129f32bc80f9a3eef7721b282b52320e26be9b0a60",
+      "published_sha256": "f491a8203c0312127c3d01129f32bc80f9a3eef7721b282b52320e26be9b0a60",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_3_0.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_3_0.stl",
+      "source_sha256": "f6fe051ebf450bc9eb15c7a4f4506da89bee9b3b2b458cfe271f5f72b7bb4b79",
+      "published_sha256": "f6fe051ebf450bc9eb15c7a4f4506da89bee9b3b2b458cfe271f5f72b7bb4b79",
+      "adapted": false
+    },
+    {
+      "source": "outputs/House-Airflow/case-b/meshCase/constant/triSurface/patch_4_0.stl",
+      "destination": "experiments/window-comparison/case-b/input/meshCase/constant/triSurface/patch_4_0.stl",
+      "source_sha256": "005a691b6e6a1563c759e69473910ce24cc6c8ea0aebbdb3d1b41455a29b2697",
+      "published_sha256": "005a691b6e6a1563c759e69473910ce24cc6c8ea0aebbdb3d1b41455a29b2697",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/Allrun",
+      "destination": "experiments/family-house-airflow/input/case/Allrun",
+      "source_sha256": "471ac30b6833d7f4828c0e2e90225b51d227604c8db75a9d9cf77ac5dec476d8",
+      "published_sha256": "471ac30b6833d7f4828c0e2e90225b51d227604c8db75a9d9cf77ac5dec476d8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/0/epsilon",
+      "destination": "experiments/family-house-airflow/input/case/0/epsilon",
+      "source_sha256": "d1142220aaa2f1ef9876a1971931a3dc8e60018be81b7a9b88e921a5f34826c1",
+      "published_sha256": "d1142220aaa2f1ef9876a1971931a3dc8e60018be81b7a9b88e921a5f34826c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/0/k",
+      "destination": "experiments/family-house-airflow/input/case/0/k",
+      "source_sha256": "77f42227ce2ab7ac9fb6226a4f5b638da90ea1d32447dd18de0315e44bc8607b",
+      "published_sha256": "77f42227ce2ab7ac9fb6226a4f5b638da90ea1d32447dd18de0315e44bc8607b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/0/nut",
+      "destination": "experiments/family-house-airflow/input/case/0/nut",
+      "source_sha256": "168cfd1663440fe7a8f2a43653c5f0fb186397a8bfcb4d4cb09f261547b4c41d",
+      "published_sha256": "168cfd1663440fe7a8f2a43653c5f0fb186397a8bfcb4d4cb09f261547b4c41d",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/0/p",
+      "destination": "experiments/family-house-airflow/input/case/0/p",
+      "source_sha256": "1f3c30381adc236e379d524dc64e95373676c1b7212be35f5f8897e782e9c76c",
+      "published_sha256": "1f3c30381adc236e379d524dc64e95373676c1b7212be35f5f8897e782e9c76c",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/constant/momentumTransport",
+      "destination": "experiments/family-house-airflow/input/case/constant/momentumTransport",
+      "source_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "published_sha256": "736c9dca6372f1dedb0e2f15c1c47f1fd27efa7e06f791424519309cfdb52d9e",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/constant/transportProperties",
+      "destination": "experiments/family-house-airflow/input/case/constant/transportProperties",
+      "source_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "published_sha256": "67984e9c069d6984103d6c349fbc6f31657dabf8a1880d9cb5d51f3e1353ea82",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/constant/turbulenceProperties",
+      "destination": "experiments/family-house-airflow/input/case/constant/turbulenceProperties",
+      "source_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "published_sha256": "2b8e6226716a4c93334069a4503fc47825deec064aecfe53342b9a56841e5720",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/alphaDivScheme",
+      "destination": "experiments/family-house-airflow/input/case/system/alphaDivScheme",
+      "source_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "published_sha256": "5a556ca066bd50ed0794683f9a4d7db2a748177caa64ee976c9136f88048d997",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/cAlpha",
+      "destination": "experiments/family-house-airflow/input/case/system/cAlpha",
+      "source_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "published_sha256": "524a8503e73a17783a41441a09aea711e2e287e86887a07c1b0dd756556910bb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/controlDict",
+      "destination": "experiments/family-house-airflow/input/case/system/controlDict",
+      "source_sha256": "a1172654ae4d66f0dd104cc74a7fe9127d3c1b4abbfa1294fe88822a04c40f89",
+      "published_sha256": "a1172654ae4d66f0dd104cc74a7fe9127d3c1b4abbfa1294fe88822a04c40f89",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/createPatchDict",
+      "destination": "experiments/family-house-airflow/input/case/system/createPatchDict",
+      "source_sha256": "59cf2bbfaef628e3d24028bae2822b861353e240ed4144112a997e204722eeb7",
+      "published_sha256": "59cf2bbfaef628e3d24028bae2822b861353e240ed4144112a997e204722eeb7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/decomposeParDict",
+      "destination": "experiments/family-house-airflow/input/case/system/decomposeParDict",
+      "source_sha256": "ed118f3ae3ac9b359a23fecf233cefe8baecbe5fd34bee0f673269efc2b8fac4",
+      "published_sha256": "ed118f3ae3ac9b359a23fecf233cefe8baecbe5fd34bee0f673269efc2b8fac4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/fvSchemes",
+      "destination": "experiments/family-house-airflow/input/case/system/fvSchemes",
+      "source_sha256": "e6464bcb2d01e6b4ecaeaf41384b10384c7fa4c51b13c66a88aacc80cf866c32",
+      "published_sha256": "e6464bcb2d01e6b4ecaeaf41384b10384c7fa4c51b13c66a88aacc80cf866c32",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/fvSolution",
+      "destination": "experiments/family-house-airflow/input/case/system/fvSolution",
+      "source_sha256": "f641143a2b5f8a03fdb3d856415432cd39baa8cc84b49a59adb07d722e23ced3",
+      "published_sha256": "f641143a2b5f8a03fdb3d856415432cd39baa8cc84b49a59adb07d722e23ced3",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/case/system/turbulenceLib",
+      "destination": "experiments/family-house-airflow/input/case/system/turbulenceLib",
+      "source_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "published_sha256": "a7eff64e5678cc2bb4c0fe109a9e081c3bb3e50e6087fd2cefe136f76b9961dd",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/Allmesh",
+      "destination": "experiments/family-house-airflow/input/meshCase/Allmesh",
+      "source_sha256": "12b4988d67bfce50299cb08feb38a9fae151bcff0e8a8fc0542f20fd720e84df",
+      "published_sha256": "12b4988d67bfce50299cb08feb38a9fae151bcff0e8a8fc0542f20fd720e84df",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/controlDict",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/controlDict",
+      "source_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "published_sha256": "2609681a3d560bac17f4ebfa545487f03b8f874cc8740de74228dc110d18bc50",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/createPatchDict",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/createPatchDict",
+      "source_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "published_sha256": "38618b46d2d2422a0f67c64f38c40eb28da7d378f34dbe955663d05e591c8d6a",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/fvSchemes",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/fvSchemes",
+      "source_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "published_sha256": "c1ca1ff1f7ea8b9685a0d502b4bc84cecfdba8b2dcd0f3fe1e0aeb102ba123e0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/fvSolution",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/fvSolution",
+      "source_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "published_sha256": "fb3c44a34bb3c42c0b85560cdb265bd3d1c99351eca578e6cabcc694811deeb0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/meshDict",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/meshDict",
+      "source_sha256": "5784213c69a891ac127868b9af7adb49013fcf3e2023d8e4d5b4df66755f7ded",
+      "published_sha256": "5784213c69a891ac127868b9af7adb49013fcf3e2023d8e4d5b4df66755f7ded",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/system/meshQualityDict",
+      "destination": "experiments/family-house-airflow/input/meshCase/system/meshQualityDict",
+      "source_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "published_sha256": "080d454b6ae9db3a225e99737ca67916f7a38bf19ecc89adc15a92dd3ff1a6c1",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/AirDomain_Geometry.stl",
+      "source_sha256": "9b72b4abb87f9a1a1c0a7afbe9a655310634d6571a48815c483d410aa10b7554",
+      "published_sha256": "9b72b4abb87f9a1a1c0a7afbe9a655310634d6571a48815c483d410aa10b7554",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement.stl",
+      "source_sha256": "67d02ffd50bd0927e6e319cfeda444d87bb062019a621507dd820b075c1c2642",
+      "published_sha256": "67d02ffd50bd0927e6e319cfeda444d87bb062019a621507dd820b075c1c2642",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement001.stl",
+      "source_sha256": "465fc80c23457d2dbb9f9d1e19e63e091160bbf33db0fd8bb3f53c5fd3046e87",
+      "published_sha256": "465fc80c23457d2dbb9f9d1e19e63e091160bbf33db0fd8bb3f53c5fd3046e87",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement002.stl",
+      "source_sha256": "bdb10e94a38f93b44e6b4460595a47ce96617c9b72519478a0d8d915abec38a8",
+      "published_sha256": "bdb10e94a38f93b44e6b4460595a47ce96617c9b72519478a0d8d915abec38a8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement003.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement003.stl",
+      "source_sha256": "c09b01002a315a4b229ef8a1adaad41644565eb0ad3de6cfd72dc6ba1ff1447f",
+      "published_sha256": "c09b01002a315a4b229ef8a1adaad41644565eb0ad3de6cfd72dc6ba1ff1447f",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement004.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement004.stl",
+      "source_sha256": "eb4de23b34303a96fc3e547d0e6588b40ea08df939c0bb27e20c73d81a239bef",
+      "published_sha256": "eb4de23b34303a96fc3e547d0e6588b40ea08df939c0bb27e20c73d81a239bef",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement005.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement005.stl",
+      "source_sha256": "948ce9cde6321905269bcc71b4a5f65adb952be18ad9835942d68856f0a67223",
+      "published_sha256": "948ce9cde6321905269bcc71b4a5f65adb952be18ad9835942d68856f0a67223",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement006.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement006.stl",
+      "source_sha256": "f1fefeeb2285278f3c3be89a749536e8e59ca754a2e00964c45213f3e52e3ad5",
+      "published_sha256": "f1fefeeb2285278f3c3be89a749536e8e59ca754a2e00964c45213f3e52e3ad5",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement007.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement007.stl",
+      "source_sha256": "439c9e2b06f2b21224309b0928ac55924c3b16b075c570033e6d756aef99ef5b",
+      "published_sha256": "439c9e2b06f2b21224309b0928ac55924c3b16b075c570033e6d756aef99ef5b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement008.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement008.stl",
+      "source_sha256": "7a2fb17a50ad1009a3b3eb060946fe7b49098f634dce478b20845f9b583f2ee5",
+      "published_sha256": "7a2fb17a50ad1009a3b3eb060946fe7b49098f634dce478b20845f9b583f2ee5",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement009.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement009.stl",
+      "source_sha256": "7bd19e9ffdf30a1efdb510976f64ea2014dac481b28866f638014b589c7535e4",
+      "published_sha256": "7bd19e9ffdf30a1efdb510976f64ea2014dac481b28866f638014b589c7535e4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement010.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement010.stl",
+      "source_sha256": "e76a0115d8f347adf4bbb1a1f3d1bd5b8398aa5e5c6db13022160ca356d3e905",
+      "published_sha256": "e76a0115d8f347adf4bbb1a1f3d1bd5b8398aa5e5c6db13022160ca356d3e905",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement011.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement011.stl",
+      "source_sha256": "366d4912de02cd015ff3668f59fa706517b8ca4824cd30593ed18e0a2554bffb",
+      "published_sha256": "366d4912de02cd015ff3668f59fa706517b8ca4824cd30593ed18e0a2554bffb",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement012.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement012.stl",
+      "source_sha256": "ea8c616b50c2862b2ef038146476992ba8e5df813fb4528a4a5fe4be3840b437",
+      "published_sha256": "ea8c616b50c2862b2ef038146476992ba8e5df813fb4528a4a5fe4be3840b437",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement013.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement013.stl",
+      "source_sha256": "b52e8c83163ae4d7a24ac68b921c5a4cab4f6f00d66f8547fa44bc335b247b59",
+      "published_sha256": "b52e8c83163ae4d7a24ac68b921c5a4cab4f6f00d66f8547fa44bc335b247b59",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement014.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement014.stl",
+      "source_sha256": "8a0da5a0897eae303c80737a93b7aac295ea0b51bf4930a90d03ffd446bf04f4",
+      "published_sha256": "8a0da5a0897eae303c80737a93b7aac295ea0b51bf4930a90d03ffd446bf04f4",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement015.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement015.stl",
+      "source_sha256": "e015a72fe28e238045a0036238b5e0ec2e9a460203a76bddebeee1fc5ad2aea6",
+      "published_sha256": "e015a72fe28e238045a0036238b5e0ec2e9a460203a76bddebeee1fc5ad2aea6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement016.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement016.stl",
+      "source_sha256": "5eb2a23a48deb3ffa07d890ea253d9bfac60fd461928d4cb1506e5d2bebf09f7",
+      "published_sha256": "5eb2a23a48deb3ffa07d890ea253d9bfac60fd461928d4cb1506e5d2bebf09f7",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement017.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement017.stl",
+      "source_sha256": "7d630fd2c9c70402b2d3eceadafacb9dc583f52680784fb74461700801c1fa2b",
+      "published_sha256": "7d630fd2c9c70402b2d3eceadafacb9dc583f52680784fb74461700801c1fa2b",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement018.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement018.stl",
+      "source_sha256": "6aa41ab3ec707e4a0de6024bbbecbce79af65faaf597ed91ed01cd678ff5b775",
+      "published_sha256": "6aa41ab3ec707e4a0de6024bbbecbce79af65faaf597ed91ed01cd678ff5b775",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement019.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement019.stl",
+      "source_sha256": "90ae0ad1803609b377728b787ccb6d205e2895374d1718a49d833e4cdd057156",
+      "published_sha256": "90ae0ad1803609b377728b787ccb6d205e2895374d1718a49d833e4cdd057156",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement020.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement020.stl",
+      "source_sha256": "5b77baa278d233e8ad0102b0fdf0ba3d05d8e4eafc93e2a0772c76b9d24ccc69",
+      "published_sha256": "5b77baa278d233e8ad0102b0fdf0ba3d05d8e4eafc93e2a0772c76b9d24ccc69",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement021.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement021.stl",
+      "source_sha256": "7757b01fcb0d2a89fdd9fdf45667c4c15bbca935aac15402c90e52ac66b1aca6",
+      "published_sha256": "7757b01fcb0d2a89fdd9fdf45667c4c15bbca935aac15402c90e52ac66b1aca6",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement022.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement022.stl",
+      "source_sha256": "2dea1d88fe23f61c8177f2d47d8ac0dc8d5e6036a324b1989e2397dd615dafed",
+      "published_sha256": "2dea1d88fe23f61c8177f2d47d8ac0dc8d5e6036a324b1989e2397dd615dafed",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/MeshRefinement023.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/MeshRefinement023.stl",
+      "source_sha256": "f6ee24fc6664cdd77d9a3b0c6658704b77cda6ef1c62d9fe984fd23ef82cea61",
+      "published_sha256": "f6ee24fc6664cdd77d9a3b0c6658704b77cda6ef1c62d9fe984fd23ef82cea61",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/patch_1_0.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/patch_1_0.stl",
+      "source_sha256": "375ab4bc655fca7f64492988ed7eec5095e642a62389648ee529871302cb15de",
+      "published_sha256": "375ab4bc655fca7f64492988ed7eec5095e642a62389648ee529871302cb15de",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/patch_2_0.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/patch_2_0.stl",
+      "source_sha256": "f15c0e5bb71a40dce748e600c2b6b4fd40815a7304c71fcb1da675777afbae80",
+      "published_sha256": "f15c0e5bb71a40dce748e600c2b6b4fd40815a7304c71fcb1da675777afbae80",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/patch_3_0.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/patch_3_0.stl",
+      "source_sha256": "05d29879071956106c3fbafa0b08e0ca9708b4e83bc2801f1a253bc353371ae0",
+      "published_sha256": "05d29879071956106c3fbafa0b08e0ca9708b4e83bc2801f1a253bc353371ae0",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/patch_4_0.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/patch_4_0.stl",
+      "source_sha256": "eceecbc135e1ecc1b055eaf24be93b75672584584bfda35969d99c6314b4e9c8",
+      "published_sha256": "eceecbc135e1ecc1b055eaf24be93b75672584584bfda35969d99c6314b4e9c8",
+      "adapted": false
+    },
+    {
+      "source": "outputs/Family-House-Airflow/meshCase/constant/triSurface/patch_5_0.stl",
+      "destination": "experiments/family-house-airflow/input/meshCase/constant/triSurface/patch_5_0.stl",
+      "source_sha256": "260e1bfa5e7deb77dd75010393bf87ee33fe61f11ef3b0e0699902174761af53",
+      "published_sha256": "260e1bfa5e7deb77dd75010393bf87ee33fe61f11ef3b0e0699902174761af53",
+      "adapted": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Official CfdOF dependency sources, downloaded without altering the original image.
+# Base digest: sha256:d09be2c8119e6fccc4b9bed2674183fb113d1cca598148efd51ff2f19e60b1d5
+FROM docker.io/mmcker/cfdof-openfoam:latest
+USER root
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ARG BUILD_JOBS=4
+ENV WM_NCOMPPROCS=${BUILD_JOBS}
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends unzip ca-certificates && rm -rf /var/lib/apt/lists/*
+COPY cfmesh-cfdof.zip hisa-master.zip gmsh-4.15.2-Linux64.tgz archive-manifest.json /opt/cfd-downloads/
+RUN mkdir -p /opt/cfd-build-logs && source /usr/lib/openfoam/openfoam2306/etc/bashrc && mkdir -p "$WM_PROJECT_USER_DIR" && unzip -q /opt/cfd-downloads/cfmesh-cfdof.zip -d "$WM_PROJECT_USER_DIR" && cd "$WM_PROJECT_USER_DIR/cfmesh-cfdof" && chmod +x Allwmake && ./Allwmake 2>&1 | tee /opt/cfd-build-logs/cfmesh.Allwmake.log
+RUN source /usr/lib/openfoam/openfoam2306/etc/bashrc && unzip -q /opt/cfd-downloads/hisa-master.zip -d "$WM_PROJECT_USER_DIR" && cd "$WM_PROJECT_USER_DIR/hisa-master" && chmod +x Allwmake && ./Allwmake 2>&1 | tee /opt/cfd-build-logs/hisa.Allwmake.log
+RUN tar -xzf /opt/cfd-downloads/gmsh-4.15.2-Linux64.tgz -C /opt && ln -sf /opt/gmsh-4.15.2-Linux64/bin/gmsh /usr/local/bin/gmsh && gmsh -version
+RUN source /usr/lib/openfoam/openfoam2306/etc/bashrc && cartesianMesh -version && hisa -version && gmsh -version
+LABEL org.opencontainers.image.title="CfdOF locally verified dependencies 2026-10-30" \
+      org.opencontainers.image.description="OpenFOAM 2306 with refreshed official cfMesh-CfdOF, HiSA and Gmsh 4.15.2"
+# /etc/bashrc in the upstream CfdOF image fixes user applications/libraries to
+# /usr/local. Install the freshly compiled artifacts there for the GUI runtime.
+RUN source /usr/lib/openfoam/openfoam2306/etc/bashrc && cp -a "$FOAM_USER_APPBIN/." /usr/local/bin/ && cp -a "$FOAM_USER_LIBBIN/." /usr/local/lib/ && ldconfig && source /etc/bashrc && cartesianMesh -version && hisa -version && gmsh -version
+LABEL org.cfdof.cfmesh.version="1.32" org.cfdof.hisa.version="1.13.4" org.cfdof.gmsh.version="4.15.2"

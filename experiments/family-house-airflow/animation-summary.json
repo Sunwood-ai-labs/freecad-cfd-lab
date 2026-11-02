@@ -1,0 +1,44 @@
+{
+  "iteration": 697.0,
+  "cells": 538479,
+  "raw_path_count": 351,
+  "path_count": 264,
+  "seed_count": 396,
+  "slice_global_z_m": 1.65,
+  "slice_local_z_m": 1.65,
+  "speed_scale_max": 2.0,
+  "slice_max_m_s": 1.411618709564209,
+  "indoor_path_max_m_s": 1.9369287490844727,
+  "slice_saturated_fraction": 0.0,
+  "source_file": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\Family-House-Airflow\\case\\pv.foam",
+  "source_U_sha256": "ffef09c52a6992f0e2d767942e14c99c1aa60471b26575b3dc8d23337beedc25",
+  "offset_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "frames": 480,
+  "fps": 24,
+  "duration_s": 20.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "time_scale": 2,
+  "method": "VTK RK45 actual 3D steady U streamlines, cropped to contiguous visible house segments. Positions linearly interpolated in physical IntegrationTime; no per-path speed normalization. Recycled with phase and endpoint fade.",
+  "integrator_settings": {
+    "velocity": "point-interpolated OpenFOAM U",
+    "integration_step_unit": "metres",
+    "initial_step_m": 0.025,
+    "minimum_step_m": 0.002,
+    "maximum_step_m": 0.08,
+    "maximum_raw_propagation_m": 70,
+    "terminal_speed_m_s": 0.002
+  },
+  "views": "0-10s top projection, 10-16s oblique 3D cutaway, 16-20s top projection. Display cuts do not affect CFD geometry.",
+  "slice_caveat": "Plan background is U magnitude at local z=1.65m; particles use full 3D U at multiple heights. Some paths lie above low furniture.",
+  "speed_scale_clipping": "Display ceiling rounded above maximum of all indoor trajectory speeds and the displayed slice; no saturation of included indoor data.",
+  "particle_caveat": "Number/density of display particles does not measure volume flux or ACH.",
+  "adapter_sha256": "fb3993bb16418d1001121b7e53339fb4b63307d938cb883d12b3cd13860cc6b8",
+  "source_design_sha256": "d71f486357cc4d18e620b51b2ea9c53f6f65255f4bc50565f70297c2f8e89662"
+}

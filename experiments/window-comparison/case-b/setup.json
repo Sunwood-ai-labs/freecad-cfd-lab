@@ -1,0 +1,117 @@
+{
+  "key": "b",
+  "case_root": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b",
+  "document": "House_B",
+  "domain_m": [
+    0,
+    120,
+    0,
+    60
+  ],
+  "house_outer_m": [
+    30,
+    38,
+    27,
+    33
+  ],
+  "house_inner_m": [
+    30.2,
+    37.8,
+    27.2,
+    32.8
+  ],
+  "west_window_m": [
+    30,
+    30.2,
+    29.4,
+    30.6
+  ],
+  "other_window_m": [
+    35.9,
+    37.1,
+    32.8,
+    33
+  ],
+  "window_width_m": 1.2,
+  "wall_thickness_m": 0.2,
+  "wind_m_s": [
+    2,
+    0,
+    0
+  ],
+  "turbulence": "steady RANS kEpsilon",
+  "turbulence_intensity_percent": 5,
+  "turbulence_length_scale_m": 1,
+  "density_kg_m3": 1.2,
+  "face_refs": {
+    "windInlet": [
+      "Face1"
+    ],
+    "windOutlet": [
+      "Face6"
+    ],
+    "farfield": [
+      "Face2",
+      "Face4"
+    ],
+    "houseWalls": [
+      "Face7",
+      "Face8",
+      "Face9",
+      "Face10",
+      "Face11",
+      "Face12",
+      "Face13",
+      "Face14",
+      "Face15",
+      "Face16",
+      "Face17",
+      "Face18",
+      "Face19",
+      "Face20",
+      "Face21",
+      "Face22"
+    ],
+    "top": [
+      "Face3"
+    ],
+    "bottom": [
+      "Face5"
+    ]
+  },
+  "mesh_command": [
+    "podman.EXE",
+    "exec",
+    "7ed0b8af2c63",
+    "bash",
+    "-c",
+    "source /etc/bashrc && cd \"/tmp/case-b/meshCase\" && export OMPI_ALLOW_RUN_AS_ROOT=1 && export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1 && export OMP_NUM_THREADS=4 && ./Allmesh"
+  ],
+  "mesh_dir": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b\\meshCase",
+  "case_dir": "C:\\Users\\Aslan\\Documents\\Codex\\2026-10-29\\fr-2\\outputs\\House-Airflow\\case-b\\case",
+  "convergence_tolerance": 0.0001,
+  "max_iterations": 6000,
+  "limitations": "Simplified planar 2D steady incompressible k-epsilon RANS, first-order upwind; not experimentally validated, no full 3D/thermal/furniture/mesh-independence verification.",
+  "mesh_bounds_m": [
+    0,
+    120,
+    0,
+    60,
+    4,
+    5
+  ],
+  "slice_z_m": 4.5,
+  "cad_meshing_thickness_m": 4,
+  "final_2d_extrusion_depth_m": 1,
+  "cells": 13711,
+  "numerics": {
+    "velocity_advection": "bounded Gauss upwind (first order, stabilised demonstration)",
+    "relaxation_U": 0.3,
+    "relaxation_p": 0.1,
+    "relaxation_turbulence": 0.3,
+    "note": "Identical first-order upwind and relaxation in both cases. Earlier kOmegaSST attempt oscillated and was not accepted as converged."
+  },
+  "converged_iteration": 2026,
+  "solver_exit_code": 0,
+  "extrusion_patch": "planar2D"
+}
